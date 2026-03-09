@@ -1,0 +1,1120 @@
+﻿Serial,Basic Information,Research Objective,System Description,Modelling Approach,Machine Learning Component,Key Results,Strengths,Limitations,Research Gap Identified
+1,"•	Title: A comprehensive review on degradation pathways, catalyst screening and machine learning in supercritical water gasification from biomass for sustainable hydrogen production
+ 
+•	Authors: Reza Dehdari, Sahand Azadvar, Omid Tavakoli
+
+•	 Journal: Biomass and Bioenergy (Elsevier)
+
+•	 Year: 2025
+ 
+•	Country/Region: Iran (University of Tehran)
+
+•	 Type: Review Article","•	Addresses the challenge of optimizing biomass supercritical water gasification (SCWG) for hydrogen-rich syngas.
+•	Significant because SCWG avoids drying costs for wet biomass and offers high hydrogen selectivity.
+•	Contribution: Reviews biomass degradation pathways, catalytic strategies, reactor designs, and ML applications for SCWG optimization.","•	Feedstocks: Agricultural residues, sludge, manure, wastewater, plastics, food waste.
+•	Conversion route: SCWG (hydrothermal gasification above 374?°C and 22.1?MPa).
+•	Outputs: Syngas (H?, CO, CO?, CH?), plus char and liquid residues.
+•	Integration: Catalysts + ML models for predictive optimization.","•	Catalysts studied:
+o	Homogeneous: KOH, NaOH, Na?CO?, K?CO?.
+o	Heterogeneous: Ni, Co, Fe, Cu, Ru, Pt, Pd, CeO?, CaO.
+•	Reaction pathways: Hydrolysis ? intermediates (glucose, furfural, phenols) ? reforming, WGS, methanation ? syngas.
+•	Reactor types: Batch, fluidized bed, continuous flow.
+•	ML models: ANN, SVM, RF, Gradient Boosting Regressors.","•	Purpose: Predict hydrogen yield, syngas composition, optimize process parameters.
+•	Advantages: Reduced experimental load, captured nonlinear interactions, guided catalyst/condition selection.
+•	Performance: ML models demonstrated strong predictive accuracy across diverse datasets.","•	Reaction temperature most influential ? higher T improves carbon gasification efficiency and H? yield.
+•	Catalysts enhanced hydrogen selectivity and reduced tar/char.
+•	Homogeneous catalysts effective but corrosive; heterogeneous catalysts more scalable.
+•	ML successfully predicted syngas composition and optimized operating conditions.
+•	Complementary synergy: catalyst engineering + ML predictive modeling.","•	Comprehensive coverage of biomass breakdown pathways in SCWG.
+•	Detailed catalyst screening (alkali metals, transition metals, noble metals).
+•	Integration of ML for predictive optimization.
+•	Addresses reactor design, regeneration, and deactivation mechanisms.","•	Review-based; lacks new experimental validation.
+•	ML applications still limited to small datasets.
+•	Catalyst recovery and long-term stability remain unresolved.
+•	Industrial-scale SCWG deployment not yet achieved.","•	Need for large-scale pilot studies of SCWG with ML-guided optimization.
+•	Exploration of hybrid ML + mechanistic models for deeper interpretability.
+•	Development of cost-effective, regenerable catalysts.
+•	Life cycle assessment of SCWG residues and emissions.
+•	Integration of SCWG into circular economy frameworks."
+2,"•	Title: Advancing algal biofuel production through data-driven insights: A comprehensive review of machine learning applications
+•	Authors: Olakunle Ayodeji Omole, Chukwuma C. Ogbaga, Jude A. Okolie, Olugbenga Akande, Richard Kimera, Joseph Lepnaan Dayil
+•	Journal: Computers & Chemical Engineering (Elsevier)
+•	Year: 2025 (received 2024, accepted Feb 2025, online Feb 2025)
+•	Country of study: Republic of Korea (primary affiliation), Nigeria, United States (multi-institutional review)
+•	Type: Review / Bibliometric + qualitative synthesis (no original modelling or experiments)","The review aims to systematically assess contemporary applications of machine learning (ML) in microalgae-based biofuel production systems. It focuses on ML integration across the value chain — from strain detection/classification, growth phase monitoring & optimization, cultivation parameter prediction, to downstream biorefinery processing — while explicitly addressing the impact of dataset quality/quantity and the particular challenge of sparse experimental datasets typical in algal biofuel research.","•	Feedstock: Microalgae (primarily lipid-accumulating strains e.g. Chlorella, Spirogyra; also general eukaryotic algae)
+•	Hydrogen production pathway: Not directly covered (review focuses on biodiesel, bio-oil via HTL/pyrolysis, biohydrogen mentions marginal)
+•	Integrated system: No — review is process-agnostic; discusses both upstream (cultivation, strain selection) and selected downstream (HTL, pyrolysis) steps
+•	Carbon capture included: No (only passing mention of CO? mitigation motivation)
+•	Polygeneration: No (focus remains biofuel-oriented, mainly lipid-to-FAME or bio-crude)","•	Type: Narrative & thematic literature review (141 selected references, emphasis on post-2014 work)
+•	Databases: ScienceDirect, IEEE Xplore, Google Scholar
+•	No original simulation — purely secondary analysis of published modelling studies
+•	Modelling families frequently cited:
+o	First-principles / mechanistic: thermodynamic equilibrium models, kinetic models (IPRs), RSM (response surface methodology)
+o	Data-driven: ANN, CNN, SVM, RF, XGBoost, ELM, ANFIS, GA, PSO
+o	Hybrid: ML surrogate models replacing or augmenting physics-based simulators
+•	Validation approach: Comparison of reported ML performance metrics (R², accuracy, MSE) against literature benchmarks and occasionally against first-principles models","•	Dominant algorithms by application domain:
+o	Microalgae detection & classification ? CNN (AlexNet, ResNeXt, YOLOv3), SVM (often with feature extraction), RF, ANN
+o	Growth phase / state prediction ? SVM, RF, deep learning on microscopic / spectral / holographic images
+o	Yield / property prediction (HTL, pyrolysis) ? ANN, RF, XGBoost, nonlinear regression, ELM (especially small-data regimes)
+o	Optimization & control ? GA, PSO, ANFIS (less frequent in review scope)
+•	Common dataset strategies for small/sparse data:
+o	Data augmentation (rotation, flip, brightness; especially image-based)
+o	Transfer learning
+o	Ensemble methods
+o	Integration of domain knowledge / physics constraints
+o	Extreme Learning Machine (ELM) repeatedly highlighted for superior generalization on small biofuel datasets
+•	Performance highlights: Classification accuracies 92–99.97% (image-based tasks); R² 0.80–0.99+ for yield/property prediction; ELM frequently outperforms gradient-based methods on limited data
+•	Data sources: FlowCAM cytometry-microscopy, fluorescence imaging, spectral imaging, polarized light scattering, digital holography","•	ML consistently outperforms or equals traditional first-principles models in prediction speed and accuracy when sufficient data are available
+•	Image-based classification of microalgae reaches near-perfect accuracy (often >98–99%) with modern CNN architectures + augmentation
+•	Small-data biofuel yield models (e.g. HTL bio-oil) benefit strongly from ELM (multiple citations show better generalization than ANN/gradient methods)
+•	Dataset size/quality is the dominant bottleneck: simulated data underperforms real experimental data; published literature data introduces noise from heterogeneous protocols
+•	PCA + ML frequently improves high-dimensional datasets (spectral, morphological features)
+•	Label-free / non-invasive ML methods (CNN on raw microscopy, holography) enable real-time monitoring without staining or sampling disruption","•	Comprehensive coverage of ML in the entire microalgae biofuel chain (strain ? cultivation ? conversion)
+•	Explicit focus on the sparse-data problem — rare and valuable in biofuel ML reviews
+•	Strong emphasis on image-based DL applications (FlowCAM, YOLO, CNN) with many concrete performance benchmarks
+•	Highlights ELM as particularly promising for typical experimental biofuel dataset sizes (tens to few hundreds of points)
+•	Good synthesis of advantages of ML over mechanistic models (speed, handling nonlinearity, reduced need for complete mechanistic understanding)","•	No hydrogen-specific focus — biohydrogen is mentioned only marginally; primary emphasis is lipid/biodiesel and HTL bio-oil
+•	No quantitative meta-analysis — performance numbers are cited study-by-study without pooled statistics or forest plots
+•	Limited discussion of hybrid physics-informed ML (very few examples given despite growing importance)
+•	No techno-economic or LCA integration of ML-optimized algal systems
+•	Temporal bias — very strong emphasis on image-classification papers (2016–2022); fewer recent (2023–2024) works on process optimization / surrogate modelling
+•	No critical comparison of computational cost vs. gain when using complex DL vs. simpler ML/ELM for industrial applicability","The review clearly exposes a major under-representation of ML applications specifically targeting biohydrogen production routes from microalgae (dark/photo fermentation, indirect biophotolysis, gasification of algal biomass). While classification, growth prediction and HTL/pyrolysis yield modelling are relatively mature, there is a near-absence of:
+•	ML-driven surrogate models for dynamic microalgae cultivation (light/dark cycles, nutrient transients, predator contamination)
+•	Physics-informed neural networks (PINNs) or hybrid ML-mechanistic models for photobioreactor / open-pond systems
+•	Multi-objective ML optimization that simultaneously targets hydrogen yield, carbon footprint, and levelized cost of hydrogen (LCOH)
+•	Transfer learning or foundation models trained on large generic biological datasets and fine-tuned to algal hydrogen systems
+•	Uncertainty quantification and robust optimization under feedstock/strain variability"
+3,"•	Title: Machine learning modeling of supercritical water gasification for predictive hydrogen production from waste biomass
+•	Authors: Kapil Khandelwal, Sonil Nanda, Ajay K. Dalai
+•	Journal: Biomass and Bioenergy (Elsevier)
+•	Year: 2025
+•	Country of study: Canada (University of Saskatchewan, Dalhousie University)
+•	Type: Modelling / ML-based / Thermochemical gasification","Supercritical water gasification (SCWG) offers a promising pathway for hydrogen production from high-moisture biomass, but its nonlinear complexity makes conventional thermodynamic/kinetic models inadequate. This study develops and compares eight machine learning models, optimized via genetic algorithm (GA) and particle swarm optimization (PSO), to predict hydrogen yield from SCWG and identify dominant process parameters.","•	Feedstock: Lignocellulosic and non-lignocellulosic biomass (e.g., forestry residues, agricultural residues, algal biomass, model compounds)
+•	Hydrogen production pathway: Supercritical water gasification (T > 374 °C, P > 22.1 MPa)
+•	Integrated system: Batch and continuous reactors considered; dataset includes proximate/ultimate analyses of feedstocks
+•	Carbon capture included: No explicit CCS; focus is on hydrogen yield prediction
+•	Outputs: Hydrogen yield (mmol/g biomass)","•	Dataset: 237 data points collected from literature (SCWG experiments across multiple feedstocks and reactor types)
+•	Input variables: Reaction temperature, pressure, time, biomass concentration, proximate/ultimate composition (C, H, N, S, ash, moisture, volatile matter), categorical variables (reactor type, feed type, biomass type)
+•	Preprocessing: StandardScaler normalization; categorical encoding (lignocellulosic = 1, non-lignocellulosic = 0, etc.)
+•	Validation: Train-test split (80/20), cross-validation with 20 unseen datapoints (canola straw, mustard meal, etc.)
+•	Evaluation metrics: R² and MSE","•	Algorithms tested: MLR, SVM, ANN, RF, DT, GBR, XGB, GPR
+•	Optimization: Hyperparameter tuning via GA and PSO
+•	Best performer: Gradient Boosting Regression (GBR) optimized with PSO
+o	Train R² = 0.995
+o	Test R² = 0.958
+o	Cross-validation R² = 0.917
+•	Interpretability: SHAP analysis + partial dependency plots used to identify critical features and their interactions","•	Dominant features:
+o	Reaction temperature (31% importance)
+o	Biomass concentration (14%)
+o	Reaction time (12%)
+•	Feature group importance: SCWG operating conditions (61%) > biomass properties (39%)
+•	Interactive effects: SHAP and dependency plots revealed nonlinear interactions between temperature, concentration, and time on hydrogen yield
+•	Model robustness: GBR + PSO achieved high predictive accuracy and generalizability across diverse feedstocks","•	First systematic comparison of eight ML models for SCWG hydrogen prediction
+•	Rigorous hyperparameter optimization using GA and PSO
+•	Incorporates both operating conditions and biomass properties, improving generalizability
+•	SHAP analysis provides interpretability of ML predictions
+•	Demonstrates strong predictive accuracy (R² > 0.95) with relatively small dataset (237 points)","•	Dataset heterogeneity: Collected from multiple literature sources with varied experimental setups ? introduces noise and uncertainty
+•	Small dataset size: 237 points limits deep learning applicability and robustness
+•	No techno-economic analysis: Focus purely on yield prediction, not cost or scalability
+•	No dynamic modelling: Only steady-state data considered; transient SCWG behavior ignored
+•	Limited biomass categorization: Only lignocellulosic vs. non-lignocellulosic; finer distinctions omitted to avoid overfitting","Future work should address:
+1.	Larger, standardized datasets from controlled SCWG experiments to reduce noise and improve model robustness.
+2.	Techno-economic integration — linking ML predictions to cost, energy efficiency, and scalability.
+3.	Dynamic modelling — ML frameworks capturing transient SCWG behavior under varying operating conditions.
+4.	Hybrid ML–physics-informed models embedding SCWG thermodynamics and kinetics for better interpretability.
+5.	Uncertainty quantification — sensitivity analysis to propagate variability in feedstock properties and reactor conditions."
+4,"•	Title: Tar inhibition for hydrogen production from biomass gasification assisted by machine learning
+•	Authors: Xuya Wang, Shenggui Ma, Wenyao Duan, Chong Liu, Siwei Liu, Xia Jiang, Hualin Wang
+•	Journal: International Journal of Hydrogen Energy (Elsevier)
+•	Year: 2025
+•	Country/Region: China (Sichuan University, Dongfang Electric Co.)
+•	Type: Original Research / Modelling / ML-based","•	Tackles the persistent issue of tar formation in biomass gasification, which reduces hydrogen yield, fouls reactors, and introduces toxic pollutants.
+•	Significant because tar inhibition is a bottleneck for scaling biomass gasification to industrial hydrogen production.
+•	Contribution: Development of interpretable ML models (PSO-SVR best performer) to predict H? concentration and tar yield, and propose optimization strategies for operating conditions and reactor design.","•	Feedstock: General biomass (proximate/ultimate analyses considered; multiple feedstocks from literature)
+•	Hydrogen production route: Gasification (fluidized bed, fixed bed, catalytic variants)
+•	System scale: Literature dataset (276 samples; lab-scale experimental data aggregated)
+•	Integration: Focus on tar inhibition strategies; catalytic materials (Fe/olivine, dolomite), steam as gasification agent; no CCS or polygeneration included.","•	Type of model: Data-driven ML (SVR, RF, MLP, Adaboost)
+•	Steady-state: Yes (dataset analysis only)
+•	Assumptions: Missing values imputed; categorical variables one-hot encoded; outliers removed via isolation forest; dimensionality reduction applied (C, VM, LHV removed due to correlation).
+•	Validation: 5-fold cross-validation; train-test split (80/20).","•	Algorithms tested: SVR (best, optimized with PSO), RF, MLP (ANN), Adaboost
+•	Optimization: Hyperparameter tuning via PSO
+•	Purpose: Prediction (tar yield, H? concentration), optimization, sensitivity analysis (SHAP + PDP)
+•	Dataset size: 276 samples (18 input features, 2 outputs)
+•	Performance:
+o	PSO-SVR ? R² = 0.8701 (tar yield), R² = 0.9105 (H? concentration)
+o	RF/Adaboost ? high training accuracy (R² > 0.96) but overfitting on test sets
+o	MLP ? poor performance due to small dataset","•	Optimal gasification temperature: 920–980 °C ? highest H? concentration, lowest tar yield.
+•	Best ML model: PSO-SVR (balanced accuracy + generalization).
+•	Feature importance (SHAP): Temperature = primary driver; reactor type/material and steam agent also significant.
+•	Catalytic strategies: Fe/olivine catalysts, steam gasification agent, improved fluidized beds reduce tar.
+•	Dual-objective PDP: Showed simultaneous optimization of tar inhibition and H? promotion.","•	Novel dual-objective ML interpretability (tar + H? simultaneously).
+•	Integration of SHAP + PDP for actionable optimization insights.
+•	Demonstrated PSO-SVR superiority for small, high-dimensional datasets.
+•	Provided practical reactor/catalyst recommendations for tar inhibition.","•	Dataset limited (276 samples, heterogeneous sources).
+•	No dynamic modelling of transient tar formation.
+•	No techno-economic analysis (cost of catalysts, reactor modifications).
+•	No experimental validation of ML-predicted optimum conditions.
+•	Uncertainty analysis absent (feedstock variability not propagated).","•	Need for larger, standardized datasets across diverse biomass types.
+•	Dynamic modelling of tar formation and H? yield under transient conditions.
+•	Techno-economic feasibility of catalyst/reactor modifications.
+•	Hybrid physics-informed ML to embed gasification chemistry into predictive models.
+•	Uncertainty quantification for robustness under variable feedstock and operating conditions."
+5,"•	Title: Co-gasification of coal, biomass with waste plastic in a fluidized bed: Machine learning model optimized and gasification scheme
+•	Authors: Shuai Yan, Jingyue Mao, Xueqin Wei, Weiwei Li
+•	Journal: Journal of Environmental Chemical Engineering (Elsevier)
+•	Year: 2025
+•	Country/Region: China (Ningbo University of Technology, North University of China)
+•	Type: Original Research / Modelling / ML-based","•	Addresses the challenge of integrating coal, biomass, and waste plastic in co-gasification to reduce CO? emissions and valorize plastic waste.
+•	Significant because tri-feedstock co-gasification offers synergy effects, improved hydrogen yield, and tar reduction.
+•	Contribution: Comparative evaluation of four ML models (SVM, RF, MLP, ANN), optimization of ANN/MLP architectures, and prediction of syngas composition, H?/CO ratio, LHV, yield, and tar emissions under different gasification agents.","•	Feedstock: Coal (lignite, Indian coals), biomass (pine, wood, sawdust), plastics (PE, PET, PP, mixed plastics).
+•	Hydrogen production route: Gasification (fluidized bed).
+•	System scale: Literature dataset (lab/pilot-scale data compiled).
+•	Integration: Multiple gasification agents tested (air, oxygen-enriched air, air + steam, oxygen + CO?); catalytic bed materials (silica sand, olivine, dolomite).","•	Type of model: Data-driven ML (SVM, RF, MLP, ANN).
+•	Steady-state: Yes (compiled dataset analysis).
+•	Assumptions: Normalization of input ranges; correlation analysis to reduce dimensionality; train/test/validation split (70/15/15).
+•	Validation: Comparison with experimental data from Pinto, Mastellone, Zaccariello, Aznar; strong agreement reported.","•	Algorithms tested: SVM, RF, MLP, ANN (with FFBP, CFBP, EFBP architectures).
+•	Optimization: Genetic Algorithms (GA), Particle Swarm Optimization (PSO), Levenberg–Marquardt (LM).
+•	Purpose: Prediction of H?, CO, H?/CO ratio, LHV, syngas yield (Qs), tar emission (Ctar).
+•	Dataset size: 45 experimental datapoints + compiled literature dataset.
+•	Performance:
+o	Optimized ANN (FFBP + GA) ? R² = 0.998, MSE = 0.0002, MAE = 0.024, MAPE = 0.001.
+o	MLP also performed strongly; RF/SVM less accurate.","•	Maximum hydrogen concentration: 25.6 % (air + steam gasification).
+•	H?/CO ratio: 1.64 (air + steam).
+•	Highest LHV: 9.3 MJ/m³ (oxygen + air gasification).
+•	Syngas yield (Qs): 2.8 m³/kg (oxygen + air gasification).
+•	Tar emission (Ctar): Reduced significantly with steam and catalytic bed materials.
+•	Trend validation: Simulation outputs matched experimental literature data closely.","•	First ML-based optimization of tri-feedstock co-gasification (coal + biomass + plastic).
+•	Rigorous comparison of multiple ML models and architectures.
+•	ANN optimization achieved near-perfect predictive accuracy.
+•	Explored multiple gasification agents and reactor conditions, providing actionable industrial insights.
+•	Demonstrated synergy effects: plastic addition improved heating value, biomass reduced heavy hydrocarbons, steam enhanced H? yield.","•	Dataset relatively small (45 datapoints for validation; heterogeneous sources).
+•	No dynamic modelling of transient gasification behavior.
+•	No techno-economic analysis (costs, scalability, LCOH absent).
+•	Interpretability limited (ANN/MLP remain black-box despite high accuracy).
+•	Experimental validation restricted to literature comparison; no new pilot-scale trials.","•	Need for larger, standardized tri-feedstock datasets to improve ML robustness.
+•	Dynamic modelling of fluidized bed co-gasification under varying conditions.
+•	Techno-economic feasibility studies for industrial deployment.
+•	Development of physics-informed ML models to improve interpretability.
+•	Uncertainty quantification for feedstock variability and operating conditions."
+6,"•	Title: Modeling study on biomass gasification for H?-rich syngas production based on machine learning: A comprehensive review
+•	Authors: Miao Wang, Le Chen, Dengyu Chen, Kuan Ding, Bin Li, Peng Lv, Xudong Song, Yue Jiao, Qinghua Guo, Guangsuo Yu, Ankui Huang, Juntao Wei
+•	Journal: Renewable and Sustainable Energy Reviews (Elsevier)
+•	Year: 2026
+•	Country/Region: China (multi-institutional collaboration)
+•	Type: Review Article","•	Addresses the need for predictive modelling of biomass gasification to produce H?-rich syngas.
+•	Significant because biomass gasification suffers from tar formation, low energy density, and reactor corrosion, limiting industrial deployment.
+•	Contribution: Synthesizes ~80 ML-based studies, compares model performance, identifies key influencing factors (S/B, ER), and highlights uncertainty/anti-overfitting strategies.","•	Feedstock: Forestry residues, agricultural wastes, municipal solid waste, wastewater-derived biomass.
+•	Hydrogen production route: Gasification (fluidized bed, fixed bed, steam/air/O?/CO? agents).
+•	System scale: Literature review of lab-scale and pilot-scale studies.
+•	Integration: Focus on ML prediction; no CCS or polygeneration explicitly included.","•	Type of model: Data-driven ML (linear regression, polynomial regression, SVR, RF, ANN, GBR, XGBoost, AdaBoost, DL).
+•	Steady-state: Yes (compiled datasets).
+•	Assumptions: Preprocessing (outlier removal, normalization, correlation analysis, dimensionality reduction).
+•	Validation: Literature comparison; model evaluation via R², RMSE, MAE, MAPE.","•	Algorithms discussed: MLR, polynomial regression, SVR, RF, ANN, GBR, XGBoost, AdaBoost, DL, hybrid neural networks.
+•	Purpose: Prediction of syngas composition, yield, LHV; feature importance analysis.
+•	Dataset size: Ranged from 30 to 4826 samples across studies.
+•	Performance metrics: R², RMSE, MAE, MAPE; boosted models better for small/noisy datasets, bagged models better for poor-quality samples.
+•	Trends: ANN most widely applied; RF and XGBoost also common; DL less frequent due to dataset size limitations.","•	Steam-to-biomass ratio (S/B) ? strongest positive correlation with H? yield.
+•	Equivalence ratio (ER) ? strongest negative correlation with H? yield.
+•	Boosted models (GBR, XGBoost, AdaBoost) ? superior for small, clean datasets.
+•	Bagged models (RF) ? more robust for noisy/low-quality datasets.
+•	ANN consistently strong for medium-to-large datasets, though prone to overfitting.","•	Comprehensive synthesis of ~80 ML-based biomass gasification studies.
+•	Detailed comparison of model types, dataset sizes, and performance.
+•	Integrates feature importance methods (Garson’s algorithm, Pearson correlation, SHAP).
+•	Highlights anti-overfitting and uncertainty considerations.
+•	Provides clear identification of key process parameters (S/B, ER).","•	Review only — no new experimental validation.
+•	Dataset heterogeneity across studies introduces bias/noise.
+•	Limited coverage of techno-economic feasibility.
+•	Few studies incorporate uncertainty quantification systematically.
+•	DL applications underrepresented due to small dataset sizes.","•	Need for standardized, large-scale datasets for ML training in biomass gasification.
+•	Uncertainty analysis must be integrated to improve reliability.
+•	Techno-economic evaluation of ML-predicted optimum conditions is missing.
+•	Hybrid physics-informed ML models could improve interpretability.
+•	Dynamic modelling of transient gasification behavior remains underexplored."
+7,"•	Title: Biomass and waste plastics chemical looping co-gasification for hydrogen-electricity-DME conservation and recycling based on machine learning
+•	Authors: Wende Tian, Shuming Zhang, Shaochen Wang, Bin Liu, Zhe Cui
+•	Journal: Energy (Elsevier)
+•	Year: 2025
+•	Country/Region: China (Qingdao University of Science & Technology)
+•	Type: Original Research / Modelling / ML-based / Polygeneration","•	Addresses the challenge of high energy consumption and limited optimization in biomass + waste plastics chemical looping gasification.
+•	Significant because co-gasification with plastics enhances syngas quality and enables polygeneration (H?, electricity, DME).
+•	Contribution: Establishes a novel chemical looping co-gasification polygeneration system, develops ANN surrogate models, and applies NSGA-II optimization to maximize H? yield and minimize energy consumption.","•	Feedstock: Biomass (various residues including algae, straw, shells, wood) + waste plastics (PE, PP, PS).
+•	Hydrogen production route: Chemical looping co-gasification (CuFe?O? oxygen carrier).
+•	System scale: Simulation-based (steady-state, equilibrium assumptions).
+•	Integration: Polygeneration system producing hydrogen, electricity, and dimethyl ether (DME); includes thermoelectric conversion and methanol/DME synthesis units.","•	Type of model:
+o	Thermodynamic equilibrium (Gibbs free energy minimization).
+o	ANN surrogate models for syngas composition and energy consumption.
+o	NSGA-II for multi-objective optimization.
+•	Steady-state: Yes (isothermal, equilibrium assumptions).
+•	Assumptions: Tar formation neglected; ash inert; only H?, CO, CO?, CH? considered in syngas.
+•	Validation: Comparison with literature data (seaweed + PE co-gasification at 800 °C).","•	Algorithms used: ANN surrogate models; NSGA-II for optimization.
+•	Purpose: Prediction of syngas composition and energy consumption; optimization of H? yield vs. energy use.
+•	Dataset size: Simulation-derived dataset (steady-state runs).
+•	Performance: ANN achieved high accuracy (close agreement with simulation outputs); NSGA-II identified Pareto-optimal trade-offs.","•	Optimized system increased H? production by 4.36%.
+•	Reduced energy consumption by 3.59%.
+•	Syngas composition (seaweed + PE, 1:1 blend, 800 °C): H? = 61.55%, CO = 33.92%, CO? = 3.91%, CH? = 0.61%.
+•	Polygeneration achieved efficient recycling of materials and energy, producing electricity, H?, and DME simultaneously.
+•	Thermoelectric conversion unit recovered syngas heat via high/low-pressure steam cycles.","•	Novel integration of biomass + plastics in chemical looping polygeneration.
+•	ANN surrogate models reduced computational cost while maintaining accuracy.
+•	NSGA-II provided robust multi-objective optimization.
+•	Demonstrated synergy effects: plastics improved heating value, biomass reduced coke/tar.
+•	Comprehensive system design including methanol/DME synthesis and power generation.","•	Simulation-based only; no experimental validation.
+•	Tar formation neglected ? may underestimate real-world challenges.
+•	Dataset limited to equilibrium assumptions; transient/dynamic effects ignored.
+•	No techno-economic analysis (CAPEX/OPEX, LCOH, payback).
+•	Interpretability of ANN limited (black-box nature).","•	Need for experimental validation of chemical looping co-gasification with plastics.
+•	Dynamic modelling of transient syngas composition and reactor behavior.
+•	Techno-economic feasibility of polygeneration system (cost, scalability).
+•	Hybrid physics-informed ML models to improve interpretability.
+•	Uncertainty quantification for feedstock variability and operating conditions."
+8,"•	Title: Data-driven model for the prediction of syngas composition and end-use application from gasification of residual biomass
+•	Authors: Laura C.G. Velandia, Samira Garcia-Freites, Marco Sanjuan, David Acosta, Adriana Aristizabal, Maria L. Botero, Santiago Builes
+•	Journal: Biomass and Bioenergy (Elsevier)
+•	Year: 2026
+•	Country/Region: Colombia (Universidad EAFIT, Promigas S.A. E.S.P)
+•	Type: Original Research / ML-based Modelling Study","•	Addresses the challenge of predicting syngas composition and end-use suitability from diverse residual biomass feedstocks.
+•	Significant because feedstock variability and complex operational interactions hinder industrial-scale biomass gasification.
+•	Contribution: Development of a CatBoost-based ML model with SMOTE augmentation to predict syngas composition (H?, CO, CH?) and classify end-use applications (heat/power, methanol/biofuels, SNG).","•	Feedstock: Residual biomass (agro-industrial, forestry residues, municipal solid waste, sewage sludge, refuse-derived fuel).
+•	Hydrogen production route: Gasification (fixed and fluidized bed reactors).
+•	System scale: Literature dataset (133 samples from 56 publications).
+•	Integration: End-use classification (heat/power, methanol/biofuels, SNG); no CCS or polygeneration explicitly included.","•	Type of model: Data-driven ML (CatBoost gradient boosting decision tree).
+•	Steady-state: Yes (compiled dataset analysis).
+•	Assumptions: Physics-informed feature engineering (gasifying agent represented by O?, N?, steam mass fractions); normalization across heterogeneous datasets.
+•	Validation: Nested cross-validation with Optuna hyperparameter optimization; SMOTE applied to balance end-use classes.","•	Algorithm used: CatBoost (gradient boosting ensemble of decision trees).
+•	Optimization: Bayesian hyperparameter tuning (Optuna).
+•	Purpose: Prediction of syngas composition (H?, CO, CH?), HHV, H?/CO ratio; classification of end-use applications.
+•	Dataset size: 133 samples (augmented via SMOTE).
+•	Performance:
+o	MAE: 4.2 ± 0.3 vol% (H?), 2.9 ± 0.4 vol% (CO), 1.4 ± 0.3 vol% (CH?).
+o	End-use classification accuracy: >90% across categories.","•	Steam gasification of sawdust and miscanthus grass ? most promising for H?-rich syngas.
+•	Model achieved robust prediction accuracy across diverse feedstocks and reactor types.
+•	SHAP analysis revealed key influences:
+o	Gasification temperature ? main driver of syngas yield.
+o	High C content ? increased HHV.
+o	High O content ? favored H? production but reduced CO/CO?.
+•	End-use classification: reliable identification of syngas suitability for heat/power, methanol/biofuels, and SNG.","•	First ML model explicitly linking syngas composition prediction to end-use application classification.
+•	Physics-informed feature engineering improved interpretability.
+•	Rigorous nested CV + SMOTE ensured generalization despite small dataset.
+•	SHAP analysis enhanced transparency of feature contributions.
+•	Demonstrated applicability across diverse biomass residues and reactor configurations.","•	Dataset relatively small (133 samples) despite augmentation.
+•	Reliance on literature-derived data ? heterogeneity and potential bias.
+•	No techno-economic analysis of end-use pathways.
+•	Interpretability limited to SHAP; deeper mechanistic integration absent.
+•	Dynamic/transient gasification behavior not modeled.","•	Need for larger, standardized experimental datasets across diverse biomass residues.
+•	Techno-economic feasibility studies linking syngas composition to end-use economics.
+•	Dynamic modelling of transient syngas composition under varying operating conditions.
+•	Development of hybrid physics-informed ML models for deeper mechanistic interpretability.
+•	Uncertainty quantification to assess robustness under feedstock variability."
+9,"Title: Structure optimization and parameter identification of a downdraft biomass gasifier using combined method of numerical simulation and machine learning
+ Authors: Yuyang Hu, Fuchun Yuan, Zhiqiang Yin, Yuyang Tian, Jiangjiang Wang
+ Journal: Renewable Energy (Elsevier)
+ Year: 2026
+ Country/Region: China (North China Electric Power University, Hebei Province)
+ Type: Original Research / CFD + ML-based Modelling Study","•	Addresses the challenge of optimizing downdraft biomass gasifier design and operating parameters for hydrogen-rich syngas.
+•	Significant because downdraft gasifiers are widely used for low-tar syngas but performance depends heavily on structural and operational conditions.
+•	Contribution: Combines CFD simulations with ML algorithms to optimize gasifier inlet structure (position, angle, agent type) and identify key operating parameters influencing H? yield and cold gas efficiency (CGE).","•	Feedstock: Wood pellets, wood chips, wheat straw, furniture waste.
+•	Hydrogen production route: Biomass gasification (downdraft gasifier).
+•	System scale: CFD-based numerical simulation validated against experimental data.
+•	Integration: Structural optimization (inlet position/angle, gasifying agent composition); ML parameter identification.","•	Type of model: CFD (Euler–Lagrangian method, DPM for biomass particles) + ML (Random Forest Regressor, Gradient Boosting, MLR, KNN, Kernel Ridge, Bayesian regression).
+•	Steady-state: Yes (adiabatic, gas-phase focus).
+•	Assumptions: Tar pyrolysis neglected; ash inert; syngas species limited to CO, H?, CH?, CO?, H?O, N?, O?.
+•	Validation: Grid independence test (72,748 cells, error <0.5%); comparison with experimental syngas composition (RMSE ~5.17%).","•	Algorithm used: Random Forest Regressor (best performer), Gradient Boosting, MLR, KNN, Kernel Ridge, Bayesian regression.
+•	Optimization: Latin Hypercube Sampling (LHS) for CFD dataset generation; Sobol sensitivity + Gini importance for parameter ranking.
+•	Purpose: Parameter identification (impact of agent flow rate, temperature, biomass flow rate on H? fraction and CGE).
+•	Dataset size: CFD-generated dataset (multiple operating conditions).
+•	Performance: RFR achieved lowest RMSE (<10%), robust predictions of H? fraction and CGE.","•	Optimal inlet vertical position: 42.5 mm above throat.
+•	Optimal inlet angle: 60°.
+•	Optimal gasifying agent: O?:H?O = 20:80 (mass fraction).
+•	Furniture waste ? highest H? fraction (36.7%).
+•	Wood chips ? best CGE (92.98%).
+•	Parameter importance:
+o	Gasifying agent flow rate ? strongest influence on H? fraction.
+o	Biomass flow rate ? strongest influence on CGE.","•	First systematic integration of CFD structural optimization + ML parameter identification for downdraft gasifiers.
+•	Rigorous validation against experimental data.
+•	Identified clear structural and operational design rules for maximizing H? yield and CGE.
+•	ML interpretability (Sobol + Gini importance) provided actionable insights.","•	Tar pyrolysis neglected ? underestimates syngas yield.
+•	CFD model errors ~12–14% for CO, H?, CO? compared to experiments.
+•	Dataset limited to four biomass feedstocks.
+•	No techno-economic analysis.
+•	Dynamic/transient effects not modeled.","•	Need for tar cracking mechanisms in CFD to improve accuracy.
+•	Dynamic modelling of transient syngas composition under varying loads.
+•	Expanded feedstock diversity beyond four biomass types.
+•	Techno-economic feasibility studies for optimized downdraft gasifiers.
+•	Hybrid CFD–physics-informed ML models for deeper mechanistic interpretability."
+10,"Title: Explainable machine learning reveals key drivers of hydrogen-rich syngas in steam co-gasification of multi-source organic wastes
+ Authors: Xu Wang, Qianqian Guo, Shiyang Sun, Zhenxing Luo, Long Jiao, Yanjun Hu
+ Journal: International Journal of Hydrogen Energy (Elsevier)
+ Year: 2026
+ Country/Region: China (Zhejiang University of Technology, State Key Laboratory of Green Chemical Synthesis and Conversion)
+ Type: Original Research / ML-based Modelling Study","•	Addresses the challenge of predicting syngas composition and heating value during steam co-gasification of diverse organic solid wastes (biomass, plastics, sludge).
+•	Significant because traditional models struggle with complex reaction mechanisms and heterogeneous feedstocks.
+•	Contribution: Developed an explainable ML framework (XGBoost + SHAP/PDP) to identify key drivers of H?-rich syngas and optimize operating conditions.","•	Feedstock: Multi-source organic wastes (biomass, plastics, sewage sludge, coal blends).
+•	Hydrogen production route: Steam co-gasification (fixed and fluidized bed reactors).
+•	System scale: Literature dataset (150 experimental cases).
+•	Integration: Focus on syngas composition and heating value prediction; no CCS or polygeneration explicitly included.","•	Type of model: Data-driven ML (LR, SVM, BPANN, RF, XGBoost).
+•	Steady-state: Yes (compiled dataset analysis).
+•	Assumptions: Dry-basis normalization of feedstock properties; non-catalytic steam atmosphere; outlier filtering via IQR.
+•	Validation: 5-fold cross-validation; leave-one-study-out (LOSO) validation for robustness.","•	Algorithms tested: Linear Regression, SVM, BPANN, RF, XGBoost.
+•	Optimization: Genetic Algorithm + Bayesian tuning for hyperparameters.
+•	Purpose: Prediction of syngas composition (H?, CO, CO?, CH?) and heating value; feature importance analysis.
+•	Dataset size: 150 experimental cases.
+•	Performance:
+o	XGBoost (optimized) ? R² = 0.94 (H?), R² = 0.92 (CO).
+o	RMSE = 1.25 (minimum across targets).
+•	Interpretability: SHAP + PDP identified dominant drivers (temperature, residence time, ash content).","•	H? peaks at ~57% near 900 °C when ash <31% and fixed carbon >23%.
+•	Temperature, residence time, and ash content ? most influential features.
+•	Explainable ML framework improved predictive reliability and interpretability compared to black-box ANN/SVM.
+•	Demonstrated synergy effects in multi-source co-gasification (biomass + plastics + sludge).","•	First explainable ML framework applied to multi-source steam co-gasification.
+•	Rigorous preprocessing (dry-basis normalization, outlier filtering, LOSO validation).
+•	SHAP/PDP enhanced transparency of feature contributions.
+•	Balanced dataset ensured generalization across heterogeneous feedstocks.
+•	Provided actionable operating windows for maximizing H? yield.","•	Dataset relatively small (150 cases) ? limited diversity.
+•	Reliance on literature-derived data ? heterogeneity and bias.
+•	No techno-economic analysis of optimized conditions.
+•	Dynamic/transient gasification behavior not modeled.
+•	Interpretability limited to SHAP/PDP; deeper mechanistic integration absent.","•	Need for larger, standardized experimental datasets across multi-source wastes.
+•	Dynamic modelling of transient syngas composition under varying operating conditions.
+•	Techno-economic feasibility studies linking optimized syngas to industrial deployment.
+•	Development of hybrid physics-informed ML models for deeper mechanistic interpretability.
+•	Uncertainty quantification to assess robustness under feedstock variability."
+11,"Title: Integration of PRO/II simulation and XGBoost machine learning for predicting and optimizing hydrogen-rich syngas from air-blown biomass-plastic co-gasification
+ Authors: Victor Hugo Xavier Bernardes, Rubens Gedraite, Nicolas Spogis, Sarah Arvelos Altino
+ Journal: International Journal of Hydrogen Energy (Elsevier)
+ Year: 2026
+ Country/Region: Brazil (Federal University of Uberlândia, State University of Campinas)
+ Type: Original Research / Hybrid Simulation + ML-based Study","•	Addresses the challenge of optimizing biomass–plastic co-gasification under air-blown conditions for hydrogen-rich syngas.
+•	Significant because nonlinear interactions among temperature, equivalence ratio, and feed composition limit conventional modelling accuracy.
+•	Contribution: Integrates PRO/II restricted-equilibrium simulation with XGBoost ML and differential evolution optimization, enabling accurate prediction and optimization of syngas composition and performance indicators.","•	Feedstock: Five plastics (PE, PP, PS, PET, PU) + 35 biomass species (agricultural and industrial residues).
+•	Hydrogen production route: Air-blown biomass–plastic co-gasification.
+•	System scale: Simulation dataset (3000 Latin Hypercube samples).
+•	Integration: Polygeneration not included; focus on syngas composition, yield, LHV, and H?/CO ratio.","•	Type of model: Hybrid — PRO/II restricted-equilibrium simulation + XGBoost ML surrogate.
+•	Steady-state: Yes (isothermal, equilibrium assumptions).
+•	Assumptions: Tar neglected; ash inert; char treated as pure carbon; Peng–Robinson EOS; air as gasifying agent.
+•	Validation: Compared with three independent experimental datasets; RMSE ~3–6 across syngas components.","•	Algorithm used: XGBoost (gradient-boosted decision trees).
+•	Optimization: Bayesian hyperparameter tuning (Optuna, 200 trials); DE algorithm for operating condition optimization.
+•	Purpose: Prediction of H?, CO, CO?, CH?, syngas yield (GY), LHV, H?/CO ratio; optimization of operating conditions.
+•	Dataset size: 3000 PRO/II simulations (Latin Hypercube sampling).
+•	Performance: R² > 0.98 for all targets; RMSE ~3–6 compared to experiments.
+•	Interpretability: SHAP analysis identified temperature and oxygen-to-fuel ratio as dominant drivers of H? yield; carbon and fixed carbon controlled CO generation.","•	Optimal blend: polypropylene + lignocellulosic residues.
+•	Achieved H? ~28%, H?/CO ~1.1, LHV ~6.5 MJ/Nm³.
+•	DE optimization improved hydrogen yield and reduced CO? simultaneously.
+•	Simulation–ML framework successfully bridged mechanistic modelling and data-driven prediction.","•	First integration of PRO/II restricted-equilibrium simulation with XGBoost ML for biomass–plastic co-gasification.
+•	Large, diverse dataset (3000 samples) ensured robustness.
+•	SHAP analysis enhanced transparency of feature contributions.
+•	DE optimization provided actionable operating conditions.
+•	Validated against independent experimental datasets.","•	Simulation-based only; no new experimental validation.
+•	Tar formation neglected ? may underestimate real-world challenges.
+•	Restricted to air-blown gasification; steam/oxygen cases only supplementary.
+•	Interpretability limited to SHAP; deeper mechanistic integration absent.
+•	Techno-economic feasibility not assessed.","•	Need for experimental validation of optimized biomass–plastic blends.
+•	Dynamic modelling of transient syngas composition under varying loads.
+•	Techno-economic feasibility studies for industrial deployment.
+•	Hybrid physics-informed ML models to improve interpretability.
+•	Uncertainty quantification for feedstock variability and operating conditions."
+12,"Title: Machine Learning-Aided Multi-Stage Optimization of Low-Carbon Hydrogen via Biomass Gasification: Emission-Aware Design and Cost-Efficient Feedstock Blending
+ Authors: Peerapat Jaiyen, Kitti Kamolrama, Amornchai Arpornwichanop, Papis Wongchaisuwat, Phantisa Limleamthong
+ Journal: Fuel (Elsevier)
+ Year: 2026
+ Country/Region: Thailand (Kasetsart University, Chulalongkorn University)
+ Type: Original Research / ML-based Optimization + Supply Chain Study","•	Addresses the challenge of linking process-level hydrogen yield optimization with system-level supply chain feasibility.
+•	Significant because variability in biomass feedstocks and logistics costs hinder practical deployment of biomass-based hydrogen.
+•	Contribution: Developed a four-stage ML-aided optimization framework combining surrogate modelling, multi-objective optimization, decision analysis, and supply chain modelling for emission-aware and cost-efficient hydrogen production.","•	Feedstock: Palm Empty Fruit Bunch (PEFB), Coconut Shell, Rice Husk (regional Thai residues).
+•	Hydrogen production route: Biomass gasification.
+•	System scale: Literature dataset (327 experimental cases).
+•	Integration: Multi-stage workflow — ML surrogates, NSGA-II optimization, DEA ranking, LP-based supply chain blending.","•	Type of model: Ensemble ML regressors (Extra Trees, Gradient Boosting, KNN).
+•	Steady-state: Yes (compiled dataset analysis).
+•	Assumptions: Preprocessed dataset with normalization, one-hot encoding, imputation for missing values.
+•	Validation: 5-fold cross-validation; SHAP analysis for interpretability.","•	Algorithms used: Extra Trees Regressor, Gradient Boosting Regressor, KNN Regressor.
+•	Optimization: RandomizedSearchCV hyperparameter tuning; NSGA-II for Pareto optimization.
+•	Purpose: Prediction of H? yield and CO? emissions; optimization of trade-offs.
+•	Dataset size: 327 curated experimental cases.
+•	Performance:
+o	R² = 0.9641 (H?), R² = 0.8473 (CO?).
+o	High predictive accuracy across targets.
+•	Interpretability: SHAP analysis identified elemental composition and operating conditions as critical drivers.","•	Optimal syngas composition: 71.5 vol% H?, 7.5 vol% CO?.
+•	Optimal feedstock blend (Thailand): 64.2% PEFB, 19.9% Coconut Shell, 15.9% Rice Husk.
+•	Multi-stage framework successfully linked process optimization with supply chain economics.
+•	Demonstrated that blending strategies outperform single-feedstock scenarios in both cost and emissions.","•	First unified framework combining ML surrogates, NSGA-II optimization, DEA ranking, and LP supply chain modelling.
+•	Rigorous dataset curation ensured generalizability.
+•	SHAP analysis enhanced transparency of ML predictions.
+•	Practical integration of regional supply chain economics into hydrogen optimization.
+•	Provided actionable blending ratios for Thai agricultural residues.","•	Dataset size relatively modest (327 cases).
+•	Reliance on literature-derived data ? heterogeneity and bias possible.
+•	No dynamic modelling of transient gasification behavior.
+•	Techno-economic analysis limited to Thai context; global applicability not tested.
+•	Interpretability restricted to SHAP; deeper mechanistic integration absent.","•	Need for larger, standardized datasets across diverse biomass types.
+•	Dynamic modelling of transient syngas composition under varying operating conditions.
+•	Global techno-economic feasibility studies beyond Thai supply chain.
+•	Development of hybrid physics-informed ML models for deeper mechanistic interpretability.
+•	Uncertainty quantification to assess robustness under feedstock variability and logistics constraints."
+13,"•	Title: Machine learning-driven optimization of iron-based oxygen carriers for enhanced hydrogen production from biomass chemical looping gasification
+
+•	Authors: Tianle He, Peixuan Xue, Zongtao Yu, Hao Song, Cheng Wei, Qiang Hu, Jiageng Xia, Haiping Yang, Hanping Chen
+
+•	Journal: Applications in Energy and Combustion Science (Elsevier)
+
+•	Year: 2025
+
+•	Country/Region: China (Huazhong University of Science and Technology)
+
+•	Type: Original Research / Experimental + ML-based Study","•	Addresses the challenge of optimizing Fe-based oxygen carriers (OCs) for biomass chemical looping gasification (BCLG).
+•	Significant because OC composition and operating conditions strongly affect hydrogen yield and syngas quality.
+•	Contribution: Integrated experimental evaluation with ML modelling (XGBoost + SHAP/PDP) to identify key drivers of hydrogen production and optimize OC design.","•	Feedstock: Pine sawdust (biomass).
+•	Hydrogen production route: Biomass chemical looping gasification (BCLG) with Fe-based OCs.
+•	System scale: Lab-scale fixed-bed reactor experiments + literature dataset (225 cases).
+•	Integration: Experimental dataset supplemented with literature data; ML used for prediction and interpretability.","•	Type of model: ML regression (LR, RF, KNN, XGBoost).
+•	Steady-state: Yes (fixed-bed BCLG experiments).
+•	Assumptions: Tar cracking not explicitly modelled; ash inert; standardized dry-basis normalization across datasets.
+•	Validation: Train/test split (80/20); cross-validation; SHAP + PDP for interpretability.","•	Algorithms tested: Linear Regression, Random Forest, KNN, XGBoost.
+•	Optimization: Hyperparameter tuning (grid search, cross-validation).
+•	Purpose: Prediction of syngas composition (H?, CO, CO?, CH?); identification of influential features.
+•	Dataset size: 225 cases (16 publications + new experiments).
+•	Performance:
+o	XGBoost ? R² > 0.824 (H?, CO).
+o	RMSE ~5.19 (H?), ~4.32 (CO).
+•	Interpretability: SHAP + PDP revealed steam-to-biomass ratio and Fe content as dominant drivers.","•	Best-performing OC: Fe?Al? ? H? yield = 22.83 mmol/g biomass, H? concentration = 44%.
+•	Al?O? support outperformed ZrO? and ZSM-5.
+•	Optimal Fe/support ratio critical: moderate Fe?O? content enhanced H? yield, excessive Fe?O? caused over-oxidation.
+•	SHAP analysis: steam-to-biomass ratio, Fe content, and support type most influential.","•	First integration of new experimental data + literature datasets into ML framework for OC optimization.
+•	Rigorous interpretability (SHAP + PDP) provided mechanistic insights.
+•	Demonstrated clear material–process relationships (support type, Fe ratio, operating conditions).
+•	Identified practical pathways for improving hydrogen yield in BCLG.","•	Dataset size relatively small (225 cases).
+•	Focused only on Fe-based OCs; other metals not considered.
+•	Fixed-bed experiments only; scalability to fluidized/industrial systems not tested.
+•	Tar cracking mechanisms not explicitly modelled.
+•	Predictive accuracy moderate (R² ~0.82–0.88); scope for improvement with larger datasets.","•	Need for larger, standardized datasets across diverse OCs and operating conditions.
+•	Dynamic modelling of transient syngas composition in BCLG.
+•	Techno-economic feasibility studies for industrial-scale OC deployment.
+•	Development of hybrid ML + mechanistic models for deeper interpretability.
+•	Uncertainty quantification for robustness under feedstock and OC variability."
+14,"•	Title: Advancing hydrogen production from municipal wastewater using Artificial Intelligence: A case study of microalgae bioremediation
+ 
+•	Authors: Fatima Musa Ardo, Azubuike Hope Amadi, Joseph Eneotu, Victor Damilare Ola, Chinenye G. Ezechi, Paul Obinna Okafor
+
+•	Journal: Fuel (Elsevier)
+
+•	Year: 2026
+
+•	Country/Region: Malaysia (Universiti Teknologi Petronas, with collaborators from Romania, Nigeria, USA)
+
+•	Type: Original Research / AI-based Biological Hydrogen Production Study","•	Addresses the challenge of simultaneously producing hydrogen and remediating municipal wastewater.
+•	Significant because conventional wastewater treatment emits methane, while biological hydrogen production suffers from low yields.
+•	Contribution: Developed AI-driven time-series models to optimize photoperiods and light intensities for immobilized microalgae (Chlorella vulgaris), achieving enhanced hydrogen yield and wastewater bioremediation.","•	Feedstock: Municipal wastewater (Kuala Lumpur, Malaysia).
+•	Biological agent: Microalgae Chlorella vulgaris immobilized in polyurethane foam.
+•	Hydrogen production route: Biophotolysis + fermentation under controlled photoperiods.
+•	System scale: Lab-scale bioreactor (600 mL wastewater, immobilized algae).
+•	Integration: Simultaneous hydrogen production and wastewater treatment (removal of BOD, NH?-N, NO?-N, NO?-N).","•	Type of model: AI-enabled time-series prediction (exponential decay + algal light response).
+•	Steady-state: No — dynamic biological system modeled with AI.
+•	Assumptions: Immobilization prevents cell washout; anaerobic conditions created with N? purge.
+•	Validation: Lifecycle Assessment (LCA) for environmental impact; AI model accuracy (MAE ~0.00192).","•	Algorithms used: AI-driven time-series models (likely RNN/LSTM variants for photoperiod optimization).
+•	Optimization: Photoperiod and light intensity tuning.
+•	Purpose: Predict hydrogen yield dynamics and optimize productivity.
+•	Dataset size: Experimental cycles with varying photoperiods (4:20, 8:16, 12:12, 18:6, 24:0 h).
+•	Performance: AI model achieved very low error (MAE ~0.00192).","•	Optimal photoperiod: 12:12 h light/dark cycle ? hydrogen yield = 324.86 mL H?/g microalgae.
+•	Hydrogen yield decreased with repeated experimental cycles.
+•	Wastewater remediation achieved:
+o	BOD? removal = 97.01%
+o	NH?-N removal = 88.13%
+o	NO?-N removal = 73.99%
+o	NO?-N removal = 78.54%
+•	LCA revealed minimal environmental impact.","•	First AI-enabled optimization of photoperiods for wastewater-based hydrogen production.
+•	Demonstrated dual benefit: clean hydrogen + wastewater remediation.
+•	Immobilization strategy improved stability and recyclability of algae.
+•	Rigorous environmental assessment (LCA).
+•	High predictive accuracy of AI model.","•	Hydrogen yield still relatively low compared to thermochemical methods.
+•	Decline in productivity over repeated cycles.
+•	Lab-scale only; scalability not tested.
+•	Cost-effectiveness of immobilization not fully assessed.
+•	AI model interpretability limited; mainly predictive.","•	Need for scaling up to pilot/industrial systems.
+•	Techno-economic feasibility studies for wastewater-to-hydrogen integration.
+•	Exploration of other microalgae species and engineered strains.
+•	Hybrid AI + mechanistic biological models for deeper interpretability.
+•	Long-term stability studies for immobilized algae in continuous operation."
+15,"•	Title: Design, performance assessment, and machine learning-driven optimization of a novel low-carbon urban waste-to-x polygeneration system: multi-scenario analysis of hydrogen and methane production
+
+•	Authors: Mohammadreza Babaei Khuyinrud, Ali Shokri Kalan, Borhan Pourtalebi, Mehran Ahamdi, Iraj Jangie, Xiaoshu Lu, Yanping Yuan, Marc A. Rosen
+
+•	Journal: Energy (Elsevier)
+
+•	Year: 2026
+
+•	Country/Region: Iran, Finland, Italy, China, Canada (multi-institutional collaboration)
+
+•	Type: Original Research / Integrated Polygeneration + ML Optimization Study","•	Addresses the challenge of integrating municipal solid waste (MSW) and wastewater treatment with multi-vector energy production under near-zero emissions.
+•	Significant because existing waste-to-energy systems rarely combine hydrogen, methane, electricity, heat, oxygen, carbon capture, and wastewater treatment in one architecture.
+•	Contribution: Proposed and optimized a novel waste-to-x polygeneration system coupling biomass gasification, advanced thermodynamic cycles, carbon capture/utilization, PEM electrolysis, and methanation.","•	Feedstock: Municipal solid waste (MSW) + municipal wastewater.
+•	Hydrogen production route: Gasification + PEM electrolysis + methanation (CO? + H? ? CH?).
+•	System scale: Integrated urban-scale polygeneration plant.
+•	Integration: Gas turbine, supercritical CO? cycle, Kalina cycle, steam and organic Rankine cycles, wastewater treatment, carbon capture (MEA absorption), PEM electrolysis, methanation.","•	Type of model: Energy and exergy analysis + ML-assisted optimization.
+•	Optimization: Machine-learning-assisted multi-objective grey wolf optimizer (MOGWO).
+•	Assumptions: Steady-state operation; MEA-based post-combustion CO? capture; waste heat recovery via thermoelectric generators (TEGs).
+•	Validation: Exergy destruction analysis; scenario-based performance comparison.","•	Algorithm used: Multi-objective grey wolf optimizer (MOGWO) with ML surrogates.
+•	Purpose: Optimize trade-offs between hydrogen/methane production, efficiency, and emissions.
+•	Dataset size: Simulation-based scenarios.
+•	Performance:
+o	Baseline: 35.0% energy efficiency, 39.9% exergy efficiency.
+o	Optimized (dual fuel scenario): 49.5% energy efficiency, 53.6% exergy efficiency.
+•	Interpretability: Sensitivity analysis identified biomass gasifier as main exergy destruction source.","•	Baseline outputs:
+o	Net power = 3510 kW; heating = 1310 kW.
+o	Daily production: 131.6 kg H?, 2106 kg O?, 296.3 kg CH?.
+o	CO? capture = 87% (177.7 t/day); wastewater treated = 116.6 t/day.
+•	Optimized scenario:
+o	Hydrogen, oxygen, methane ? 23%.
+o	Heating ? 29.1%; net power ? 6.9%.
+•	Hydrogen-only mode achieved highest efficiencies (49.7% energy, 53.6% exergy).","•	First fully integrated urban waste-to-x polygeneration system combining MSW, wastewater, CCUS, and multi-cycle energy recovery.
+•	Near-zero emissions achieved with MEA-based CO? capture.
+•	Flexible outputs: electricity, heat, H?, CH?, O?.
+•	ML-driven optimization improved efficiency and balanced trade-offs.
+•	Comprehensive exergy analysis identified system bottlenecks.","•	Simulation-based; no pilot-scale validation.
+•	High system complexity may hinder real-world deployment.
+•	Economic feasibility not fully assessed.
+•	Focused on MEA solvent; alternative capture technologies not explored.
+•	Long-term operational stability of integrated subsystems not tested.","•	Need for pilot-scale demonstration of integrated waste-to-x systems.
+•	Techno-economic feasibility studies for urban deployment.
+•	Exploration of alternative CO? capture solvents/technologies.
+•	Dynamic modelling of system under variable urban waste streams.
+•	Uncertainty quantification for robustness under real-world operating conditions."
+16,"•	Title: Machine learning for hydrogen technologies: A comprehensive review of challenges, opportunities, and emerging trends
+
+•	Authors: Robin van der Laag, Agnese Rizzato, Thomas Back, Yingjie Fan
+
+•	Journal: International Journal of Hydrogen Energy (Elsevier)
+
+•	Year: 2026
+
+•	Country/Region: Netherlands (Leiden Institute of Advanced Computer Science)
+
+•	Type: Review Article / Systematic Literature Review","•	Addresses the role of machine learning (ML) and artificial intelligence (AI) across the hydrogen value chain (production, transport, storage, utilization).
+•	Significant because hydrogen is central to the energy transition, but scaling faces technical, economic, and safety challenges.
+•	Contribution: Synthesizes 314 peer-reviewed studies (2019–2024), mapping ML applications, identifying benefits, limitations, and emerging trends.","•	Hydrogen domains covered: Production, transport, storage, utilization.
+•	Hydrogen production methods: Thermochemical (SMR, SCWG), electrochemical (PEM, SOEC), biological (microbial, algal), photocatalytic.
+•	Transport/storage: Pipelines, compressed gas, cryogenic liquid, underground caverns, solid-state (metal hydrides, MOFs).
+•	Utilization: Fuel cells, combustion, chemical feedstocks (ammonia, methanol).
+•	Integration: ML applied to predictive modeling, optimization, material characterization, and safety monitoring.","•	Type of models: Supervised (ANN, RF, SVM, GB), unsupervised (PCA, clustering), reinforcement learning (RL), hybrid physics-informed ML.
+•	Tasks: Prediction/forecasting, optimization/control, discovery/design.
+•	Assumptions: Focused on hydrogen-specific processes; excluded tangential mentions.
+•	Validation: Systematic coding of studies by domain, ML method, and application type.","•	Algorithms used: Neural networks (ANN, CNN, LSTM, RNN), tree-based ensembles (RF, GB, ERT), SVM, Gaussian processes, reinforcement learning, physics-informed ML.
+•	Optimization methods: GA, PSO, NSGA-II, Bayesian optimization, differential evolution.
+•	Purpose: Improve efficiency, predict degradation, optimize operating conditions, enhance safety.
+•	Dataset size: 314 studies reviewed (2019–2024).
+•	Performance trends: Predictive modeling dominates; optimization and hybrid approaches less common.","•	ML adoption concentrated in production and material characterization.
+•	Transport and underground storage remain underexplored.
+•	Predictive modeling (ANN, RF, GB) most widely used; optimization and hybrid physics-informed ML rare.
+•	Explainability tools (SHAP, PDP) underutilized.
+•	Reported benefits: improved efficiency, cost reduction, predictive maintenance, enhanced safety.","•	First comprehensive synthesis of ML applications across the entire hydrogen value chain.
+•	Large dataset (314 studies) ensures broad coverage.
+•	Clear classification framework (domains + ML task types).
+•	Identified emerging trends (physics-informed ML, explainable AI).
+•	Provided actionable recommendations for standardization and benchmarking.","•	Data availability fragmented; lack of standardized reporting.
+•	Heavy concentration in production; transport/storage/utilization underrepresented.
+•	Limited adoption of hybrid physics-informed ML despite safety-critical nature.
+•	Few cross-domain benchmarks; performance metrics inconsistent.
+•	Explainability and transparency often missing.","•	Need for standardized data reporting and benchmarking across hydrogen ML studies.
+•	Greater focus on transport, storage, and utilization domains.
+•	Development of physics-informed and explainable ML models for safety-critical applications.
+•	Cross-domain optimization frameworks to integrate hydrogen with broader energy systems.
+•	Uncertainty quantification and robust validation across heterogeneous datasets."
+17,"•	Title: Machine learning and thermodynamic modeling for optimizing hydrogen production via algae-biomass co-gasification
+ 
+•	Authors: Thanadol Tuntiwongwat, Takashi Yukawa, Thongchai Rohitatisha Srinophakun, Kanit Manatura, Somboon Sukpancharoen, Seyedali Mirjalili
+ 
+•	Journal: Cleaner Engineering and Technology (Elsevier)
+ 
+•	Year: 2025
+ 
+•	Country/Region: Thailand, Japan, Australia, Czech Republic, Hungary (multi-institutional collaboration)
+ 
+•	Type: Original Research / Simulation + ML Optimization Study","•	Addresses the challenge of low hydrogen yields and inefficiencies in conventional single-feedstock biomass gasification.
+•	Significant because algae co-feedstocks can enhance syngas quality, but optimization requires advanced modeling.
+•	Contribution: Pioneered integration of algae-biomass co-gasification with Aspen Plus® thermodynamic modeling and six ML algorithms, enabling real-time optimization of H? yield and syngas LHV.","•	Feedstocks:
+o	Algae: Chlorella vulgaris, Nannochloropsis oculata, Fucus serratus.
+o	Biomass: Fir Pellet (FP), Palm Empty Fruit Bunch (PEFB), Pellet Pine Wood (PPW).
+•	Hydrogen production route: Co-gasification (Aspen Plus® simulation, Gibbs free energy minimization).
+•	System scale: 3609 data points, 24 input parameters, validated with experimental trials.
+•	Integration: Thermodynamic modeling + ML regression + SHAP interpretability.","•	Type of model: Aspen Plus® restricted equilibrium (Gibbs free energy minimization) + ML regression.
+•	Steady-state: Yes (simulation-based).
+•	Assumptions: Non-conventional feedstocks modeled via MIXNC stream class; Peng–Robinson EOS; equilibrium reactions.
+•	Validation: Experimental data from LDPE and garden waste trials; 10-fold cross-validation for ML models.","•	Algorithms tested: KNN, SVR, XGB, RF, ANN, DT.
+•	Optimization: RandomizedSearchCV hyperparameter tuning; SHAP analysis for feature importance.
+•	Purpose: Predict H? yield and syngas LHV; identify critical parameters.
+•	Dataset size: 3609 data points, 24 input features.
+•	Performance:
+o	XGB ? R² > 0.96, RMSE = 0.327 (best for H? yield).
+o	RF ? R² = 0.951 (best for LHV prediction).
+•	Interpretability: SHAP identified gasification temperature (GT), steam-to-fuel ratio (S/F), equivalence ratio (ER), and blend fraction (BF) as critical drivers.","•	Chlorella vulgaris consistently superior algae species.
+•	Best combinations:
+3.	C. vulgaris + Fir Pellet (FP): Max H? yield = 9.87%, exergy efficiency = 84.84%.
+4.	C. vulgaris + PPW: Peak energy efficiency = 87.73%.
+5.	vulgaris produced highest LHV syngas across all biomass types.
+•	Framework established new benchmarks for algae-biomass co-gasification.","•	First integration of algae-biomass co-gasification with ML-enhanced thermodynamic modeling.
+•	Large dataset (3609 points) ensured robust training.
+•	SHAP interpretability provided transparent optimization insights.
+•	Demonstrated industrial scalability and real-time optimization potential.
+•	Public GitHub repository for reproducibility.","•	Simulation-based; limited experimental validation.
+•	Dataset restricted to three algae and three biomass types.
+•	Tar formation and gas cleaning not explicitly modeled.
+•	Economic feasibility not assessed.
+•	Predictive accuracy could improve with expanded datasets.","•	Need for pilot-scale experimental validation of algae-biomass co-gasification.
+•	Expanded feedstock diversity beyond three algae and biomass types.
+•	Techno-economic feasibility studies for industrial deployment.
+•	Development of hybrid physics-informed ML models for deeper mechanistic interpretability.
+•	Dynamic modeling of transient syngas composition under varying operating conditions."
+18,"•	Title: Exploring machine learning approaches for biohydrogen production through dark fermentation in wastewater
+
+•	Authors: Ibrahim Shomope, Amaal Abdulrageb Ali, Muhammad Tawalbeh, Amani Al-Othman, Fares Almomani
+
+•	Journal: International Journal of Hydrogen Energy (Elsevier)
+
+•	Year: 2025
+
+•	Country/Region: UAE, Qatar (multi-institutional collaboration)
+
+•	Type: Review Article","•	Addresses the challenge of optimizing biohydrogen yields from wastewater via dark fermentation.
+•	Significant because dark fermentation simultaneously produces hydrogen and treats wastewater, but biological complexity makes optimization difficult.
+•	Contribution: Systematically reviewed ML applications (ANN, SVM, DT, RF, CatBoost, ensemble methods) for predicting and optimizing hydrogen production, comparing them against traditional kinetic/statistical models.","•	Feedstock: Wastewater substrates (industrial effluents, distillery wastewater, starch factory wastewater, rice mill wastewater, dairy effluents, etc.).
+•	Hydrogen production route: Dark fermentation (anaerobic microbial conversion of carbohydrate-rich substrates).
+•	System scale: Literature review of recent ML-driven studies.
+•	Integration: ML models applied to predict hydrogen yield, optimize fermentation conditions, and identify key influencing factors.","•	Traditional models compared: Monod kinetics, ADM1, RSM.
+•	Limitations of traditional models: Fixed input ranges, poor generalization.
+•	ML models reviewed: ANN, SVM, RF, KNN, DT, CatBoost, LightGBM, BagXGBoost.
+•	Validation: Reported R² values up to 0.98–0.988, outperforming traditional methods.","•	Algorithms used: ANN, SVM, RF, KNN, DT, CatBoost, LightGBM, BagXGBoost.
+•	Purpose: Predict hydrogen yield, optimize fermentation conditions (pH, substrate concentration, temperature, COD, HRT, acetate-butyrate ratio, trace metals).
+•	Performance:
+o	CatBoost ? R² = 0.98.
+o	SVM ? R² = 0.988.
+•	Interpretability: Key features identified: COD, nickel concentration, butyrate levels.","•	ML models consistently outperformed traditional kinetic/statistical approaches.
+•	COD strongly correlated with hydrogen yield (substrate availability).
+•	Nickel ions critical for hydrogenase enzyme activity.
+•	Butyrate levels influenced microbial metabolism and hydrogen output.
+•	Demonstrated dual benefit: wastewater remediation + hydrogen production.","•	First systematic review of ML applications in wastewater-based dark fermentation.
+•	Compared ML vs. traditional models, highlighting clear performance gains.
+•	Identified biologically relevant features driving hydrogen yield.
+•	Linked findings to UN SDGs (Clean Water and Sanitation, Affordable and Clean Energy).","•	Literature still limited; datasets relatively small.
+•	Few lifecycle assessments or cost-benefit analyses.
+•	Scalability to industrial applications not yet validated.
+•	Lack of standardized reporting across studies.","•	Need for larger, standardized datasets across diverse wastewater types.
+•	Integration of ML with experimental workflows for real-time optimization.
+•	Lifecycle assessment and techno-economic analysis to evaluate feasibility.
+•	Development of hybrid physics-informed ML models for deeper interpretability.
+•	Industrial-scale validation of ML-driven dark fermentation systems."
+19,"•	Title: Machine learning enables more efficient (nano)catalyst management, enhancing the competitiveness of (bio)hydrogen production from sewage sludge
+
+•	Authors: Josef Marousek, Beata Gavurova, Anna Marouskova
+
+•	Journal: Renewable Energy (Elsevier)
+
+•	Year: 2026
+
+•	Country/Region: Slovakia, Czech Republic (multi-institutional collaboration)
+
+•	Type: Original Research / Experimental + ML Optimization Study","•	Addresses the challenge of low yield and instability in dark fermentation biohydrogen production.
+•	Significant because sewage sludge is abundant and year-round, but process economics are hindered by inhibitors and microbial instability.
+•	Contribution: Investigated NiO, Fe?O?, and Ni/Fe?O? nanoparticles (alone and combined with activated carbon) to enhance hydrogen yield, using both experimental trials and ML prediction.","•	Feedstock: Anaerobic sewage sludge (Czech wastewater treatment plant).
+•	Hydrogen production route: Dark fermentation (batch experiments, free and immobilized cells).
+•	Catalysts tested: Fe?O?, NiO, Ni/Fe?O? nanoparticles; activated carbon (AC); combinations (Fe?O?-AC, Ni/Fe?O?-AC).
+•	System scale: 14 scenarios, 72-hour batch runs.
+•	Integration: Modified Gompertz kinetic modeling + Random Forest ML regression.","•	Kinetic model: Modified Gompertz equation for microbial growth and hydrogen evolution.
+•	ML model: Random Forest regression trained on cumulative H? production data.
+•	Validation: Train/test split (80/20), RMSE and R² metrics.
+•	Assumptions: Nanoparticle concentration fixed at 100 mg/L; anaerobic sludge pretreated to suppress methanogens.","•	Algorithm used: Random Forest regression.
+•	Purpose: Predict cumulative/daily H? production under different nanomaterial setups.
+•	Dataset size: Experimental data across 7 setups × multiple time points.
+•	Performance: High predictive accuracy (R² > 0.9 reported).
+•	Interpretability: Identified nanoparticle type and AC presence as key drivers of yield.","•	Control (no additives): 230 mL cumulative H? after 72 h, yield = 1.7 mol H?/mol glucose.
+•	Ni/Fe?O? nanoparticles: 315 mL cumulative H?, yield = 2.6 mol H?/mol glucose (529% ? vs. control).
+•	Ni/Fe?O? + AC: 320 mL cumulative H?, yield = 2.7 mol H?/mol glucose (618% ? vs. control).
+•	NiO nanoparticles: 2.1 mol H?/mol glucose (235% ? vs. control).
+•	AC alone: 280 mL cumulative H?, yield = 1.88 mol H?/mol glucose (106% ? vs. control).
+•	Nanoparticles buffered pH drop, reducing acidity and stabilizing fermentation.
+•	Immobilized cell systems showed enhanced stability compared to free cells.","•	First systematic study of nanoparticle + AC synergy in sewage sludge dark fermentation.
+•	Combined experimental kinetics with ML prediction.
+•	Demonstrated clear catalytic benefits of bimetallic nanoparticles.
+•	Addressed both yield and stability challenges.
+•	Practical feedstock (sewage sludge) ensures scalability.","•	Lab-scale batch experiments only; no pilot-scale validation.
+•	Nanoparticle concentration fixed; dose-response not explored.
+•	Economic feasibility of nanoparticle use not assessed.
+•	ML limited to Random Forest; no comparison with other algorithms.
+•	Long-term microbial community stability not studied.","•	Need for pilot-scale validation of nanoparticle-assisted dark fermentation.
+•	Techno-economic analysis of nanoparticle and AC supplementation.
+•	Exploration of different nanoparticle concentrations and bimetallic combinations.
+•	Hybrid ML + mechanistic models for deeper interpretability.
+•	Long-term stability studies of immobilized sludge systems."
+20,"•	Title: An ensemble learning method to predict a hydrogen production rate in the viable wastewater-hydrogen supply chain network design
+
+•	Authors: Beheshteh Moghadaspoor, Ali Bozorgi-Amiri, Reza Tavakkoli-Moghaddam, Mahdi Bashiri
+
+•	Journal: Energy (Elsevier)
+
+•	Year: 2026
+
+•	Country/Region: Iran, Turkey, Oman, UK (multi-institutional collaboration)
+
+•	Type: Original Research / ML Prediction + Supply Chain Optimization","•	Addresses the challenge of integrating wastewater-derived hydrogen into viable supply chain (SC) design.
+•	Significant because most studies focus on experimental dark fermentation yields but ignore system-level SC optimization.
+•	Contribution: First framework coupling ML-based prediction of hydrogen production rates (HPRs) with multi-objective SC optimization for resilience, sustainability, and profitability.","•	Feedstock: Industrial wastewater (carbohydrate-rich, diverse effluents).
+•	Hydrogen production route: Dark fermentation (DF).
+•	System scale: Prediction dataset from experimental/literature WW properties; optimization applied to Iran case study.
+•	Integration: ML prediction of HPRs embedded into SC design (production, storage, transport, distribution).","•	Prediction models tested: Bagging, Random Forest, Gradient Boosting Regression, XGBoost Regression.
+•	Best performer: XGBoost (R² = 0.966, MSE = 0.111).
+•	Optimization model: Multi-period, multi-objective MILP with e-constraint method.
+•	Objectives: Maximize profit, minimize non-resiliency (flow complexity, node complexity, node criticality), limit CO? emissions.","•	Algorithms used: Bagging, RF, GB, XGBoost.
+•	Purpose: Predict hydrogen production rates from wastewater properties.
+•	Dataset inputs: Biomass concentration, Ni, Fe, pH, HRT, COD, acetate, butyrate, acetate/butyrate ratio, ethanol.
+•	Performance: XGBoost achieved highest accuracy (R² = 0.966).
+•	Interpretability: SHAP analysis highlighted COD, acetate/butyrate ratio, Ni, and HRT as dominant features.","•	ML predictions enabled accurate estimation of HPRs from diverse wastewater streams.
+•	Supply chain optimization improved profitability and reduced operational risks.
+•	Sensitivity analysis: transportation had dominant impact on CO? emissions; responsiveness affected computational complexity.
+•	Framework demonstrated viability of wastewater-based hydrogen SC design.","•	First integration of ML prediction with viable SC optimization for wastewater-derived hydrogen.
+•	Combined technical (DF yields) and strategic (SC design) perspectives.
+•	Multi-objective optimization addressed resilience, sustainability, and profitability simultaneously.
+•	Case study validated framework in real-world context.","•	Dataset limited to reported experimental WW properties; not real-time industrial data.
+•	ML restricted to four ensemble methods; no deep learning or hybrid physics-informed models tested.
+•	Case study focused on Iran; global generalizability not assessed.
+•	Economic feasibility sensitive to transport emissions and infrastructure.","•	Need for larger, real-time datasets of wastewater properties and hydrogen yields.
+•	Exploration of hybrid physics-informed ML models for mechanistic interpretability.
+•	Global techno-economic feasibility studies of wastewater-to-hydrogen SCs.
+•	Dynamic SC modeling under uncertainty and disruption scenarios.
+•	Integration with circular economy frameworks (reuse of byproducts, nutrient recovery)."
+21,"Title: Integration of the grey relational analysis with machine learning for sucrose anaerobic hydrogen production prediction
+
+ Authors: Xianze Wang, Yifan Wang, Yu-Yao Tseng, Yidi Gao, Keqing Li, Ming-Hung Wang, Jinghui Wu, Chyi-How Lay, Mingxin Huo
+
+ Journal: International Journal of Hydrogen Energy (Elsevier)
+
+ Year: 2024
+
+ Country/Region: China, Taiwan (multi-institutional collaboration)
+
+ Type: Original Research / ML Prediction + Grey Relational Analysis","•	Addresses the challenge of predicting hydrogen production rates (HPR) in anaerobic sucrose fermentation, where multiple environmental factors interact.
+•	Significant because sucrose is abundant in Taiwan and represents a practical biomass feedstock, but process optimization is complex.
+•	Contribution: Combined grey relational analysis (GRA) with ML algorithms to identify key influencing factors and predict HPR with high accuracy.","•	Feedstock: Sucrose substrate (20–40 g COD/L).
+•	Hydrogen production route: Anaerobic fermentation using activated sludge inoculum.
+•	System scale: Continuous-flow reactor (4 L) at Taichung Wastewater Treatment Plant; 432 days of experimental data.
+•	Integration: Grey relational analysis to rank feature relevance ? ML models trained on 11 features to predict HPR.","•	Grey relational analysis (GRA): Ranked correlation between features and HPR.
+•	ML algorithms tested: SVM, Decision Tree (DT), Random Forest (RF), XGBoost, KNN.
+•	Validation: Train/test split (80/20), metrics = R² and MSE.
+•	Assumptions: Missing data imputed via linear interpolation; features normalized with MinMaxScaler.","•	Algorithms used: SVM, DT, RF, XGBoost, KNN.
+•	Purpose: Predict hydrogen production rate (HPR) from sucrose fermentation data.
+•	Dataset size: 432 sets of valid data, 11 input features.
+•	Performance:
+o	XGBoost ? R² = 0.91, MSE = 0.0052 (best performer).
+•	Interpretability:
+o	GRA identified butyrate, ORP, and VSS as most influential.
+o	Shapley values confirmed butyrate’s importance, with acetate and ethanol also relevant.","•	Butyrate concentration strongly correlated with HPR (highest GRA score = 0.839).
+•	ORP and VSS also critical indicators of microbial activity and hydrogen yield.
+•	Excess butyrate inhibited fermentation despite its positive correlation.
+•	XGBoost achieved highest predictive accuracy among tested ML models.
+•	Forecasting extended to predict HPR for 432 future days, validating model practicality.","•	First integration of grey relational analysis with ML for sucrose-based hydrogen prediction.
+•	Large, real-world dataset (432 days continuous operation).
+•	Combined feature ranking (GRA) with post-hoc interpretability (Shapley values).
+•	Demonstrated predictive accuracy and practical forecasting capability.","•	Focused only on sucrose feedstock; generalizability to other substrates not tested.
+•	Dataset limited to one wastewater treatment plant.
+•	ML restricted to five algorithms; no deep learning or hybrid physics-informed approaches.
+•	Economic feasibility not assessed.","•	Need for multi-feedstock validation beyond sucrose.
+•	Cross-plant datasets to improve generalizability.
+•	Exploration of hybrid physics-informed ML models for mechanistic interpretability.
+•	Techno-economic analysis of sucrose-based hydrogen production.
+•	Dynamic modeling of microbial community shifts under varying ORP/pH conditions."
+22,"•	Title: Boosting biohydrogen yield from cheese whey through machine learning optimization of supplement-assisted dark fermentation
+
+•	Authors: Behrouz Nemati, Mohammadreza Kamali, Sara Zandi, Tejraj M. Aminabhavi, Raf Dewil, Juan M. Corchado, M. Elisabete V. Costa, Isabel Capela
+
+•	Journal: International Journal of Hydrogen Energy (Elsevier)
+
+•	Year: 2025
+
+•	Country/Region: Portugal, Belgium, India, Korea, UK, Spain (multi-institutional collaboration)
+
+•	Type: Original Research / Experimental + ML Optimization Study","•	Addresses the challenge of low hydrogen yields and instability in cheese whey dark fermentation.
+•	Significant because cheese whey is a cheap, abundant dairy by-product but prone to rapid acidification and microbial inhibition.
+•	Contribution: First comprehensive optimization of supplement-assisted DF using both statistical (RSM-CCD) and ML (RF-GA) approaches.","•	Feedstock: Cheese whey powder (CWP).
+•	Inoculum: Anaerobic sludge (thermally pretreated to suppress methanogens).
+•	Supplements tested: Fly ash (FA), biochar (BC), geopolymer (GP).
+•	System scale: 2-L batch DF reactors, 21 experimental runs.
+•	Integration: RSM-CCD vs. RF-GA optimization of supplement concentration, particle size, and pH.","•	Statistical method: Response Surface Methodology – Central Composite Design (RSM-CCD).
+•	ML method: Random Forest combined with Genetic Algorithm (RF-GA).
+•	Assumptions: FA concentration (FAC), supplement concentration (SC), supplement particle size (SPS), and pH as key optimization variables.
+•	Validation: Experimental runs + predictive modeling comparison.","•	Algorithm used: Random Forest regression tuned via Genetic Algorithm.
+•	Purpose: Optimize supplement parameters for maximum H? yield.
+•	Dataset size: 21 experimental runs × multiple parameter combinations.
+•	Performance:
+o	RSM-CCD optimum ? 285.61 mL H?/g VS added.
+o	RF-GA optimum ? 307.66 mL H?/g VS added.
+•	Interpretability: RF-GA captured non-linear interactions better than RSM.","•	Optimum conditions:
+o	FAC ? 66.66%, SPS = 0.2 mm, SC = 10–14 g/L, pH = 7.1–7.5.
+•	RF-GA achieved higher yield than RSM-CCD.
+•	BC and GP shortened fermentation duration from 72 h ? 48 h.
+•	Supplements stabilized pH and electrical conductivity, suppressing methanogenesis.
+•	FA provided trace metals and buffering; BC enhanced microbial attachment and electron transfer; GP released nutrients and stabilized microbial activity.","•	First dual-method optimization (RSM vs. ML) for supplement-assisted DF.
+•	Demonstrated synergy of FA, BC, and GP in boosting yields.
+•	ML approach (RF-GA) outperformed traditional statistical optimization.
+•	Reduced fermentation time improved process economics.
+•	Practical feedstock (cheese whey) ensures industrial relevance.","•	Lab-scale batch experiments only; no pilot-scale validation.
+•	Dataset relatively small (21 runs).
+•	Economic feasibility of supplement use not assessed.
+•	ML limited to RF-GA; no comparison with deep learning or hybrid physics-informed models.
+•	Long-term microbial stability not studied.","•	Need for pilot-scale validation of supplement-assisted DF.
+•	Techno-economic analysis of supplement costs and scalability.
+•	Exploration of other ML algorithms (deep learning, hybrid physics-informed).
+•	Expanded datasets across diverse whey and dairy waste streams.
+•	Microbial community analysis under supplement influence for long-term stability."
+23,"•	Title: Leveraging IoT and machine learning for smart fermentation of amasi: A predictive framework for acidity control
+
+•	Authors: Ismail Adeleke, Oluwafemi Ayodeji Adebo, Nnamdi Nwulu
+
+•	Journal: Journal of Agriculture and Food Research (Elsevier)
+
+•	Year: 2025
+
+•	Country/Region: South Africa (University of Johannesburg)
+
+•	Type: Original Research / IoT + ML Application in Fermentation","•	Addresses the challenge of manual, imprecise acidity monitoring in traditional amasi fermentation.
+•	Significant because acidity (pH, TTA) determines taste, texture, and microbial safety, but conventional titration is labor-intensive.
+•	Contribution: Developed a low-cost IoT + ML framework with real-time sensors, digital twin, and PID control for predictive acidity management.","•	Product: Amasi (traditional fermented milk widely consumed in South Africa/Zimbabwe).
+•	Fermentation conditions: Raw, pasteurized, and inoculated milk samples fermented at 25?°C, 27?°C, and 32?°C.
+•	System scale: 7 fermentation runs, 549,483 sensor datapoints collected.
+•	Integration: Raspberry Pi-based IoT platform + cloud-hosted digital twin + ML models for acidity prediction.","•	Sensors: pH probe, EC probe, temperature sensor.
+•	Control: PID-controlled heating and stirring.
+•	Data handling: EC calibrated against TTA via titration; normalization and interpolation applied to handle missing data.
+•	Validation: Laboratory titration compared with IoT-predicted acidity.","•	Algorithms tested: Linear Regression, Random Forest, Gradient Boosting, KNN, LSTM, CNN, Feedforward Neural Network (FNN).
+•	Purpose: Predict total titratable acidity (TTA) from EC, pH, and temperature.
+•	Performance:
+o	CNN ? R² = 0.9475 (best global accuracy).
+o	FNN and RF also strong performers.
+o	Time-to-target acidity model achieved R² = 0.98.
+•	Interpretability: EC validated as a reliable proxy for TTA, though influenced by salts, proteins, and temperature.","•	IoT + ML system successfully predicted acidity in real-time.
+•	CNN model provided highest accuracy; time-to-target acidity prediction enabled proactive control.
+•	PID-controlled actuation maintained stable fermentation conditions.
+•	Demonstrated feasibility of low-cost, scalable digital fermentation management for artisanal dairy.","•	First end-to-end IoT + ML framework for amasi fermentation.
+•	Validated EC as proxy for TTA, reducing reliance on manual titration.
+•	Demonstrated digital twin integration for real-time monitoring and control.
+•	Applicable to resource-limited, smallholder dairy settings.","•	Focused only on amasi; generalizability to other dairy fermentations not tested.
+•	Sensor calibration required frequent validation; long-term drift not fully addressed.
+•	Dataset limited to controlled lab conditions; field deployment not yet validated.
+•	Economic feasibility and scalability beyond pilot runs not assessed.","•	Need for field-scale validation in rural dairy production.
+•	Exploration of multisensor fusion (e.g., colorimetry, spectroscopy) to improve robustness.
+•	Hybrid physics-informed ML models for mechanistic interpretability.
+•	Techno-economic analysis of IoT deployment in artisanal dairy systems.
+•	Integration with Dairy 4.0 frameworks (traceability, blockchain, sustainability)."
+24,"•	Title: Improved estimation of dark fermentation biohydrogen production utilizing a robust categorical boosting machine-learning algorithm
+
+•	Authors: Atieh Fahimi Bandpey, Jafar Abdi, Tahere Taghizade Firozjaee
+
+•	Journal: International Journal of Hydrogen Energy (Elsevier)
+
+•	Year: 2024
+
+•	Country/Region: Finland, Iran (multi-institutional collaboration)
+
+•	Type: Original Research / ML Prediction Study","•	Addresses the challenge of accurately predicting hydrogen yields from wastewater-based dark fermentation.
+•	Significant because DF is promising for renewable hydrogen and wastewater treatment, but process complexity limits traditional modeling.
+•	Contribution: Compared multiple ML algorithms (CatBoost, BagXGBoost, LightGBM, KNN, DT) for H? prediction, highlighting CatBoost’s superior performance and feature interpretability.","•	Feedstock: Wastewater substrates (literature-derived dataset).
+•	Hydrogen production route: Dark fermentation (anaerobic microbial conversion).
+•	System scale: Dataset of 208 data points compiled from published studies.
+•	Integration: ML regression models + SHAP analysis for feature importance.","•	Algorithms tested: CatBoost, BagXGBoost, LightGBM, KNN, Decision Trees.
+•	Inputs considered: Ni, Fe, biomass concentration, pH, COD, HRT, acetate, ethanol, butyrate, acetate/butyrate ratio.
+•	Validation: Train/test split (75/25), metrics = R², RMSE, MAE, NSE.
+•	Assumptions: Normalized dataset to reduce variability across sources.","•	Best performers:
+o	CatBoost ? R² = 0.98 (train), 0.87 (test).
+o	BagXGBoost ? R² = 0.97 (train), 0.86 (test).
+•	Other models: LightGBM, KNN, DT performed moderately (R² ~0.73–0.82 on test sets).
+•	Interpretability: SHAP analysis identified COD, Ni, and butyrate as most influential features.","•	CatBoost achieved highest predictive accuracy and robustness.
+•	COD (absolute SHAP value = 1.1), Ni (1.0), and butyrate (0.07) were dominant drivers of H? yield.
+•	Demonstrated feasibility of ML-driven prediction for DF optimization.
+•	Provided insights into parameter relevance for experimental design.","•	First comparative study of multiple ML algorithms for DF hydrogen prediction.
+•	CatBoost offered strong accuracy and interpretability.
+•	Dataset compiled from diverse literature, improving generalizability.
+•	SHAP analysis provided transparent feature importance ranking.","•	Dataset relatively small (208 points).
+•	Derived from literature; lacks real-time or pilot-scale validation.
+•	Models limited to tree-based and KNN; no deep learning or hybrid physics-informed approaches tested.
+•	Potential variability in source data (different inocula, reactor setups).","•	Need for larger, standardized datasets across wastewater types.
+•	Exploration of hybrid physics-informed ML models for mechanistic clarity.
+•	Pilot-scale validation of CatBoost predictions in real DF systems.
+•	Dynamic modeling of microbial community shifts under varying COD/Ni levels.
+•	Integration with optimization frameworks for real-time DF control."
+25,"•	Title: An integrated framework for bio-hydrogen production optimization using novel metaheuristic algorithms and explainable machine learning tuned via grid search
+
+•	Authors: Van Tuan Dang, Wei-Hsin Chen, Anh Tuan Hoang, M. Olga Guerrero-Pérez, Enrique Rodríguez-Castellón, María Cruz López-Escalante, Minh Chuong Nguyen, Thi Anh Em Bui, Thanh Hai Truong, Xuan Phuong Nguyen
+
+•	Journal: International Journal of Hydrogen Energy (Elsevier)
+
+•	Year: 2025
+
+•	Country/Region: Vietnam, Taiwan, Korea, Spain (multi-institutional collaboration)
+
+•	Type: Original Research / Hybrid Optimization + ML Framework","•	Addresses the challenge of maximizing biohydrogen yield in complex, nonlinear fermentation systems.
+•	Significant because traditional trial-and-error optimization is inefficient and ML models often lack interpretability.
+•	Contribution: Developed a hybrid framework combining metaheuristic optimization (Newton-Raphson, Grey Wolf, Battle Royale) with explainable ML (SVR, XGBoost, surrogate decision trees, SHAP).","•	Feedstock: Sugar-rich biomass substrates (dataset adapted from prior experimental studies).
+•	Hydrogen production route: Dark fermentation / photo-fermentation hybrid conditions.
+•	System scale: Dataset with controlled variations in substrate concentration, temperature, pH, inoculum ratio.
+•	Integration: Metaheuristic optimization + ML prediction + explainability tools.","•	Optimization methods: Newton-Raphson Optimization (NRBO), Grey Wolf Optimization (GWO), Battle Royale Optimization (BRO).
+•	ML models tested: Decision Tree Regression, XGBoost, Support Vector Regression (SVR).
+•	Validation: ANOVA confirmed quadratic model significance (R² = 0.9720).
+•	Explainability: Surrogate decision trees + SHAP analysis to identify key influencing variables.","•	Best performer: SVR ? R² = 0.989 (train), 0.974 (test).
+•	XGBoost: R² = 0.926 (train), 0.856 (test).
+•	Interpretability: SHAP + surrogate trees highlighted temperature and inoculum ratio as dominant features; pH and substrate concentration had smaller but notable impacts.","•	BRO achieved highest optimized yield: 95.17 mL H?/g TS at SC = 37.98 g/L, T = 30.98?°C, pH = 7.81, IR = 28.812%.
+•	NRBO converged fastest; GWO provided robust search avoiding local minima.
+•	SVR provided most accurate predictive model; XGBoost offered strong nonlinear handling.
+•	Explainable ML confirmed biological relevance of temperature and inoculum ratio.","•	First hybrid framework combining metaheuristic optimization + explainable ML for bioH?.
+•	BRO introduced as a novel optimizer with rapid convergence.
+•	SVR achieved near-perfect predictive accuracy.
+•	SHAP and surrogate trees enhanced transparency and trust in ML predictions.
+•	Provided actionable parameter ranges for maximizing yield.","•	Dataset derived from prior experimental studies; not validated in new lab-scale runs.
+•	Focused on four parameters (SC, T, pH, IR); excluded other microbial/nutrient factors.
+•	BRO relatively new; long-term robustness across diverse datasets not yet proven.
+•	Economic feasibility and scalability not assessed.","•	Need for pilot-scale validation of BRO + SVR framework.
+•	Expansion to include nutrient cofactors and microbial community dynamics.
+•	Comparative studies with other modern optimizers (e.g., Moth Flame, Whale Optimization).
+•	Techno-economic analysis of optimized bioH? production conditions.
+•	Integration into real-time control systems for industrial biohydrogen reactors."
+26,"•	Title: Bioprocess modeling of microalgae in treating domestic wastewater via fermentation to convert pollutants into hydrogen
+ 
+•	Authors: Suleiman Mousa, Mohammed E. Ali Mohsin
+
+•	Journal: Journal of Molecular Structure (Elsevier)
+ 
+•	Year: 2025
+ 
+•	Country/Region: Saudi Arabia (King Faisal University)
+ 
+•	Type: Original Research / Experimental + Bioprocess Modeling","•	Addresses the dual challenge of wastewater treatment and renewable hydrogen generation.
+•	Significant because conventional wastewater treatment is costly and polluting, while microalgae offer nutrient recovery and clean energy.
+•	Contribution: Demonstrated attached microalgae cultivation on polyurethane foam for simultaneous pollutant removal and hydrogen production, validated with modified Monod modeling.","•	Feedstock: Domestic wastewater (high BOD, nitrogen species, TOC, heavy metals).
+•	Biological agent: Chlorella vulgaris microalgae immobilized on polyurethane foam cubes.
+•	Hydrogen production route: Dark fermentation with light/dark cycles.
+•	System scale: Lab-scale bioreactors (200–1000 mL working volume).
+•	Integration: Wastewater bioremediation + hydrogen generation.","•	Model used: Modified Monod equation.
+•	Parameters optimized: Maximum hydrogen production rate (µmax), light intensity constant (Ki).
+•	Validation: R² = 0.9838, RSE = 6.7%.
+•	Assumptions: Immobilized biofilm improves nutrient diffusion and cell retention.","•	Tool: Python + SciPy optimization libraries.
+•	Purpose: Fit Monod parameters to experimental hydrogen yield data across photoperiods.
+•	Dataset: Time-course hydrogen production under 12:12 h light/dark cycles at 200 µmol/m²s.
+•	Performance: High predictive accuracy (R² = 0.9838).","•	Maximum hydrogen yield: 862.64 mL H?/g microalgae.
+•	Pollutant removal efficiencies:
+o	BOD? ? 97%
+o	NH?-N ? 88%
+o	NO?-N ? 74%
+o	NO?-N ? 79%
+•	Immobilization on polyurethane foam enabled repeated reuse and higher yields compared to suspended microalgae (only ~3.47 mL H?).
+•	Light/dark cycles balanced photosynthesis (oxygen release) and fermentation (hydrogen generation).","•	First demonstration of polyurethane foam–attached microalgae for dual wastewater treatment + hydrogen production.
+•	Achieved very high pollutant removal alongside hydrogen yield.
+•	Modified Monod model provided robust predictive capability.
+•	Practical reuse of immobilized biofilm improved sustainability.","•	Lab-scale only; industrial scalability not tested.
+•	Dependent on controlled light intensity and photoperiod.
+•	Heavy metal tolerance and long-term stability of biofilm not fully assessed.
+•	Economic feasibility of polyurethane foam immobilization not evaluated.","•	Need for pilot-scale validation in real wastewater treatment plants.
+•	Exploration of alternative immobilization supports for cost-effectiveness.
+•	Integration with hybrid fermentation/photo-fermentation systems for higher yields.
+•	Techno-economic analysis of nutrient recovery + hydrogen generation.
+•	Long-term biofilm stability studies under varying wastewater compositions."
+27,"•	Title: Accurate prediction and screening of Ni-based bimetallic catalysts for hydrogen production from biogas reforming: An interpretable machine learning study
+ 
+•	Authors: Wen-ming Zhang, Bin Hu, Bo-yuan Zheng, Ji Liu, Qi Niu, Kai Li, Zhi-mo Fang, Bing Zhang, Qiang Lu
+ 
+•	Journal: Chemical Engineering Journal (Elsevier)
+ 
+•	Year: 2026
+ 
+•	Country/Region: China (North China Electric Power University)
+ 
+•	Type: Original Research / ML Prediction + Catalyst Screening","•	Addresses the challenge of rapid, cost-efficient screening of Ni-based bimetallic catalysts for biogas reforming (BR).
+•	Significant because BR integrates steam reforming (SR) and dry reforming (DR), offering sustainable hydrogen production but requiring stable catalysts.
+•	Contribution: Applied ML (RF, MLP) to predict catalyst activity, selectivity, and stability, enabling interpretable catalyst screening.","•	Feedstock: Biogas (CH? + CO? mixture).
+•	Process: Biogas reforming (SR + DR combined).
+•	Catalysts: Ni-based bimetallic catalysts with various dopants.
+•	Dataset: 2025 samples (CH? conversion), 1946 (CO? conversion), 1042 (H?/CO ratio), 610 (CH? stability).
+•	Integration: ML prediction + SHAP, ICE, PDP interpretability.","•	Algorithms tested: Random Forest (RF), Multilayer Perceptron (MLP).
+•	Targets: CH? conversion, CO? conversion, H?/CO ratio, CH? conversion change (5 h stability).
+•	Features considered: Temperature, WHSV, Ni content, Ni particle size, SSA, dopant properties (atomic radius, electronegativity, content).
+•	Validation: Train/test split (80/20), metrics = R², RMSE.","•	Best performer: RF ? R² > 0.9, RMSE ? 5.01 across all metrics.
+•	MLP weaker: R² ~0.88 for CH? conversion, higher residual errors.
+•	Interpretability: SHAP analysis identified temperature and WHSV as dominant predictors; Ni content and SSA also critical.
+•	Insights:
+o	Small Ni particle size (<7 nm) and low SSA (<225 m²/g) improved stability.
+o	Dopant type influenced performance: alkaline-earth/lanthanides better at low T; 5th/6th-period transition metals better at high T.","•	RF model accurately predicted CH? conversion (R² = 0.97, RMSE = 4.85).
+•	CO? conversion prediction also strong (R² ? 0.99).
+•	Optimal operating conditions: T > 725?°C, WHSV < 132 L·g?¹·h?¹.
+•	Catalyst screening identified promising dopants for different temperature regimes.
+•	H?/CO ratio predictions aligned with syngas stoichiometry targets (1.5–2.0).","•	First ML study to jointly predict catalyst activity, selectivity, and stability for biogas reforming.
+•	RF model provided high accuracy and robust interpretability.
+•	SHAP, ICE, PDP analyses offered mechanistic insights into catalyst behavior.
+•	Enabled rapid screening of dopants without exhaustive experiments.","•	Dataset compiled from literature; experimental variability may affect generalizability.
+•	Focused only on Ni-based catalysts; other catalyst families not explored.
+•	Long-term industrial-scale stability not validated.
+•	MLP underperformed, suggesting need for more advanced neural architectures.","•	Need for pilot-scale validation of ML-screened catalysts.
+•	Expansion to non-Ni catalyst systems for broader applicability.
+•	Integration of DFT descriptors + ML for mechanistic accuracy.
+•	Techno-economic analysis of catalyst deployment in industrial BR.
+•	Exploration of hybrid ML + physics-informed models for deeper interpretability."
+28,"•	Title: Turning waste into energy: Application of machine learning and explainable artificial intelligence for determining key factors in wastewater-to-hydrogen conversion
+ 
+•	Authors: Anh Tuan Hoang, Wei-Hsin Chen, M. Olga Guerrero-Pérez, Enrique Rodríguez-Castellón, María Cruz López-Escalante, Van Nhanh Nguyen, Prabhu Paramasivam, Xuan Phuong Nguyen, Thanh Hai Truong
+ 
+•	Journal: Energy (Elsevier)
+ 
+•	Year: 2026
+ 
+•	Country/Region: Vietnam, Taiwan, Spain, India (multi-institutional collaboration)
+ 
+•	Type: Original Research / ML + Explainable AI for Dark Fermentation","•	Addresses the challenge of modeling wastewater-to-hydrogen conversion via dark fermentation.
+•	Significant because DF is nonlinear and complex, making conventional mechanistic models insufficient.
+•	Contribution: Developed Bayesian-optimized ML models (ANN, XGBoost) with SHAP explainability to predict bio-H? yield and identify key influencing factors.","•	Feedstock: Wastewater substrates (secondary data from published studies).
+•	Hydrogen production route: Dark fermentation.
+•	System scale: Dataset of 144 experimental data points.
+•	Integration: ML prediction + Bayesian hyperparameter optimization + SHAP interpretability.","•	Algorithms tested: Linear Regression (baseline), ANN, XGBoost.
+•	Hyperparameter tuning: Bayesian optimization with 5-fold cross-validation.
+•	Validation metrics: MSE, R², Taylor diagrams.
+•	Interpretability: SHAP analysis to rank feature importance.","•	Best performer: Bayesian-optimized XGBoost ?
+o	Training: MSE = 0.009, R² = 0.9875
+o	Testing: MSE = 0.001, R² = 0.9812
+•	ANN: Strong but slightly less accurate.
+•	Linear Regression: Used as baseline, weaker performance.
+•	Interpretability: SHAP identified Ni, butyrate, and ethanol as top three influential factors.","•	Bayesian-optimized XGBoost achieved highly accurate predictions of bio-H? yield.
+•	SHAP analysis revealed Ni concentration, butyrate accumulation, and ethanol levels as dominant factors.
+•	Data cleaning improved correlation reliability and reduced noise.
+•	Provided actionable insights for optimizing DF conditions in wastewater-to-H? conversion.","•	First study to combine Bayesian optimization with explainable ML for wastewater-to-H? prediction.
+•	Balanced predictive accuracy with interpretability.
+•	Identified critical biochemical parameters for DF optimization.
+•	Demonstrated robustness across diverse experimental datasets.","•	Dataset relatively small (144 points).
+•	Derived from secondary sources; no new experimental validation.
+•	Focused only on DF; excluded hybrid or electrochemical pathways.
+•	Economic feasibility not assessed.","•	Need for larger, real-time datasets from industrial wastewater systems.
+•	Exploration of hybrid ML + mechanistic models for deeper interpretability.
+•	Pilot-scale validation of AI-driven optimization.
+•	Techno-economic analysis of wastewater-to-H? conversion.
+•	Expansion to multi-process frameworks (DF + photo-fermentation + MEC)."
+29,"•	Title: Hydrogen production and pollution mitigation: Enhanced gasification of plastic waste and biomass with machine learning & storage for a sustainable future
+ 
+•	Authors: Abu Danish Aiman Bin Abu Sofian, Hooi Ren Lim, Kit Wayne Chew, Kuan Shiong Khoo, Inn Shi Tan, Zengling Ma, Pau Loke Show
+ 
+•	Journal: Environmental Pollution (Elsevier)
+ 
+•	Year: 2024
+ 
+•	Country/Region: Malaysia, Singapore, China, Taiwan, UAE (multi-institutional collaboration)
+ 
+•	Type: Review Article","•	Addresses the dual challenge of plastic waste pollution and sustainable hydrogen production.
+•	Significant because plastic waste is projected to reach 1.1 billion tons by 2050, with recycling rates below 10%.
+•	Contribution: Reviews co-gasification of biomass and plastics, highlights ML applications for process optimization, and evaluates hydrogen storage solutions.","•	Feedstocks: Biomass (straw, sludge, manure, microalgae) + mixed plastic waste (polyethylene, thermosets).
+•	Conversion route: Gasification (steam gasification, supercritical water gasification, co-gasification).
+•	Outputs: Syngas (H? + CO), hydrogen-rich gas, carbon nanotubes (in some cases).
+•	Integration: ML applied to predict syngas composition, optimize operating conditions, and improve hydrogen storage materials.","•	ML applications: Linear Regression, KNN, SVM, Decision Trees, ensemble boosting.
+•	Targets: H? yield, syngas composition, heating value.
+•	Interpretability: Statistical evaluation (MAE, MSE, variance metrics).
+•	Storage optimization: ML used to predict hydrogen storage capacity and optimize material properties.","•	Examples:
+o	Ozbas et al. ? ML models predicted H? concentration with R² ? 0.99.
+o	ML refined syngas composition prediction under varying agents (air, steam, oxygen).
+•	Purpose: Enhance yield prediction, reduce tar formation, optimize catalyst use, improve hydrogen storage.","•	Biomass gasification with steam achieved hydrogen exergy efficiency up to 44%.
+•	Microalgae-based BGCSR yielded >56 vol% hydrogen.
+•	Plastic waste gasification with Ni/CeO?-ZrO? catalysts resisted coke deposition.
+•	Co-production of carbon nanotubes + hydrogen demonstrated dual-value outputs.
+•	ML models achieved near-perfect prediction accuracy for syngas composition.","•	Comprehensive review bridging waste management, hydrogen production, ML optimization, and storage.
+•	Highlights co-gasification as a circular economy solution.
+•	Demonstrates ML’s role in both process efficiency and storage material optimization.
+•	Connects environmental remediation with energy sustainability.","•	Review-based; lacks new experimental validation.
+•	Economic feasibility of large-scale co-gasification still uncertain.
+•	Hydrogen storage technologies remain costly and complex.
+•	Long-term catalyst stability and scalability not fully addressed.","•	Need for pilot-scale co-gasification studies integrating plastics + biomass.
+•	Exploration of hybrid ML + mechanistic models for deeper interpretability.
+•	Life cycle assessment of environmental impacts and emissions.
+•	Development of cost-effective hydrogen storage materials.
+•	Policy frameworks for integrating waste-to-hydrogen into national energy grids."

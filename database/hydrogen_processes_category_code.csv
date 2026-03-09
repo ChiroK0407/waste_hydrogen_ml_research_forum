@@ -1,0 +1,9 @@
+Category,Code
+SCWG,1
+Gasification,2
+Fermentation,3
+Biological (Biophotolysis + Fermentation),4
+Biogas Reforming (SR + DR),5
+Multiple,6
+Biofuel (HTL; pyrolysis),7
+Other/Hybrid,8
