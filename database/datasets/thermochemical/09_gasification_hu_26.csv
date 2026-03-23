@@ -1,0 +1,33 @@
+# Table 1: Simulation setup parameters.
+Parameter,Value,Parameter,Value
+Volatile (%),82,C (%),41.62
+Fixed Carbon (%),16,H (%),5.74
+Ash (%),2,O (%),50.63
+Higher heating value (MJ/kg),17.49,N (%),1.87
+Biomass mass flow rate (kg/h),3.43,S (%),0.14
+Biomass inlet temperature (K),300,Airflow rate (Nm³/h),4.92
+Air inlet temperature (K),300,Equivalence ratio,0.32
+
+# Table 2: Types of gasifying agent.
+Numbers,Mass fraction(%)
+1,O₂:N₂ (21:79)
+2,O₂:N₂ (50:50)
+3,O₂:H₂O (80:20)
+4,O₂:H₂O (50:50)
+5,O₂:H₂O (20:80)
+
+# Table 3: Characterization of four biomass materials [27,33,34].
+Biomass,Proximate analysis (wt% dry basis) Volatile,Fixed Carbon,Ash,Moisture,Ultimate Analysis (wt% dry basis) C,H,O,N,S,HHV(MJ/kg)
+WP,82,16,2,0,41.62,5.74,50.63,1.87,0.14,17.49
+WC,56.39,31.46,2.44,9.71,49.59,6.28,43.74,0.39,0,18.7
+WS,94.37,1.89,0.07,3.67,44.3,6.17,49.5,0.03,0,16.71
+FW,80.40,15.70,3.90,0,48.6,6.2,44.87,0.33,0,18.06
+
+# Table 4: Mean square error of target variables of different ML algorithms.
+ML algorithm,H₂ volume fraction,CGE
+GBR,0.000887,0.004457
+MLR,0.000731,0.005923
+KNNR,0.000866,0.006246
+RFR,0.000387,0.002969
+KRR,8.081588,0.0106573
+BLR,6.801037,0.088865

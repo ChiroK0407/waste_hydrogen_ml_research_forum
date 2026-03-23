@@ -1,0 +1,7 @@
+Reaction name,Reaction formula,Reaction type,Change with increasing temperature,Change with increasing pressure,Change with increasing feed concentration
+Steam reforming,CxHyOz + (x-z)HzO → xCO + (x-z + y/2)Hz,Endothermic,Products increase,Inhibits the reaction,Inhibits the reaction
+Water-gas shift,CO + H2O → CO2 + H2,Exothermic,Inhibits the reaction,Inhibits the reaction,Inhibits the reaction
+Methanation of CO,CO + 3H2 → CH4 + H2O,Exothermic,Inhibits the reaction,Promotes the reaction,Promotes the reaction
+Methanation of CO2,CO2 + 4H2 → CH4 + 2H2O,Exothermic,Inhibits the reaction,Promotes the reaction,Promotes the reaction
+Hydrogenation,CO + 2H2 → CH4 + 0.5O2,Exothermic,Inhibits the reaction,Promotes the reaction,Promotes the reaction
+Boudouard,2CO → C + CO2,Exothermic,Inhibits the reaction,Promotes the reaction,Promotes the reaction

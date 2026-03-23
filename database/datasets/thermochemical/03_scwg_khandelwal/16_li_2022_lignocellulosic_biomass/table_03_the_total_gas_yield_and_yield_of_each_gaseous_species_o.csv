@@ -1,0 +1,11 @@
+Biomass,Reaction time (min),Total gas yield (mmol/g),Yield of each gaseous species (mmol/g),,,
+,,,H₂,CH₄,CO,CO₂
+Cellulose,10,4.3,0.61,0.12,0.16,3.41
+Cellulose,30,4.22,0.65,0.16,0.16,3.25
+Cellulose,50,4.23,0.58,0.13,0.12,3.22
+Lignin,10,2.46,0.56,0.26,0,1.64
+Lignin,30,2.52,0.65,0.3,0,1.57
+Lignin,50,2.59,0.62,0.29,0,1.68
+Xylan,10,3.8,0.46,0.15,0.17,3.02
+Xylan,30,3.96,0.55,0.16,0.15,3.1
+Xylan,50,4.37,0.68,0.15,0.15,3.39

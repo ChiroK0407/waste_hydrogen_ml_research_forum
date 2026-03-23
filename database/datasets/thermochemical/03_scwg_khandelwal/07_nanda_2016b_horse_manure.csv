@@ -1,0 +1,90 @@
+Parameter,Horse manure,HM-400,HM-500,HM-600
+"Table 1. Proximate and ultimate analysis of horse manure feedstock and biochar (derived at 400–600 °C with 1:10 BTW ratio, 45 min and 23–25 MPa).",,,,
+Proximate analysis (wt%),,,,
+Moisture,8.4,2.6,2.3,1.9
+Ash,16.7,29.8,36.9,41.5
+Volatile matter,64.8,41.6,32.8,25.5
+Fixed carbonᵃ,10.1,26,27.8,31.1
+Ultimate analysis (wt%),,,,
+C,45.9,69.4,70.1,71.1
+H,6.4,4.6,3.4,2.7
+N,1,1.8,1.6,1.4
+S,0.1,0.04,0.04,0.05
+Oᵇ,35.7,7.4,5.2,1.7
+Atomic ratio,,,,
+H/C,1.7,0.8,0.6,0.5
+O/C,0.6,0.1,0.1,0.02
+N/C,0.02,0.6,0.1,0.02
+HHV (MJ/kg),18.8,28.4,27.6,26.9
+"Note: HM-400, HM-500 and HM-600 represent biochars generated at 400, 500 and 600 °C, respectively. The data presented here are average of triplicate measurements with standard error <3%.
+ᵃ Fixed carbon (wt%) = 100 − (moisture + volatile matter + ash).
+ᵇ Oxygen (wt%) = 100 − (carbon + hydrogen + nitrogen + sulfur + ash).",,,,
+,,,,
+Table 2. ICP-MS analysis of horse manure.,,,,
+Element,Concentration (mg/kg),,,
+Li,0.1,,,
+Na,40,,,
+Mg,266,,,
+Al,513,,,
+P,58,,,
+K,219,,,
+Ca,1311,,,
+Mn,59,,,
+Fe,309,,,
+Ni,69,,,
+Cu,14,,,
+Zn,25,,,
+Sr,8,,,
+Ba,11,,,
+Pb,2,,,
+,,,,
+Table 3. Assignments for FTIR peaks in horse manure and its biochar.,,,,
+Wavenumber (cm⁻¹),Description,,,
+"547, 552, 590, 593",C—C aromatic ring,,,
+"744, 750",C—H phenyl ring,,,
+"870, 872",C—H alkenes,,,
+958,O—H carboxylic acids,,,
+985,S—O sulphate,,,
+"1045, 1049",P—O phosphates,,,
+1120,C—N aromatic amines,,,
+1160,"C—O alcohols, ethers and esters",,,
+"1245, 1275",C—N aliphatic amines,,,
+"1509, 1560, 1577",N—O nitro compounds,,,
+1652,N—H amines,,,
+1730,C=O aldehydes and ketones,,,
+"2330, 2332, 2364",C≡N nitriles,,,
+"2847, 2914",C—H alkanes,,,
+,,,,
+Table 4. Assignments for deconvoluted Raman spectra of biochar from horse manure.,,,,
+Band,Raman shift (cm⁻¹),Description,Bond type,
+Iᵢ,1160–1220,"C—H on aromatic rings, C—C on hydroaromatic rings","sp², sp³",
+Iₛ,1230–1270,"Alkyl-aryl ether, para-aromatics, C—C structure, methyl carbon to an aromatic ring","sp², sp³",
+Iᴅ,1325–1350,"Highly ordered carbon, C—C between aromatic rings, aromatics with 6 or more fused benzene rings but less than graphite",sp²,
+Iᴄ,1430–1490,"C—H methylene or methyl, semi-circle breathing of aromatic rings, condensed benzene rings","sp², sp³",
+Iɢ*,1510–1540,"Amorphous carbon structures, aromatics with 3–5 rings",sp²,
+Iɢ,1580–1605,"C=C alkenes, graphite crystalline structures, aromatic ring quadrant breathing",sp²,
+,,,,
+"Table 5. Total gas yields, carbon conversion efficiency and lower heating value of gas products from supercritical water gasification of horse manure at 23–25 MPa.",,,,
+Horse manure,Gasification conditions,Total gas yields (mmol/g),Carbon conversion efficiency (%),Lower heating value (kJ/Nm³)
+"1:5 BTW ratio, 45 min",400 °C,4.9,12.5,382
+,500 °C,6.6,15.3,716
+,600 °C,8,17,1042
+"1:10 BTW ratio, 45 min",400 °C,5.8,14.6,335
+,500 °C,7.6,17.6,799
+,600 °C,9.9,20.3,1344
+"1:5 BTW ratio, 600 °C",15 min,6.4,14.2,824
+,30 min,6.7,14.8,909
+,45 min,8,17,1042
+"1:10 BTW ratio, 600 °C",15 min,8.2,17.3,975
+,30 min,9,19.1,1186
+,45 min,9.9,20.3,1344
+"1:10 BTW ratio, 600 °C, 45 min",1 wt% NaOH,18.1,38.1,2548
+,1.5 wt% NaOH,18.9,39.9,2809
+,2 wt% NaOH,20.1,42.4,3074
+,1 wt% Na₂CO₃,15.1,33.2,2119
+,1.5 wt% Na₂CO₃,19.1,40.1,2725
+,2 wt% Na₂CO₃,20.8,43.1,2920
+,1 wt% K₂CO₃,16.8,35.4,2293
+,1.5 wt% K₂CO₃,18,37.2,2490
+,2 wt% K₂CO₃,18.8,38,2604
+Note: The data presented here are average of triplicate measurements with standard error <3%.,,,,

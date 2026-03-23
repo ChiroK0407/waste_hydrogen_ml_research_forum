@@ -1,0 +1,43 @@
+Parameter,Unit,Value,Unnamed: 3
+Table 1. Analysis of food samples used for this investigation.,,,
+H2 (Hydrogen),%,9.6,
+C (Carbon),%,34.25,
+S (Sulfur),%,0.2,
+N (Nitrogen),%,2.7,
+Total solid,%,59.34,
+pH,No,4.6,
+,,,
+Table 2. Specification of the system.,,,
+Parameter,Value,,
+Hydrogen pressure P_H2,0.3 bar,,
+Oxygen pressure P_O2,0.21 bar,,
+Area of the system A,100 cm²,,
+Maximum current I_Max,33 A,,
+Stack temperature T_st,320 K,,
+Hydrogen stoichiometry S_H2,2,,
+,,,
+Table 3. Parameters and accuracy of test instruments.,,,
+Instruments,Model,Accuracy,
+DC transducer,LA 55-P/SP1,±1.9 %,
+Anemometer,AVM-03,±2 %,
+Thermocouple,K-thermocouple RS PRO,±0.5 %,
+Digital hydrogen flow meter,AMS2106,±0.7 %,
+Pressure gauge,WIKA 232.50/233.50 Bourdon Tube Pressure Gauge,±0.5 %,
+,,,
+Table 4. Comparison of the studies related to waste food processing for hydrogen.,,,
+References,Additives,Process,Conversion
+Sunyota et al. [53],Biochar,Batch reactor 60 mL volume,26 %
+Pagliaccia et al. [54],Olive husks,Batch reactor 0.3 L volume,15.8 %
+Zhang et al. [55],Lime mud,Batch reactor 270 mL volume,53 %
+Lin et al. [56],Pulp & paper sludge (PPS),Batch reactor 800 mL volume,27.6 %
+The current study,Sodium hydroxide,Batch reactor 300 mL volume,23.1 %
+,,,
+Table 5. Measured value uncertainty.,,,
+Parameters,Measured uncertainty (%),,
+Gas fraction,2.6,,
+H2,2.5,,
+HE,3.1,,
+CE,3.3,,
+H2 selectivity,2.8,,
+Total gas yield,2.2,,
+Gas yield,3.6,,

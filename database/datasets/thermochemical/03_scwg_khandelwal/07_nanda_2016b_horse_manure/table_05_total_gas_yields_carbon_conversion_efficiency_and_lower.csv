@@ -1,0 +1,23 @@
+Horse manure,Gasification conditions,Total gas yields (mmol/g),Carbon conversion efficiency (%),Lower heating value (kJ/Nm³)
+"1:5 BTW ratio, 45 min",400 °C,4.9,12.5,382
+,500 °C,6.6,15.3,716
+,600 °C,8,17,1042
+"1:10 BTW ratio, 45 min",400 °C,5.8,14.6,335
+,500 °C,7.6,17.6,799
+,600 °C,9.9,20.3,1344
+"1:5 BTW ratio, 600 °C",15 min,6.4,14.2,824
+,30 min,6.7,14.8,909
+,45 min,8,17,1042
+"1:10 BTW ratio, 600 °C",15 min,8.2,17.3,975
+,30 min,9,19.1,1186
+,45 min,9.9,20.3,1344
+"1:10 BTW ratio, 600 °C, 45 min",1 wt% NaOH,18.1,38.1,2548
+,1.5 wt% NaOH,18.9,39.9,2809
+,2 wt% NaOH,20.1,42.4,3074
+,1 wt% Na₂CO₃,15.1,33.2,2119
+,1.5 wt% Na₂CO₃,19.1,40.1,2725
+,2 wt% Na₂CO₃,20.8,43.1,2920
+,1 wt% K₂CO₃,16.8,35.4,2293
+,1.5 wt% K₂CO₃,18,37.2,2490
+,2 wt% K₂CO₃,18.8,38,2604
+Note: The data presented here are average of triplicate measurements with standard error <3%.,,,,

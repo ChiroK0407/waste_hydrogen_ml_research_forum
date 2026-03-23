@@ -1,0 +1,9 @@
+Item,Value,Item,Value
+Biomass feed rate (kg/h),1000.00,Energy input from waste plastics (kW),20341.80
+Energy input from biomass (kW),11606.56,DME chemical energy output (kW),13443.04
+Power energy input (kW),5587.38,H₂ chemical energy output (kW),6261.48
+P1 (kW),0.73,Output power (kW),20143.91
+P2 (kW),14.10,TUR-1 (kW),123.65
+DME production (kg/h),1093.74,TUR-2 (kW),54.83
+H₂ production (kg/h),187.987,TUR-3 (kW),413.47
+Feed rate of steam (kg/h),1000.00,η_therm (%),54.05

@@ -1,0 +1,18 @@
+Feedstock,Temp (°C),Pressure (MPa),Feedstock concentration,Residence time,Catalyst,Ref
+Two components,,,,,,
+Cellulose/lignin,300–600,9–41,0.45 M,60 min,K₂CO₃,[99]
+Xylose/phenol,750,25,20 g/L,5.3–27 s,/,[96]
+Glucose/glycine,663,24,4 wt%,128 s,Na₂CO₃,[126]
+Glycerol/glucose,380,23,3 wt%,15 min,Raney nickel; Ni/Al₂O₃; Ru/C; Ru/Al₂O₃,[218]
+Glycerol/glycine,380,23,3 wt%,15 min,Raney nickel; Ni/Al₂O₃; Ru/C; Ru/Al₂O₃,[218]
+Phenol/alanine,400,22–26,5 wt%,30 min,/,[127]
+Formaldehyde/formic acid,400,25,4.5 wt%,30 min,/,[219]
+Phenol/cyclohexanol,500–750,30,2 wt%,30–50 min,Ru/C,[220]
+Glycerol/methanol,450–600,23–25,10–25 wt%,45 s,KOH; NaOH; K₂CO₃,[221]
+Glucose/phenol,400,25,5 wt%,10–240 s,/,[83]
+Glucose/phenol,400,25,5 wt%,10–240 s,/,[222]
+Phenol/acetic acid,550,25,5 wt%,30–55 s,NaOH,[223]
+Glucose/phenol,400–550,25,2 wt%,0.1624 min,KHCO₃,[224]
+Three components,,,,,,
+Glycine/glutamic acid/glucose,663,24,4 wt%,128 s,Na₂CO₃,[126]
+Phenol/naphthalene/acetic acid,550,25,0.5-3.5 wt%,20 s,/,[129]

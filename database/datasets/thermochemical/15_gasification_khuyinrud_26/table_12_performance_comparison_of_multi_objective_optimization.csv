@@ -1,0 +1,5 @@
+Algorithm,HVₙ,IGD,ε,Spread,Remarks
+GWO,20.69,0.0086,0.0739,0.97,Closest to reference front; balanced and stable
+GA,25.59,0.04563,0.2031,2.078,Highest coverage but poor uniformity
+NSGA-II,9.72,0.0734,0.1900,0.89,Moderate diversity; weakest convergence
+MOPSO,15.27,0.0146,0.0361,0.79,Most uniform distribution; strong dominance

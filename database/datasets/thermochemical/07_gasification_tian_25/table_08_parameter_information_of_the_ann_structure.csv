@@ -1,0 +1,4 @@
+Parameter,Specification,,
+Number of hidden layers,3,,
+Number of neurons in each hidden layer,13,13,13
+Learning algorithm,L-BFGS,,

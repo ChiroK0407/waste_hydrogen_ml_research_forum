@@ -1,0 +1,17 @@
+Feed concentration: 30 wt%; reaction time: 30 min,Petcoke (350 °C),4.23,936,30
+,Petcoke (450 °C),4.18,858,38
+,Petcoke (550 °C),4.44,809,54
+,Petcoke (650 °C),4.53,748,61
+,Asphaltene (650 °C),5.4,953,62
+Temperature: 650 °C; reaction time: 30 min,Petcoke (15 wt%),4.83,577,81
+,Petcoke (20 wt%),4.53,641,73
+,Petcoke (25 wt%),4.48,680,70
+,Petcoke (30 wt%),4.53,748,61
+,Asphaltene (15 wt%),5.45,642,89
+Temperature: 650 °C; feed concentration: 15 wt%,Petcoke (15 min),3.01,493,27
+,Petcoke (30 min),4.83,577,81
+,Petcoke (45 min),5.35,735,81
+,Petcoke (60 min),5.53,698,87
+,Asphaltene (60 min),6.67,731,89
+Temperature: 650 °C; feed concentration: 15 wt%; reaction time: 60 min,Petcoke + 5 wt% Ni/AC,8.04,1158,59
+,Asphaltene + 5 wt% Ni/AC,11.97,2084,53

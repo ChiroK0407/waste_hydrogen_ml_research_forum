@@ -1,0 +1,64 @@
+Table 1: Variable descriptions and statistical summary.,,,,
+Variable,Name,Value,Mean,S.D.
+Input features,,,,
+Biomass feedstock characteristics (vol% dry basis),,,,
+Moisture,MB,6.38-10.00,8.24,3.47
+Fixed carbon,FCB,12.20-15.38,14.41,6.80
+Volatile matter,VMB,73.16-84.14,77.41,12.16
+Ash (Proximate analysis),AB,0.18-6.30,2.32,7.63
+Ash (Ultimate analysis),AB2,0.00-6.83,2.31,9.14
+Carbon content,CB,43.80-50.50,48.14,6.89
+Hydrogen content,HB,5.90-6.20,6.06,0.58
+Nitrogen content,NB,0.07-0.44,0.27,3.90
+Sulfur content,SB,0.02-0.20,0.10,0.50
+Oxygen content,OB,42.64-43.71,43.12,5.55
+Algae feedstock characteristics (vol% dry basis),,,,
+Moisture,MA,0.00-8.00,4.90,4.29
+Fixed carbon,FCA,8.00-27.40,15.27,10.58
+Volatile matter,VMA,51.50-84.30,71.57,17.59
+Ash (Proximate analysis),AA,6.40-21.10,10.93,8.82
+Ash (Ultimate analysis),AA2,0.00-23.60,10.00,12.20
+Carbon content,CA,33.50-52.10,43.27,9.35
+Hydrogen content,HA,4.80-6.50,5.70,0.85
+Nitrogen content,NA,0.00-9.95,4.12,5.19
+Sulfur content,SA,0.00-1.30,0.62,0.65
+Oxygen content,OA,30.90-43.30,36.20,6.39
+Operating conditions,,,,
+Gasification temperature (°C),GT,450-1250,851.89,242.85
+Steam to fuel ratio (kg/h:kg/h),S/F,0.005-0.5,0.27,0.17
+Blend in feed (%),BF,5-95,49.38,27.50
+Equivalence ratio,ER,0.1-0.5,0.30,0.14
+Output targets,,,,
+H2 yield (%),HY,1.03-9.87,5.14,1.72
+Syngas lower heating value (MJ/Nm³),LHV syn,11.34-21.48,12.67,2.04
+
+Table 2: Model validation: Comparison of simulated and experimental syngas composition.,,,,
+Syngas composition (%vol),LDPE blends in feed 15% - Simulation,LDPE blends in feed 15% - Fazil et al. (2022),LDPE blends in feed 20% - Simulation,LDPE blends in feed 20% - Fazil et al. (2022)
+H2,13.60,13.30,14.88,13.29
+CO,14.22,17.04,15.73,18.65
+CO2,10.12,12.56,9.70,11.63
+CH4,0.00,2.24,0.00,2.03
+
+Table 3: Cross-validation prediction accuracy of six ML algorithms for H2 yield and LHV syngas.,,,,,,,
+Model,Data,H2 yield - R² (S.D.),H2 yield - RMSE (S.D.),H2 yield - MAE (S.D.),LHV syngas - R² (S.D.),LHV syngas - RMSE (S.D.),LHV syngas - MAE (S.D.)
+KNN,Train,0.98925 (0.00129),0.17688 (0.01108),0.04143 (0.00196),0.95014 (0.00246),0.46098 (0.01057),0.25789 (0.00414)
+KNN,Test,0.85462 (0.03449),0.64576 (0.07135),0.39109 (0.03459),0.94818 (0.01265),0.46397 (0.05495),0.26270 (0.02198)
+SVR,Train,0.86305 (0.00516),0.63242 (0.01153),0.33030 (0.00539),0.95140 (0.00133),0.45522 (0.00597),0.25641 (0.00254)
+SVR,Test,0.84643 (0.05523),0.65827 (0.09663),0.35975 (0.05136),0.95030 (0.01189),0.45443 (0.05216),0.25779 (0.02322)
+XGB,Train,0.97121 (0.00638),0.28741 (0.03965),0.16287 (0.03111),0.95303 (0.00125),0.44753 (0.00585),0.25296 (0.00257)
+XGB,Test,0.96190 (0.01513),0.32749 (0.06788),0.18664 (0.02241),0.95080 (0.01201),0.45188 (0.05361),0.25627 (0.02256)
+RF,Train,0.98335 (0.00233),0.22007 (0.01566),0.10054 (0.01096),0.95303 (0.00125),0.44754 (0.00584),0.25291 (0.00260)
+RF,Test,0.96158 (0.01844),0.32542 (0.08417),0.16270 (0.02166),0.95088 (0.01189),0.45152 (0.05307),0.25609 (0.02239)
+ANN,Train,0.90639 (0.00703),0.50840 (0.04093),0.31350 (0.03209),0.95302 (0.00125),0.44757 (0.00585),0.25301 (0.00261)
+ANN,Test,0.90015 (0.01686),0.52579 (0.06680),0.33037 (0.01712),0.95078 (0.01202),0.45193 (0.05364),0.25628 (0.02257)
+DT,Train,0.98102 (0.00703),0.23187 (0.04093),0.10450 (0.03209),0.95302 (0.00125),0.44757 (0.00585),0.25301 (0.00261)
+DT,Test,0.94517 (0.01686),0.39568 (0.06680),0.19445 (0.01712),0.95078 (0.01202),0.45193 (0.05364),0.25628 (0.02257)
+
+Table S1: Proximate and ultimate analysis characteristics of biomass and algae feedstocks
+Sample,%M,%FC,%VM,%A,%A,C,H,N,Cl,S,O
+Palm empty fruit bunch [1],8.34,12.2,73.16,6.3,6.83,43.8,6.2,0.44,0,0.09,42.64
+Pellet pine wood [2],10,14.85,74.94,0.18,0.1,50.5,5.9,0.3,0,0.2,43
+Fir pellet [3],6.38,15.38,84.14,0.48,0,50.12,6.08,0.07,0,0.02,43.71
+Chlorella vulgaris (C. vulgaris) [4],8,10.4,84.3,5.3,0,52.1,6.5,9.95,0,0.55,30.9
+Nannochloropsis oculata (N.oculata) [5],6.7,8,78.9,6.4,6.4,44.5,5.8,0,0,0,43.3
+Fucus serratus (F.serratus) [5],0,27.4,51.5,21.1,23.6,33.5,4.8,2.4,0,1.3,34.4

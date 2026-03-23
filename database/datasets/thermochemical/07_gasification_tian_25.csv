@@ -1,0 +1,125 @@
+# Table 1: Results of approximate and final analysis for biomass (dry basis, wt.%).
+Name,MC,FC,VM,AC,C,H,N,S,O,Ref.
+Chlorella vulgaris,8.00,10.40,84.30,5.30,52.10,6.50,9.95,0.55,30.90,[16]
+Barley Straw,11.50,18.50,76.20,5.30,46.78,5.87,0.66,0.10,41.29,[17]
+Pistachio Shells,7.54,16.95,81.64,1.41,50.20,6.32,0.69,0.22,41.16,[18]
+Alfalfa Straw,9.30,15.80,78.90,5.30,47.25,5.97,2.65,0.19,38.64,[19]
+Spruce Wood,6.70,18.30,81.20,0.50,52.04,6.07,0.29,0.09,40.99,[20]
+Groundnut Shell,7.90,22.70,79.90,3.40,49.17,7.25,1.16,0.00,39.03,[21]
+Balsam Bark,8.40,20.50,72.70,2.60,52.63,6.03,0.19,0.09,38.47,[18]
+Hemlock Wood,8.40,25.50,72.00,2.50,53.69,5.75,0.19,0.10,37.83,[22]
+Chestnut Tree,8.20,22.69,72.41,4.90,45.48,5.93,2.10,0.26,41.33,[23]
+Willow Wood,11.10,19.30,78.60,2.10,49.30,6.60,1.10,0.26,40.80,[18]
+Cotton Husk,6.90,18.20,78.40,3.40,48.68,8.11,1.35,0.00,38.44,[24]
+Hazelnut Shell,13.00,27.31,71.94,0.75,50.73,5.42,1.38,0.00,40.97,[25]
+Olive Pomace,3.38,19.88,78.04,2.08,54.70,6.07,0.48,0.10,36.57,[26]
+Walnut Shell,8.70,18.70,79.00,2.30,48.50,6.02,1.36,0.09,41.57,[18]
+Almond Hulls,6.52,20.87,73.80,6.13,47.51,6.01,1.12,0.09,39.15,[19]
+Cacao,9.33,19.82,71.92,8.26,48.24,9.18,2.79,0.06,31.47,[23]
+Walnut Shell,8.70,18.70,79.00,2.30,48.59,6.13,0.21,0.10,45.37,[18]
+Wheat Straw,10.10,18.10,74.80,7.10,45.89,5.67,0.65,0.18,40.50,[27]
+Rice husks,10.60,19.20,62.80,18.00,40.42,5.00,0.65,0.08,35.83,[28]
+Maple bark,8.4,19.4,76.6,4.00,49.92,5.95,0.38,0.10,39.65,[16]
+
+# Table 2: Results of approximate and final analysis for waste plastics (dry basis, wt.%).
+Name,MC,FC,VM,AC,C,H,N,S,O,Ref.
+Polyethylene,0.02,0.00,99.40,0.60,85.00,14.20,0.00,0.20,0.00,[29]
+Polypropylene,0.08,0.00,99.63,0.29,84.68,14.68,0.04,0.23,0.00,[29]
+Polystyrene,0.24,0.00,99.58,0.18,90.10,16.81,0.00,0.08,0.00,[30]
+
+# Table 3: Kinetic parameters of methanol synthesis reaction.
+Reaction,Expression K₁,K₁,Expression K₂,K₂
+Eq. (21),K_CO [Pa⁻¹],8.3965 × 10⁻¹¹ exp(11827/RT),K_CO / K_A [Pa],3.5408 × 10¹² exp(19832/RT)
+Eq. (22),K_CO₂ [Pa⁻¹],1.7214 × 10⁻¹⁶ exp(81287/RT),K_CO₂ / K_B [Pa⁻¹],6.1221 × 10⁻¹⁹ exp(125226/RT)
+Eq. (23),K_CO₂ [Pa⁻¹],1.7214 × 10⁻¹⁶ exp(81287/RT),K_CO₂ / K_C [Pa],2.5813 × 10⁻¹⁰ exp(26788/RT)
+
+# Table 4: Kinetic parameters of methanol dehydration to DME reaction.
+Parameter,Expression
+k₄,5.35 × 10¹³ exp(-17280/T)
+K_CH₃OH,5.39 × 10⁻⁴ exp(8487/T)
+K_H₂O,8.47 × 10⁻² exp(5070/T)
+ln K₄,2037.6/T-1.533
+
+# Table 5: Comparison of the polygeneration system with other experimental data.
+Feedstock,T (°C),H₂ (%),CO (%),CO₂ (%),CH₄ (%),Literature
+Biomass + Polyethylene,800,63.54,29.89,5.57,0.60,This study
+Biomass + Polyethylene,800,63,30,6,0.3,[36]
+Polyethylene + Polypropylene,800,62,30,7,0.8,[37]
+
+# Table 6: BPCGL decision variables and ranges of values for the system.
+Index,Decision-making variables,Lower limit,Upper limit
+1,Proximate and final analysis of biomass and waste plastics,Input based on analysis provided by experiments or literature (As listed in Tables 1 and 2),-
+2,Steam feed rate (kg/h),2000,6000
+3,Waste plastic flow,0,1000
+4,PYR temperature (°C),300,500
+5,FR temperature (°C),600,1000
+6,AR temperature (°C),700,1000
+
+# Table 7: Upper and lower limit of ANN hyperparameters.
+Hyperparameter,Lower limit,Upper limit
+Hidden layers,1,3
+Number of neurons,9,14
+
+# Table 8: Parameter information of the ANN structure.
+Parameter,Specification
+Number of hidden layers,3
+Number of neurons in each hidden layer,13,13,13
+Learning algorithm,L-BFGS
+
+# Table 9: Model accuracy for different combinations.
+Type,R²
+Woody biomass + Waste plastics,0.998
+Pesticide residues biomass + Waste plastics,0.994
+Aquatic biomass + Waste plastics,0.997
+
+# Table 10: Decision variables of the system and the range of values.
+Operational variables,Lower limit,Upper limit
+Steam feed rate (kg/h),2000.00,6000.00
+SPL Diversion ratio,0.00,1.00
+DCMP1 Temperature (°C),200.00,400.00
+DCMP2 Temperature (°C),200.00,400.00
+PYR Temperature (°C),300.00,500.00
+FR Temperature (°C),600.00,1000.00
+AR Temperature (°C),700.00,1000.00
+Reflux ratio of C1 (kmol/kmol),1.20,5
+Reflux ratio of C2 (kmol/kmol),1.20,5
+Reflux ratio of C3 (kmol/kmol),1.20,5
+
+# Table 11: Energy performance of the system.
+Item,Value,Item,Value
+Biomass feed rate (kg/h),1000.00,Energy input from waste plastics (kW),20341.80
+Energy input from biomass (kW),11606.56,DME chemical energy output (kW),13443.04
+Power energy input (kW),5587.38,H₂ chemical energy output (kW),6261.48
+P1 (kW),0.73,Output power (kW),20143.91
+P2 (kW),14.10,TUR-1 (kW),123.65
+DME production (kg/h),1093.74,TUR-2 (kW),54.83
+H₂ production (kg/h),187.987,TUR-3 (kW),413.47
+Feed rate of steam (kg/h),1000.00,η_therm (%),54.05
+
+# Table 12: Operational parameters and their corresponding values at optimal solution (point B).
+Operational Variables,Operating Parameter
+Water steam flow (kg/h),4328.58
+SPL Diversion ratio,0.70
+DCMP1 Temperature (°C),292.65
+DCMP2 Temperature (°C),290.34
+PYR Temperature (°C),425.07
+FR Temperature (°C),788.73
+AR Temperature (°C),912.30
+Reflux ratio of C1 (kmol/kmol),3.63
+Reflux ratio of C2 (kmol/kmol),2.76
+Reflux ratio of C3 (kmol/kmol),3.69
+
+# Table 13: Operating parameters for optimal point B and optimal operating point in steady state simulation.
+Optimization goals,Optimal solution point B,Best point in the simulation,Relative deviation (%)
+Energy consumption (kW),3.746 × 10⁴,3.887 × 10⁴,3.59
+H₂ molar fraction (%),66.311,63.540,4.36
+
+# Table 14: Parameters of products corresponding to points A, B and C.
+Name,A,B,C
+MF_DME (%),99.98,99.96,99.93
+ML_DME (kmol/h),21.76,21.65,21.59
+
+# Table 15: Comparison of optimal solutions of different optimization algorithms.
+Optimization goals,NSGA-II,AGE-MOEA,SMS-EMOA
+Energy consumption (kW),37463,37520,37695
+H₂ molar fraction (%),66.311,66.339,66.247

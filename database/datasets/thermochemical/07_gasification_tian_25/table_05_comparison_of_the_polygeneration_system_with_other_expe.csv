@@ -1,0 +1,4 @@
+Feedstock,T (°C),H₂ (%),CO (%),CO₂ (%),CH₄ (%),Literature
+Biomass + Polyethylene,800,63.54,29.89,5.57,0.60,This study
+Biomass + Polyethylene,800,63,30,6,0.3,[36]
+Polyethylene + Polypropylene,800,62,30,7,0.8,[37]

@@ -1,0 +1,6 @@
+Band,Raman shift (cm⁻¹),Description
+Iᵢ,1180,"C—C on hydro-aromatic rings, C—H on aromatic rings"
+Iₛ,1243,"Alkyl-aryl ether, para-aromatics, C—C structure, methyl carbon to an aromatic ring"
+Iᴅ,"1362, 1368, 1373","Highly ordered carbon, C—C between aromatic rings, aromatics with six or more fused benzene rings but less than graphite"
+Iɢ*,"1540, 1555, 1558","Amorphous carbon structures, aromatics with 3–5 rings"
+Iɢ,"1594, 1595, 1597","C=C alkenes, graphite crystalline structures, aromatic ring quadrant breathing"

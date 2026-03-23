@@ -1,0 +1,74 @@
+Gasification conditions,Feedstock / Temperature / Time / Concentration,Total gas yield (mmol/g),H₂ selectivity (%),LHV (kJ/Nm³),Unnamed: 5,Unnamed: 6,Unnamed: 7
+"Table 1. Total gas yield, hydrogen selectivity and lower heating value of gaseous products from SCWG of canola residues.",,,,,,,
+"500 °C, 40 min, 20 wt% and 23–25 MPa",Canola hull,20.6,22.1,3506,,,
+,Canola meal,24.8,24.9,3663,,,
+,Canola straw,25.4,27.9,3476,,,
+"Canola straw (40 min, 20 wt% and 23–25 MPa)",350 °C,13.4,20.3,1152,,,
+,400 °C,16.2,25.9,1609,,,
+,450 °C,22,27.5,2866,,,
+,500 °C,25.4,27.9,3476,,,
+"Canola straw (500 °C, 20 wt% and 23–25 MPa)",20 min,18.2,23.1,2541,,,
+,40 min,25.7,27.5,3520,,,
+,60 min,27.3,27.1,3566,,,
+,80 min,26.4,26.6,3638,,,
+"Canola straw (500 °C, 60 min and 23–25 MPa)",10 wt%,29.7,27.4,4271,,,
+,15 wt%,28.4,27.2,3964,,,
+,20 wt%,27.3,27.1,3566,,,
+,25 wt%,22,23.7,3029,,,
+,,,,,,,
+Table 2. Characterization of canola residues and hydrochar samples.,,,,,,,
+Content,Canola straw,Canola hull,Canola meal,Canola straw hydrochar (350 °C),Canola straw hydrochar (500 °C),Canola hull hydrochar (500 °C),Canola meal hydrochar (500 °C)
+Carbon (wt%),46.3,43.8,50.6,69.4,71.1,50.9,54.3
+Hydrogen (wt%),6.8,6,5.5,4.7,3.3,2.8,3.1
+Nitrogen (wt%),0.9,1.3,6.4,0.7,0.9,0.5,4
+Sulfur (wt%),0.4,0.8,1,0.8,0.9,3.2,0.6
+Oxygen (wt%),45.6,48.1,36.5,24.4,23.9,42.6,38
+HHV (MJ/kg),18.9,18.1,20.5,24.5,24,17.9,19
+Cellulose (wt%),46.2,41,7.9,–,–,–,–
+Hemicellulose (wt%),29.2,16.4,3.6,–,–,–,–
+Lignin (wt%),14.2,10,9,–,–,–,–
+Crude protein (wt%),–,–,34,–,–,–,–
+Note: Oxygen content was calculated on an ash-free basis. Hydrochar samples were generated from SCWG with 20 wt% feed concentration in 40 min under 23–25 MPa pressure.,,,,,,,
+,,,,,,,
+Table 3. Summary of recent studies of SCWG of agricultural crop residues.,,,,,,,
+Feedstocks,Process conditions,Main findings,Reference,,,,
+"Almond shells, walnut shells and wheat straw","• Temperature: 440 °C
+• Pressure: 25 MPa
+• Reaction time: 5–30 min
+• Feedstock concentration: 1 wt%
+• Optimized: 440 °C, 10 min and 1 wt%","• Wheat straw demonstrated the highest H₂ yield of 6.5 mmol/g followed by walnut shells and almond shells.
+• The highest H₂ yield from wheat straw was due to its highest cellulose content (40%) followed by walnut shell (36%) and almond shell (31%).
+• Further optimization of reaction time improved the H₂ yield from wheat straw to 7.3 mmol/g.",Safari et al. [39],,,,
+"Barley straw pellets, canola hull pellets and oat hull pellets","• Temperature: 300–500 °C
+• Pressure: 22–25 MPa
+• Reaction time: 20–60 min
+• Biomass/water ratio: 1:5–1:15
+• Reactor type: Batch
+• Optimized: 500 °C, 60 min and 1:10","• High temperature, reaction time and biomass/water ratio were beneficial for total gas yield and H₂ yield from SCWG of canola hull pellets.
+• The highest H₂ selectivity and total gas yields of 52% and 7.3 mmol/g were obtained at the optimized condition from SCWG of canola hull pellets.
+• SCWG of canola hull pellets demonstrated the highest H₂ and total gas yields.",Sarker et al. [40],,,,
+"Canola hull, canola meal and canola straw","• Temperature: 350–500 °C
+• Pressure: 23–25 MPa
+• Reaction time: 20–80 min
+• Feedstock concentration: 10–25 wt%
+• Reactor type: Batch
+• Optimum: 500 °C, 60 min and 10 wt%","• SCWG of canola straw demonstrated the highest H₂ and total gas yields among all the canola residues due to its highest cellulose and hemicellulose contents.
+• An increase in temperature and reaction time increased the gaseous yield, however, an increase in feedstock concentration decreased the gas yields.
+• The highest H₂ yield and total gas yield of 8.1 mmol/g and 29.7 mmol/g, respectively were obtained at 500 °C, 23–25 MPa, 60 min and 10 wt% feedstock concentration.",This study,,,,
+Canola meal and low-density polyethylene (LDPE),"• Temperature: 375–525 °C
+• Pressure: 22–25 MPa
+• Reaction time: 15–60 min
+• Biomass/water ratio: 1:10
+• Catalyst: WO₃–TiO₂, KOH, TiO₂, ZrO₂ and WO₃–ZrO₂
+• Reactor type: Batch
+• Optimum: 525 °C, 1:10 and 60 min","• An increase in temperature and reaction time for SCWG of canola meal increased the total gas yields and H₂ yield.
+• Co-gasification of canola meal with LDPE demonstrated synergistic behavior on gas yields.
+• The highest total gas yield of 17.9 mmol/g and H₂ yield of 8.1 mmol/g were obtained from non-catalytic SCWG at optimal conditions with canola meal and LDPE blending ratio of 1:1.
+• In catalytic SCWG, WO₃–TiO₂ improved H₂ yield to 18.5 mmol/g.",Nanda et al. [41],,,,
+Food waste,"• Temperature: 420–480 °C
+• Pressure: 26–30 MPa
+• Reaction time: 40 min
+• Feedstock concentration: 8 wt%
+• Optimum: 480 °C, 40 min and 8 wt%","• H₂ yield and total gas yields increased from 2.3 mmol/g and 5.2 mmol/g, respectively at 420 °C to 4.9 mmol/g and 12.7 mmol/g at 480 °C.
+• The increase in gas yields was due to enhancement in endothermic reforming reaction at high temperatures.
+• The use of 6% La-promoted Ni/Al₂O₃ catalysts improved H₂ yield to 8 mmol/g.",Su et al. [42],,,,

@@ -1,0 +1,5 @@
+Parameter,Expression
+k₄,5.35 × 10¹³ exp(-17280/T)
+K_CH₃OH,5.39 × 10⁻⁴ exp(8487/T)
+K_H₂O,8.47 × 10⁻² exp(5070/T)
+ln K₄,2037.6/T-1.533

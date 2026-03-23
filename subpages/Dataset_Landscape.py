@@ -1,3 +1,5 @@
+# Dataset_Landscape.py
+
 import streamlit as st
 import pandas as pd
 
@@ -10,11 +12,29 @@ def show_dataset_landscape(df: pd.DataFrame):
     """)
 
     # --- Prepare table ---
-    table_df = df[['Journal', 'Dataset_Size_Numeric']].copy()
+    table_df = df[['Serial', 'Title', 'Author', 'Country_Region', 'Journal', 'Dataset_Size_Numeric', 'Drive_Link']].copy()
     table_df = table_df.dropna(subset=['Dataset_Size_Numeric'])
     table_df = table_df.sort_values(by='Dataset_Size_Numeric', ascending=False)
+    table_df = table_df.rename(columns={
+        'Dataset_Size_Numeric': 'Dataset Size',
+        'Drive_Link':           'Paper / Dataset',
+    })
 
-    st.dataframe(table_df, width='stretch')
+    st.dataframe(
+        table_df,
+        width='stretch',
+        column_config={
+            'Dataset Size': st.column_config.NumberColumn(
+                format='%d samples',
+                help='Number of datapoints reported in the paper',
+            ),
+            'Paper / Dataset': st.column_config.LinkColumn(
+                display_text='🔗 Open',
+                help='Opens the paper and its dataset in Google Drive',
+            ),
+        },
+        hide_index=True,
+    )
 
     st.caption("""
     **Interpretation:**  

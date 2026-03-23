@@ -1,0 +1,4 @@
+Reaction,Expression K₁,K₁,Expression K₂,K₂
+Eq. (21),K_CO [Pa⁻¹],8.3965 × 10⁻¹¹ exp(11827/RT),K_CO / K_A [Pa],3.5408 × 10¹² exp(19832/RT)
+Eq. (22),K_CO₂ [Pa⁻¹],1.7214 × 10⁻¹⁶ exp(81287/RT),K_CO₂ / K_B [Pa⁻¹],6.1221 × 10⁻¹⁹ exp(125226/RT)
+Eq. (23),K_CO₂ [Pa⁻¹],1.7214 × 10⁻¹⁶ exp(81287/RT),K_CO₂ / K_C [Pa],2.5813 × 10⁻¹⁰ exp(26788/RT)

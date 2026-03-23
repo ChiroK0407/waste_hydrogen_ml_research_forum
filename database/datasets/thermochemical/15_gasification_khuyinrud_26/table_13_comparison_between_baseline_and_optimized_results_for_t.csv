@@ -1,0 +1,9 @@
+Performance criteria,Baseline,Optimal point,Difference
+Energy efficiency (%),35.0,49.5,+41.5%
+Exergy efficiency (%),39.9,53.6,+34.4%
+Methane production rate (kg/day),296,364,+23.0%
+Hydrogen production rate (kg/day),131.6,162,+23.0%
+Oxygen production rate (kg/day),2106,2589,+23.0%
+Heating load (kW),1310,1695,+29.1%
+Net power production rate (kW),3510,3270,-6.9%
+Total exergy destruction rate (kW),17800,17550,-1.4%

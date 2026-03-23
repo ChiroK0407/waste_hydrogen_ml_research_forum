@@ -1,0 +1,7 @@
+Index,Decision-making variables,Lower limit,Upper limit
+1,Proximate and final analysis of biomass and waste plastics,Input based on analysis provided by experiments or literature (As listed in Tables 1 and 2),-
+2,Steam feed rate (kg/h),2000,6000
+3,Waste plastic flow,0,1000
+4,PYR temperature (°C),300,500
+5,FR temperature (°C),600,1000
+6,AR temperature (°C),700,1000

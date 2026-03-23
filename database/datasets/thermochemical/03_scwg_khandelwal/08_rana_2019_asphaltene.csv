@@ -1,0 +1,42 @@
+Gasification conditions,Feedstock / Catalyst,Total gas yields (mmol/g),Lower heating value (kJ/Nm³),Hydrogen selectivity (%),Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10
+"Table 1. Total gas yields, lower heating value and hydrogen selectivity of gas products from hydrothermal gasification of petcoke and asphaltene at 23–25 MPa.",,,,,,,,,,
+Feed concentration: 30 wt%; reaction time: 30 min,Petcoke (350 °C),4.23,936,30,,,,,,
+,Petcoke (450 °C),4.18,858,38,,,,,,
+,Petcoke (550 °C),4.44,809,54,,,,,,
+,Petcoke (650 °C),4.53,748,61,,,,,,
+,Asphaltene (650 °C),5.4,953,62,,,,,,
+Temperature: 650 °C; reaction time: 30 min,Petcoke (15 wt%),4.83,577,81,,,,,,
+,Petcoke (20 wt%),4.53,641,73,,,,,,
+,Petcoke (25 wt%),4.48,680,70,,,,,,
+,Petcoke (30 wt%),4.53,748,61,,,,,,
+,Asphaltene (15 wt%),5.45,642,89,,,,,,
+Temperature: 650 °C; feed concentration: 15 wt%,Petcoke (15 min),3.01,493,27,,,,,,
+,Petcoke (30 min),4.83,577,81,,,,,,
+,Petcoke (45 min),5.35,735,81,,,,,,
+,Petcoke (60 min),5.53,698,87,,,,,,
+,Asphaltene (60 min),6.67,731,89,,,,,,
+Temperature: 650 °C; feed concentration: 15 wt%; reaction time: 60 min,Petcoke + 5 wt% Ni/AC,8.04,1158,59,,,,,,
+,Asphaltene + 5 wt% Ni/AC,11.97,2084,53,,,,,,
+,,,,,,,,,,
+"Table 2. Proximate analysis of petcoke, asphaltene and their chars generated from hydrothermal gasification (350–650 °C; 23–25 MPa) with 30 wt% feed concentration for 30 min.",,,,,,,,,,
+Feedstock,Moisture,Ash,Volatile matter,Fixed carbon,,,,,,
+Petcoke,5.1 ± 0.15,3.6 ± 0.12,53.8 ± 1.84,37.5 ± 1.17,,,,,,
+Petcoke char – 350 °C,4.6 ± 0.06,4.4 ± 0.1,46.9 ± 1.35,44.1 ± 1.22,,,,,,
+Petcoke char – 450 °C,4.2 ± 0.14,4.9 ± 0.14,39.2 ± 1.09,51.7 ± 1.61,,,,,,
+Petcoke char – 550 °C,3.5 ± 0.1,5.3 ± 0.13,35.1 ± 1.18,56.1 ± 1.28,,,,,,
+Petcoke char – 650 °C,3.3 ± 0.12,5.8 ± 0.12,32.8 ± 1.17,58.1 ± 1.73,,,,,,
+Asphaltene,4.4 ± 0.11,4.0 ± 0.12,60.1 ± 1.78,31.5 ± 1.04,,,,,,
+Asphaltene char – 650 °C,3.8 ± 0.13,5.4 ± 0.17,34.8 ± 1.04,56 ± 1.31,,,,,,
+"Fixed carbon was determined as the difference of moisture, volatile matter and ash.",,,,,,,,,,
+,,,,,,,,,,
+"Table 3. Ultimate analysis of petcoke, asphaltene and their chars generated from hydrothermal gasification (350–650 °C; 23–25 MPa) with 30 wt% feed concentration for 30 min.",,,,,,,,,,
+Feedstock,Organic elements (wt%),,,,,Atomic ratios,,,,HHV (MJ/kg)
+,C,H,N,S,O,H/C,O/C,N/C,S/C,
+Petcoke,74.1 ± 1.24,4.35 ± 0.13,1.61 ± 0.04,5.75 ± 0.15,10.59 ± 0.45,0.7,0.11,0.019,0.029,28.7 ± 1.16
+Petcoke char – 350 °C,77.9 ± 1.48,3.99 ± 0.05,1.63 ± 0.03,5.78 ± 0.06,6.3 ± 0.06,0.61,0.06,0.02,0.028,30.8 ± 1.01
+Petcoke char – 450 °C,79.6 ± 1.29,3.83 ± 0.11,1.65 ± 0.02,5.95 ± 0.11,4.07 ± 0.12,0.58,0.04,0.018,0.028,31.6 ± 1.04
+Petcoke char – 550 °C,80.8 ± 1.85,3.30 ± 0.14,1.7 ± 0.01,6.02 ± 0.1,2.88 ± 0.08,0.49,0.03,0.018,0.028,32.1 ± 1.25
+Petcoke char – 650 °C,81.7 ± 1.51,3.19 ± 0.08,1.71 ± 0.07,6.57 ± 0.12,1.03 ± 0.01,0.47,0.01,0.018,0.03,32.9 ± 1.54
+Asphaltene,79.6 ± 1.62,7.31 ± 0.13,1.15 ± 0.05,6.21 ± 0.09,1.7 ± 0.002,1.1,0.02,0.012,0.029,34.5 ± 1.44
+Asphaltene char – 650 °C,82.3 ± 1.65,2.89 ± 0.05,1.62 ± 0.02,7.33 ± 0.16,0.46 ± 0.03,0.42,0.004,0.017,0.033,38.1 ± 1.52
+"Oxygen was determined as the difference of carbon, hydrogen, nitrogen, sulfur and ash.",,,,,,,,,,

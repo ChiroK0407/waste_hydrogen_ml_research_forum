@@ -1,0 +1,23 @@
+Elements,"Biochar
+(T = 650 °C/SBR = 0.31)","Biochar
+(T = 750 °C/SBR = 0.47)","Biochar
+(T = 850 °C/SBR = 0.62)","Biochar
+(SCW-650 °C, 10 wt%, 60 min)"
+Essential elements (mg/g of biochar),,,,
+Na,3,5,8,4
+K,12,17,22,10
+Mg,9,12,17,7
+Ca,7,11,17,4
+P,13,13,27,13
+Fe,3,3,5,3
+Total (essential elements),47,61,96,41
+Heavy/toxic elements (mg/g of biochar),,,,
+Al,<1,<1,<1,<1
+Cr,<1,<1,1,<1
+Cu,1,<1,<1,<1
+Mn,<1,<1,<1,<1
+Mo,<1,<1,<1,<1
+Ni,<1,<1,<1,<1
+Zn,<1,<1,<1,<1
+Total (heavy elements),2.2,2.1,2.6,1.2
+¹ T: gasification temperature and SBR: steam-to-biomass ratio.,,,,

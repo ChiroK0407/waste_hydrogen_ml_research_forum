@@ -1,0 +1,61 @@
+# Table 1: Main oxidation reactions in biomass gasification [34].
+Chemical reaction,Chemical formula,Heat of reaction at standard atmospheric pressure (kJ/mol)
+Partial oxidation,C + 1/2 O₂ → CO,-123.1
+Complete oxidation (combustion),C + O₂ → CO₂,-405.9
+H₂ combustion reaction,H₂ + 1/2 O₂ → H₂O,-286.0
+CO combustion reaction,CO + 1/2 O₂ → CO₂,-282.8
+
+# Table 2: Main reduction reactions of biomass gasification [36,37].
+Chemical reaction,Chemical formula,Heat of reaction at standard atmospheric pressure (kJ/mol)
+Steam gasification reaction,C + H₂O → CO + H₂,+118.9
+Boudouard reaction,C + CO₂ → 2CO,+159.7
+Methanation reaction,C + 2H₂ → CH₄,-75
+Steam reduction reaction,C + 2H₂O → CO₂ + 2H₂,-90.2
+Water gas shift reaction,CO + H₂O → CO₂ + H₂,-45.2
+Steam reforming reaction,CH₄ + H₂O → CO + 3H₂,+206.9
+
+# Table 3: Essential elements in some machine learning based predictive biomass gasification studies
+Literature sources,Sample size (number),Importation,Exports,Model
+Elmaz et al. [38],4826,Temperature, equivalence ratio, gas concentration, fuel flow rate, and results of proximate analysis and ultimate analysis of biomass,Gas concentrations of CO, CO₂, CH₄, H₂ and high calorific value of syngas,Multinomial regression model, SVR, DL
+Yan et al. [39],166,Biomass particle size, temperature, equivalence ratio, results of proximate analysis and ultimate analysis of biomass, net height of gasifier, inner diameter of gasifier,Concentrations of CO, CO₂, CH₄, H₂,Thermodynamic model, ANN, thermodynamic-based ANN modelling
+Yang et al. [40],1855,Temperature and results of proximate analysis and ultimate analysis of biomass,Gas yield, low calorific value of syngas,ANN, SVR, multiple linear regression, DL
+Baruah et al. [41],63,Temperature and results of proximate analysis and ultimate analysis of biomass,Concentrations of CO, CO₂, CH₄, H₂,ANN
+Pandey et al. [16],67,Temperature, equivalence ratio, results of proximate analysis and ultimate analysis of biomass,Syngas yield, low calorific value of gasification products,ANN
+Mikulandric et al. [42],About 130,Fuel flow rate, air flow rate, syngas outlet temperature, gasification time,Concentrations of CO, CO₂, CH₄, H₂, gasification real-time temperature,ANN
+Puig-Arnavat et al. [43],54,Temperature, equivalence ratio, results of proximate analysis and ultimate analysis of biomass, steam to dry biomass ratio,Concentration and gas yield of CO, CO₂, CH₄, H₂,ANN
+George et al. [44],70,Temperature, equivalence ratio, results of proximate analysis and ultimate analysis of biomass,Concentration of CO, CO₂, CH₄, H₂,ANN
+Elmaz et al. [45],3500,Temperature, equivalence ratio, results of proximate analysis and ultimate analysis of biomass, high calorific value of syngas,Concentration of CO, CO₂, CH₄, H₂, temperature and low calorific value of syngas,Non-linear autoregressive neural network models with external inputs
+Tasneem et al. [46],About 100,Temperature, equivalence ratio, results of proximate analysis and ultimate analysis of biomass, fuel flow rate,Gas yield of CO, H₂, carbon supply consumption rate, carbon supply rate, solar input power, reactor efficiency,RF, random sample consistent model, autocorrelation determination model, resilient network regression model
+Xiao et al. [47],91,Fuel type, equivalence ratio, temperature,Low calorific value of syngas, low calorific value of gasification products, gas yield,ANN
+Ascher et al. [48],312,Results of proximate analysis and ultimate analysis of biomass, feedstock particle size, temperature, gasifier operating mode, equivalence ratio, catalyst, gasifier, reactor type and bed material,Low calorific value of gasification products, solid-liquid-gas yield, concentration of CO, CO₂, CH₄, H₂,RF, GBR, XGBoost, AdaBoost, SVR, ANN, Super integrated learning model
+Ren et al. [49],324,Results of proximate analysis and ultimate analysis of biomass, feedstock particle size, temperature, gasifier operating mode, equivalence ratio, catalyst, gasifier, reactor type and bed material,Concentration of CO, CO₂, CH₄, H₂, N₂,RF, GBR, XGBoost, SVR, ANN, Physical information neural network model
+Kim et al. [15],336,Lignocellulosic composition, temperature, pressure, equivalence ratio, steam-biomass ratio, surface gas flow rate,Gas concentration of CO, CO₂, CH₄, H₂, low level calorific value of gas, solid-liquid yield,DL, AdaBoost, GBR, RF
+Devasahayam et al. [50],30,Raw material particle size, raw material ratio, temperature,hydrogen production,DL, AdaBoost, GBR, RF
+Xue et al. [51],222,Results of proximate analysis and ultimate analysis of biomass, steam-biomass ratio, temperature,Concentration of CO, CO₂, CH₄, H₂, CO/H₂, low calorific value,XGBoost, linear regression model, K-nearest neighbor model, DL, RF
+Guo et al. [52],112,Results of proximate analysis and ultimate analysis of biomass, temperature, lignocellulose content, biomass particle size,Concentration of CO, CO₂, Gas CH₄, H₂,Hybrid neural network model
+Qi et al. [17],255,Results of proximate analysis and ultimate analysis of biomass, equivalence ratio, raw material mixing ratio, steam-raw material ratio,Concentration of CO, CO₂, CH₄, H₂, CₙHₘ, H₂/CO, low calorific value of gas, liquid yield, carbon conversion ratio,GBR, RF, XGBoost, histogram gradient boosting model
+Li et al. [53],492,Results of proximate analysis and ultimate analysis of biomass, temperature,Distribution of products, concentration of CO, CO₂, CH₄, H₂,Neural network model, SVR, RF, GBR
+Yucel et al. [54],3831,Results of industrial and elemental analyses of biomass, temperature, equivalence ratio, gas flow rate,Gas concentration of CO, CO₂, CH₄, H₂, high calorific value of gas,ANN, Non-linear autoregressive neural network models with external inputs
+
+# Table 4: Indicators of model evaluation and their formula used in some studies
+Assessment of indicators,Formula,Ref.
+R²,R² = 1 - [∑(y_i - ŷ_i)² / ∑(y_i - ȳ)²],[15,38-41,43-46,48-51,53,54,70]
+Adj R²,Adj R² = 1 - [(1 - R²) * (n-1)/(n-k-1)],[38,45,50]
+RMSE,RMSE = √[ (1/n) ∑(y_i - ŷ_i)² ],[15,17,38-41,43-45,48,49,51,53,70]
+NRMSE,NRMSE = RMSE / ȳ,[38,44,54]
+MAPE,MAPE = (1/n) ∑ |y_i - ŷ_i| / y_i * 100%,[39,47]
+MSE,MSE = (1/n) ∑ (y_i - ŷ_i)²,[16,40,44,50]
+MAE,MAE = (1/n) ∑ |y_i - ŷ_i|,[17,40,46]
+
+# Table 5: Summary of prediction performance by various models
+Sample size,R²,RMSE (rank),Computational efficiency,Interpretability,Ref.
+4826,"SVR: 0.713-0.915; DTR: 0.807-0.944; MLP: 0.823-0.944","SVR > DTR ≈ MLP","DTR took the shortest training time.","DTR has the best interpretability.",Elmaz et al. [38]
+1855,"ANN: 0.924; SVR: 0.876; MLR: 0.708; DTR: 0.708","DTR > MLR > SVR > ANN.","-","-","Yang et al. [40]
+166,"TE-A: 0.454; TE-B: 0.258; T-ANN-A: 0.859; T-ANN-B: 0.312","TE-A > TE-B > T-ANN-B > T-ANN-A","The coupled model T-ANN had better interpretability.","Yan et al. [39]
+3500,"Non-linear autoregressive neural network: 0.990; Polynomial regression: 0.848","Polynomial regression > Non-linear autoregressive neural network","Polynomial regression model took the shortest training time.","-",Elmaz et al. [45]
+312,"RF: 0.858; GBR: 0.900; XGBoost: 0.837; AdaBoost: 0.846; SVM: 0.557; ANN: 0.806; Super learner: 0.892","SVM > XGBoost > RF ≈ AdaBoost > Super learner ≈ GBR","The study conducted interpretability analysis on multiple models based on the global interpretation method.","Ascher et al. [48]
+324,"RF: 0.881; GBR: 0.888; XGBoost: 0.900; SVM: 0.870; ANN: 0.755; Physical information neural network model (PINN): 0.917","ANN > SVM > RF > GBR > XGBoost > PINN","PINN had the best interpretability based on the physical consistency degree method.","Ren et al. [49]
+366,"RF: 0.946; SVM: 0.814; ANN: 0.924","SVM > ANN > RF","-","-",Kim et al. [15]
+222,"LR: 0.646; KNN: 0.684; DT: 0.891; RF: 0.886; XGBoost: 0.898","LR > KNN > RF > DT > XGBoost","-","-",Xue et al. [51]
+255,"XGBoost: 0.940; GBR: 0.970; RF: 0.970; Histogram gradient boosting (HGBR): 0.960","XGBoost > RF > HGBR > GBR","-","-",Qi et al. [17]
+492,"RF: 0.85; RNN: 0.86; SVR: 0.72; GBR: 0.91","SVR > RNN > RF > GBR","-","-",Li et al. [53]

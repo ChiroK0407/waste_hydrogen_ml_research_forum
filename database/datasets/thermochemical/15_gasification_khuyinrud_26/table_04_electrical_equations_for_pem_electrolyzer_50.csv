@@ -1,0 +1,5 @@
+Term,Equation
+Nernst equation,V₀ = 1.229 - 0.00085(T_RMEM - 298)
+Anode overpotential equation,V_act_an = (RT / αF) ln(j / j₀^an)
+Cathode overpotential equation,V_act_ca = (RT / αF) ln(j / j₀^ca)
+Ohmic overpotential equation,V_ohm = J × (R_membrane)

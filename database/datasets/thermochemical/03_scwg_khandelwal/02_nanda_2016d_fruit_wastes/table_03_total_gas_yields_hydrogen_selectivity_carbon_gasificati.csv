@@ -1,0 +1,26 @@
+Feedstock (or gasification conditions),Gasification conditions (or feedstock),Total gas yields (mmol/g),Hydrogen selectivity (%),Carbon gasification efficiency (%),Lower heating value (kJ/Nm³)
+"Orange peel, 1:5 BTW ratio, 45 min",400 °C,3.12,2.5,8.9,128
+,500 °C,4.12,16.7,10.3,275
+,600 °C,5.52,19.7,13.4,530
+"Orange peel, 1:5 BTW ratio, 600 °C",15 min,3.99,28.1,7.2,494
+,30 min,4.37,26.4,9.1,508
+,45 min,5.52,19.7,13.4,530
+"1:10 BTW ratio, 600 °C, 45 min",Aloe vera rind,7.36,29.6,18.9,870
+,Banana peel,6.14,33.1,13.5,668
+,Coconut shell,7.85,37.8,13.8,759
+,Lemon peel,6.41,32,14.4,634
+,Orange peel,6.72,32.2,14.8,722
+,Pineapple peel,6.25,35.3,13.1,685
+,Sugarcane bagasse,7.04,30.8,15.4,920
+"Coconut shell, 1:10 BTW ratio, 600 °C",1 wt% K₂CO₃,10.4,38.4,18.2,1168
+,1.5 wt% K₂CO₃,12.9,39.8,22.4,1442
+,2 wt% K₂CO₃,15.2,45.8,25.3,1674
+,2 wt% NaOH,14.6,39.5,25.3,1822
+"1:10 BTW ratio, 600 °C, 45 min, 2 wt% K₂CO₃",Aloe vera rind,13.3,36.9,32.4,1411
+,Banana peel,11.5,39.2,24.3,1137
+,Coconut shell,15,45.8,25.3,1595
+,Lemon peel,11.8,38.8,25.2,1178
+,Orange peel,12.8,36.7,27.2,1289
+,Pineapple peel,12.3,37.8,25.2,1195
+,Sugarcane bagasse,14.8,41.8,29.9,1585
+Note: The data presented here are average of triplicate measurements with standard deviation <3%.,,,,,

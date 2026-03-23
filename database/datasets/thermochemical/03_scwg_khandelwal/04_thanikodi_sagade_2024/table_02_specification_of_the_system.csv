@@ -1,0 +1,7 @@
+Parameter,Value
+Hydrogen pressure P_H2,0.3 bar
+Oxygen pressure P_O2,0.21 bar
+Area of the system A,100 cm²
+Maximum current I_Max,33 A
+Stack temperature T_st,320 K
+Hydrogen stoichiometry S_H2,2

@@ -1,0 +1,10 @@
+ML Method,Advantages,Limitations
+Random Forest (RF),High accuracy with small-to-medium datasets interpretable via feature importance robust to noise and outliers,Computationally expensive for large datasets requires kernel selection expertise
+Gaussian Process,Excellent performance on small datasets provides uncertainty estimates works well with non-linear patterns,Sensitive to parameter tuning less interpretable than tree models
+Support Vector Machines (SVM/SVR),Effective in high-dimensional spaces good for non-linear regression with proper kernel choice,Requires large dataset for generalization hyperparameter tuning can be computationally heavy
+Artificial Neural Networks (ANN),Can model complex non-linear relationships adaptable to large datasets,Less interpretable than RF potential overfitting on noisy data
+Extra Trees (ET/ELT),Fast training handles complex feature interactions well,Requires careful hyperparameter tuning may overfit small datasets
+Extreme Gradient Boosting (XGB) & CatBoost,Increased data effective with heterogeneous feature types can model interactions,Limited accuracy prone to overfitting small datasets low generalization ability
+Decision Tree (DT),Simple and interpretable low computational cost,Model complexity may require detailed process knowledge
+Hybrid ML-Thermodynamic Models,Combines physics-based and data-driven accuracy correct model behavior,Model complexity may require detailed process knowledge
+Ensembled Adaboost Regressor (ELA),Enhances weak learners good predictive accuracy with feature interactions,Computationally heavy for large datasets sensitive to noisy data

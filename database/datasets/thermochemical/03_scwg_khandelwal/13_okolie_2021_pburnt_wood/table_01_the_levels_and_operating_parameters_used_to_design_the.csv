@@ -1,0 +1,5 @@
+Temperature (°C),300,400,500
+Residence time (min),15,30,45
+Feed concentration (wt%),10,15,20
+Biomass particle size (mm),A (0.13 mm),B (0.8 mm),
+Note: Not applicable (n/a) because this factor (biomass particle size) contains only two levels.,,,

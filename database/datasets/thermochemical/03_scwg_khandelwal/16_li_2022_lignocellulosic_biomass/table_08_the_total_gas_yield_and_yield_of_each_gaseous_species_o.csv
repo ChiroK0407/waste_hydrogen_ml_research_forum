@@ -1,0 +1,8 @@
+Biomass,Reaction time (min),Total gas yield (mmol/g),Yield of each gaseous species (mmol/g),,,
+,,,H₂,CH₄,CO,CO₂
+Pinewood,10,8.63,2,1.64,0.16,4.83
+Pinewood,30,8.72,2.02,1.68,0.16,4.86
+Pinewood,50,9.96,2.13,2.52,0.14,5.17
+Cornstalk,10,8.71,1.75,1.63,0.16,5.17
+Cornstalk,30,9.09,1.83,1.93,0.19,5.14
+Cornstalk,50,10.09,2.06,2.37,0.17,5.49

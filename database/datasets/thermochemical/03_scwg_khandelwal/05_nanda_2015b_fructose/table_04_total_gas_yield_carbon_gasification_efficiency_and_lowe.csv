@@ -1,0 +1,10 @@
+Catalysts,Concentration (wt%),Total gas yield (L/g),Carbon gasification efficiency (%),Lower heating value (KJ/m³)
+KOH,0,1.04 ± 0.032,88,2482
+,0.2,1.28 ± 0.037,90,2818
+,0.5,1.55 ± 0.043,93,3248
+,0.8,2.01 ± 0.062,98,3630
+NaOH,0,1.04 ± 0.032,88,2482
+,0.2,1.16 ± 0.035,91,2685
+,0.5,1.4 ± 0.043,94,3073
+,0.8,1.9 ± 0.063,97,3576
+Note: The gasification conditions involving KOH and NaOH were 700 °C and 60 s with 4 wt% fructose. The data presented here are the average of triplicate measurements with standard deviation <5%.,,,,

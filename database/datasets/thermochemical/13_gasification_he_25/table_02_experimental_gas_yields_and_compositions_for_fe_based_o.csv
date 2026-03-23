@@ -1,0 +1,16 @@
+Oxygen Carrier,,,Gas Yields (mmol/g biomass),,,,Gas Composition (%),
+OC Name,Support Type,Fe₂O₃:Support Ratio,H₂ Yield (mmol/g),CO Yield (mmol/g),CO₂ Yield (mmol/g),CH₄ Yield (mmol/g),H₂ Conc. (%),CO Conc. (%)
+Fe₁₀ (pure Fe₂O₃),None,10:0,~10,~3,~2,~1,38%,27%
+Fe₈Al₂,Al₂O₃,8:2,22.83,~7,~3,~1,44%,24%
+Fe₅Al₅,Al₂O₃,5:5,~19,~6,~3,~1,43%,25%
+Fe₂Al₈,Al₂O₃,2:8,~11,~4,~2,~1,41%,26%
+Al₁₀ (pure Al₂O₃),Al₂O₃,0:10,~5,~1,~1,~1,38%,33%
+Fe₈Zr₂,ZrO₂,8:2,17.6,~6,~2,~1,38%,27%
+Fe₅Zr₅,ZrO₂,5:5,19.81,~7,~3,~1,38%,28%
+Fe₂Zr₈,ZrO₂,2:8,14.2,~5,~2,~1,37%,28%
+Zr₁₀ (pure ZrO₂),ZrO₂,0:10,~5,~2,~1,~1,36%,36%
+Fe₈ZSM5₂,ZSM-5,8:2,16.02,~6,~2,~1,38%,27%
+Fe₅ZSM5₅,ZSM-5,5:5,~13,~4,~2,~1,34%,28%
+Fe₂ZSM5₈,ZSM-5,2:8,~11,~4,~2,~1,37%,30%
+ZSM5₁₀ (pure ZSM-5),ZSM-5,0:10,~5,~2,~1,~1,38%,33%
+"Highlighted = best performing OC (Fe₈Al₂). Values marked ~ estimated from Fig. 2 bar charts. Exact values from paper text: Fe₈Al₂ H₂=22.83 mmol/g (44%), Fe₈Zr₂ H₂=17.6 mmol/g (38.4%), Fe₈ZSM5₂ H₂=16.02 mmol/g (38.3%). OC naming: FexSupporty where x,y = mass fractions of Fe₂O₃ and support.",,,,,,,,

@@ -1,0 +1,21 @@
+Category,Subcategory,Feature,Data Range,,
+Input,Ultimate analysis,C (wt. %),35.26-53.91,,
+Input,Ultimate analysis,H (wt. %),4.02-7.82,,
+Input,Ultimate analysis,O (wt. %),28.49-53.40,,
+Input,Ultimate analysis,N (wt. %),0.03-3.92,,
+Input,Ultimate analysis,S (wt. %),0-0.99,,
+Input,Proximate analysis,FC (wt. %),5.25-24.28,,
+Input,Proximate analysis,VM (wt. %),58.99-93.74,,
+Input,Proximate analysis,Ash (wt. %),0.20-23.65,,
+Input,Feedstock Property,PS (mm),0.08-70.00,,
+Input,Feedstock Property,LHV (MJ/NmÂ³),11.53-20.27,,
+Input,Reactor Property,Reactor type,Fixed bed,fluidized bed,other
+Input,Reactor Property,Reactor H/D,2.31-158.00,,
+Input,Reactor Property,Reactor material,silica,steel,other
+Input,Operation condition,Temperature (Â°C),500.00-1050.00,,
+Input,Operation condition,Gasification agent,air,steam,other
+Input,Operation condition,ER,0-0.87,,
+Input,Operation condition,S/B,0.1-10.00,,
+Input,Operation condition,Catalyst,0,1,
+Output,,Hâ (Vol%),0-60.00,,
+Output,,Tar (g/NmÂ³),0.02-103.03,,

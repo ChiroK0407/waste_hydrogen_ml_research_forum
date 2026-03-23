@@ -1,0 +1,427 @@
+# Table 1: System thermodynamic modeling parameters for operation and design.
+Parameter,Value,Unit,Reference
+Reference temperature,293.15,K,-
+Reference pressure,1.013,bar,-
+Biomass gasification - MSW LHV,13980,kJ/kg,[45]
+Biomass gasification - Biomass mass flow rate,1.155,kg/s,[45]
+Biomass gasification - The heat of formation,-221579,kJ/kmol,[45]
+Biomass gasification - Temperature of the syngas,823.15,K,[45]
+Biomass gasification - Mass flow rate of syngas,3.683,kg/s,[45]
+Biomass gasification - Moisture content,14.93,wt. %,[45]
+Biomass gasification - MSW chemical composition,CH1.46O0.69,-,[45]
+Biomass gasification - Molar equivalence ratio,0.7,-,[45]
+Biomass gasification - Oxygen mole fraction in air,21,%,[45]
+Biomass gasification - Nitrogen mole fraction in air,79,%,[45]
+Gas turbine cycle - dP_Hot_APH,1.5,%,[46]
+Gas turbine cycle - dP_cold_APH,3,%,[46]
+Gas turbine cycle - η_is_AC1,87,%,[46]
+Gas turbine cycle - η_is_AC2,87,%,[46]
+Gas turbine cycle - η_is_GT,89,%,[46]
+Gas turbine cycle - T_12,280,K,[46]
+Gas turbine cycle - PR_AC1,2.3,-,[46]
+Gas turbine cycle - PR_AC2,2.3,-,[46]
+Gas turbine cycle - T_14,1500,K,[46]
+Supercritical CO₂ cycle - PR_MC,3.09,-,[23]
+Supercritical CO₂ cycle - PR_RC,2.968,-,[23]
+Supercritical CO₂ cycle - T_max,823.15,K,[23]
+Supercritical CO₂ cycle - η_is_comp,85,%,[23]
+Supercritical CO₂ cycle - η_is_turb,90,%,[23]
+Supercritical CO₂ cycle - dP_HEX,2,%,[23]
+Supercritical CO₂ cycle - dP_LTR,3,%,[23]
+Supercritical CO₂ cycle - dP_HTR,1,%,[23]
+Supercritical CO₂ cycle - ΔT_pp_GEN,3,K,[23]
+Supercritical CO₂ cycle - P6,74,bar,[23]
+Supercritical CO₂ cycle - SR,0.25,-,[23]
+Kalina cycle - Recuperators temperature difference of pinch point,8,K,[47]
+Kalina cycle - Evaporator temperature difference of pinch point,20,K,[47]
+Kalina cycle - Condensers temperature difference of pinch point,4,K,[47]
+Kalina cycle - Turbine inlet pressure,140,bar,[47]
+Kalina cycle - Working solution ammonia concentration,0.6,-,[47]
+Kalina cycle - Inlet temperature of Kalina turbine,773.15,K,[47]
+Kalina cycle - Pumps isentropic efficiency,70,%,[47]
+Kalina cycle - Turbine isentropic efficiency,85,%,[47]
+Kalina cycle - Basic solution ammonia concentration,0.4037,-,[47]
+Kalina cycle - Inlet temperature of separator (T29),347,K,[47]
+Kalina cycle - Temperature of condenser outlet water,303.15,K,[47]
+Kalina cycle - Temperature of condenser inlet water,293.15,K,[47]
+Kalina cycle - Pinch point temperature difference of condenser,4,K,[48]
+Kalina cycle - Pinch point temperature difference of evaporator,5,K,[48]
+Kalina cycle - Isentropic efficiency of turbine,80,%,[48]
+Kalina cycle - Isentropic efficiency of pump,80,%,[48]
+Steam Rankine cycle - Minimum temperature approach in evaporator,10,K,[49]
+Steam Rankine cycle - Minimum temperature approach in condenser,5,K,[49]
+Steam Rankine cycle - Inlet pressure of the turbine,38.19,bar,[49]
+Steam Rankine cycle - Turbine isentropic efficiency,85,%,[49]
+Steam Rankine cycle - Pump isentropic efficiency,80,%,[49]
+PEME - Cell temperature,353,K,[50]
+PEME - Cell pressure,1,bar,[50]
+PEME - Current density (J),6000,A/m²,[50]
+PEME - Active surface area,0.01,m²,[50]
+PEME - Membrane thickness (D),50,μm,[50]
+λ_an,14,-,[50]
+λ_ca,10,-,[50]
+Cell number,49,-,[50]
+Methanation - Reactor operation temperature,573,K,[51]
+Methanation - Reactor operation pressure,200,bar,[51]
+Methanation - Reactor pressure drop,2,%,[51]
+Methanation - Isentropic efficiency of pumps,85,%,[51]
+Methanation - Efficiency of the HEX7,75,%,[51]
+Methanation - Heat exchangers pressure drop,2,%,[51]
+Methanation - Storage temperature,308,K,[51]
+Carbon capture unit - Compressor adiabatic efficiency,75,%,[52]
+Carbon capture unit - Theoretical stages number,10,-,[52]
+Carbon capture unit - Operating pressure,1.161,bar,[52]
+Carbon capture unit - Top temperature,313.6,K,[52]
+Carbon capture unit - Bottom temperature,314.06,K,[52]
+Z_TEG,0.8,-,[50]
+
+# Table 2: Energy and exergy balance formulations for the components of the proposed system.
+Components,Energy balance equations (E_Fuel / E_Product / E_Loss),Exergy balance equations
+Biomass,Presented in section 3.3.1,Ė₁ + Ė₂
+Gasifier,Presented in section 3.3.1,Ė₁ + Ė₃
+Combustion Chamber,m₆ = m₅ + m₄Q_in = ṁ_WDG LHV_WDG Q_loss = 0.02·Q_in,Ė₄ + Ė₅ / Ė₆
+Cooler,ṁ₉(h₉ - h₈) = m₄₀(h₄₁ - h₄₀),Ė₉ / Ė₁₀
+Gas turbine cycle - Air compressor 1,W_AC1 = m₁₁₁(h₁₁ - h₁₀),W_AC1
+Gas turbine cycle - Air compressor 2,W_AC2 = m₁₁₃(h₁₃ - h₁₂),W_AC2
+Gas turbine cycle - Heat exchanger 1,m₁₁₁(h₁₁ - h₁₂) = m₄₇(h₆₇ - h₆₆),Ė₁₂ / Ė₆₆
+Gas turbine cycle - Heat exchanger 2,m₁₄(h₁₄ - h₁₃) = m₆(h₈ - h₇),Ė₇ / Ė₁₃
+Gas turbine cycle - Gas turbine,W_GT = m₁₄(h₁₄ - h₁₅),Ė₁₄ - W_GT
+Gas turbine cycle - Air preheater,m₁₈(h₁₅ - h₁₆) = m₄(h₈ - h₄),Ė₁₅ - Ė₁₆
+Kalina cycle - Evaporator,ṁ₇(h₇ - h₈) = m₁₉(h₁₉ - h₃₅),Ė₉ - Ė₁₉
+Kalina cycle - Turbine,W_TUR = m₁₉(h₁₉ - h₂₀),Ė₁₉ - W_TUR
+Kalina cycle - Recuperator 1,m₂₀(h₂₀ - h₂₁) = m₃₃(h₃₃ - h₃₄),Ė₂₀ - Ė₂₁
+Kalina cycle - Recuperator 2,m₂₁(h₂₁ - h₂₂) = m₂₇(h₂₇ - h₂₃),Ė₂₁ - Ė₂₂
+Kalina cycle - Condenser 1,m₂₃(h₂₃ - h₂₄) = m₃₅(h₃₅ - h₃₄),Ė₂₃ - Ė₂₄
+Kalina cycle - Condenser 2,m₂₆(h₂₆ - h₃₆) = m₃₂(h₃₉ - h₃₀),Ė₂₄ - Ė₂₆
+Kalina cycle - Pump 1,W_PU1 = m₂₄(h₂₅ - h₂₄),W_PU1
+Kalina cycle - Pump 2,W_PU2 = m₃₃(h₃₃ - h₃₃),W_PU2
+Kalina cycle - Separator,m₂₀ h₂₀ = m₂₉ h₂₉ + m₃₀ h₃₀,Ė₂₀ / Ė₃₀ + Ė₂₉
+Kalina cycle - Mixer 1,m₂₂ + m₃₁ h₃₁ = m₂₃,Ė₃₁ + Ė₂₂ / Ė₂₃
+Kalina cycle - Mixer 2,m₂₆ + m₂₈ + h₂₈ = m₂₆ + m₂₈,Ė₂₆ + Ė₂₈ / Ė₂₆
+Kalina cycle - Splitter,h₂₈ = h₂₇, h₂₅ = h₂₆,Ė₂₅ / Ė₂₈ + Ė₂₆
+Kalina cycle - Throttling valve,h₃₀ = h₃₁,Ė₃₀ / Ė₃₁
+Supercritical CO₂ cycle - Main compressor,W_MC = (1 - SR) m₄₉(h₄₉ - h₄₀),W_MC
+Supercritical CO₂ cycle - Re-compressor,W_RC = SR m₅₁(h₅₁ - h₄₇),W_RC
+Supercritical CO₂ cycle - Turbine,W_TUR = m₄₂(h₄₂ - h₄₃),W_TUR
+Supercritical CO₂ cycle - High temperature recuperator,m₅₂(h₅₃ - h₅₂) = m₄₃(h₄₃ - h₄₄),Ė₄₃ - Ė₄₄
+Low temperature recuperator,m₅₀(h₅₀ - h₄₉) = m₄₄(h₄₄ - h₄₅),Ė₄₄ - Ė₄₅ / Ė₄₉ - Ė₅₀
+Generator,ε_LTR = (T₄₄ - T₄₉) / (T₄₄ - T₄₉),Ė₁₆ - Ė₁₇
+Mixer,m₁₆(h₁₆ - h₁₇) = m₁₇,Ė₅₀ + Ė₅₁ = m₅₂ h₅₂
+Organic Rankine cycle - Turbine,W_TUR = m₅₄(h₅₄ - h₅₅),Ė₅₄ - W_TUR / Ė₅₄ - Ė₅₅
+Organic Rankine cycle - Evaporator,m₄₆(h₄₆ - h₄₀) = m₄₇(h₅₄ - h₅₇),Ė₄₆ - Ė₄₀ / Ė₅₄ - Ė₅₇
+Organic Rankine cycle - Pump,W_PU = m₅₆(h₅₇ - h₅₆),W_PU / Ė₅₇ - Ė₅₆
+Organic Rankine cycle - Condenser,m₅₅(h₅₅ - h₅₈) = m₅₆(h₅₉ - h₅₈),Ė₅₅ - Ė₅₈ / Ė₅₈ - Ė₅₉
+Steam Rankine cycle - Evaporator,m₁₇(h₁₇ - h₁₀) = m₆₀(h₆₀ - h₆₃),Ė₁₇ - Ė₁₀ / Ė₆₀ - Ė₆₃
+Steam Rankine cycle - Turbine,W_TUR = m₆₀(h₆₀ - h₆₁),W_TUR / Ė₆₀ - W_TUR
+Steam Rankine cycle - Pump,W_PU = m₆₃(h₆₃ - h₆₂),W_PU / Ė₆₃ - Ė₆₂
+Steam Rankine cycle - Condenser,m₆₁(h₆₁ - h₆₂) = m₆₄(h₆₅ - h₆₄),Ė₆₁ - Ė₆₂ / Ė₆₂ - Ė₆₄
+
+# Table 3: Average chemical composition of typical urban wastewater.
+Constituent,Concentration (ppm)
+NO₃-N,3.9
+NH₄-N,4.1
+PO₄,8.6
+K,22.4
+Ca,99.03
+Mg,84.19
+Na,275.25
+Cl,93.2
+Fe,0.72
+Mn,0.61
+Zn,0.039
+Cu,0.09
+Pb,0.023
+Ni,0.01
+Cd,Not detectable
+
+# Table 4: Electrical equations for PEM electrolyzer [50].
+Term,Equation
+Nernst equation,V₀ = 1.229 - 0.00085(T_RMEM - 298)
+Anode overpotential equation,V_act_an = (RT / αF) ln(j / j₀^an)
+Cathode overpotential equation,V_act_ca = (RT / αF) ln(j / j₀^ca)
+Ohmic overpotential equation,V_ohm = J × (R_membrane)
+
+# Table 5: Variables under consideration and their ranges of possible values.
+Decision variable,Range of variation
+Air compressor 1 pressure ratio,2-4
+Air compressor 2 pressure ratio,2-4
+Gas turbine inlet temperature (K),1300–1600
+Kalina evaporator pinch-point difference,10–40
+Main compressor pressure ratio,2-4
+Re-compressor pressure ratio,2-4
+PEME cell number,40-60
+
+# Table 6: Thermodynamic properties of proposed system.
+State,Working fluid,T(K),P(bar),x (-),m(kg/s),h(kJ/kg),s(kJ/kg K),Ė(kW)
+1,Air,293.2,1.013,-,2.71,0,0,14.52
+2,MSW,293.2,1.013,-,1.155,18908,-
+3,Syngas,823,1.013,-,3.683,-2882,1.794,10908
+4,Air,293.2,1.013,-,3.853,293.3,6.843,20.65
+5,Air,847.8,1.013,-,3.853,875.1,7.947,1015
+6,Exhaust gas,1877,1.013,-,7.536,-989.7,2.497,10757
+7,Exhaust gas,826.2,1.013,-,7.536,-2383,1.42,2635
+8,Exhaust gas,379.1,1.013,-,7.536,-2894,0.5359,734.9
+9,Exhaust gas,323.1,1.013,-,7.536,-2954,0.3658,661.4
+10,Air,293.2,1.013,-,8.268,293.3,6.843,0
+11,Air,383.5,2.323,-,8.268,384.3,6.874,676
+12,Air,280,2.288,-,8.268,279.8,6.561,571.2
+13,Air,366.5,2.263,-,8.268,366.6,6.592,1213
+14,Air,1500,5.105,-,8.268,1637,8.145,7951
+15,Air,1066,1.013,-,8.268,1122,8.206,3550
+16,Air,826.2,1.013,-,8.268,851.2,7.918,2006
+17,Air,672,1.013,-,8.268,683.6,7.694,1164
+18,Air,313.2,1.013,-,8.268,313.5,6.909,5.433
+19,NH₃H₂O,773.2,140,0.6,1.436,2854,6.215,19146
+20,NH₃H₂O,369.3,1.688,0.6,1.436,1967,6.64,17690
+21,NH₃H₂O,359.6,1.688,0.6,1.436,1701,5.911,17617
+22,NH₃H₂O,315.6,1.688,0.6,1.436,630.4,2.79,17394
+23,NH₃H₂O,321.1,1.688,0.4037,4.222,299.2,1.587,35122
+24,NH₃H₂O,297.2,1.688,0.4037,4.222,-122,0.2283,35026
+25,NH₃H₂O,297.2,1.688,0.4037,4.222,-121.5,0.2288,35028
+26,NH₃H₂O,297.2,1.688,0.4037,0.9181,-121.5,0.2288,7618
+27,NH₃H₂O,297.2,1.688,0.4037,3.303,-121.5,0.2288,27410
+28,NH₃H₂O,347,1.688,0.4037,3.303,343.9,1.637,27583
+29,NH₃H₂O,347,1.688,0.9478,5.0182,1502,5.323,9842
+30,NH₃H₂O,347,1.688,0.3025,2.785,128.4,0.9516,17734
+31,NH₃H₂O,323.5,1.688,0.3025,2.785,128.4,0.9656,17722
+32,NH₃H₂O,325.6,1.688,0.6,1.436,464.3,2.079,17452
+33,NH₃H₂O,297.2,1.688,0.6,1.436,-119.5,0.2079,17404
+34,NH₃H₂O,300,140,0.6,1.436,-95.02,0.2324,17429
+35,NH₃H₂O,358.2,140,0.6,1.436,171.2,1.042,17470
+36,Water,293.2,1.013,-,42.51,83.93,0.2962,22391
+37,Water,303.2,1.013,-,42.51,125.8,0.3465,22421
+38,Water,293.2,1.013,-,20.04,83.93,0.2962,10559
+39,Water,303.2,1.013,-,20.04,125.8,0.3465,10573
+40,Water,293.2,1.013,-,2.684,83.93,0.2962,0
+41,Water,333.2,1.013,-,2.684,251.2,0.8311,28.11
+42,CO₂,823.2,198.5,-,7.332,528.5,0.00376,3871
+43,CO₂,706.1,74,-,7.332,399.8,0.02419,2883
+44,CO₂,561.6,71.78,-,7.332,234.9,0.2313,2223
+45,CO₂,421.3,70.34,-,7.332,77.83,-0.5495,1756
+46,CO₂,421.3,70.34,-,5.499,77.83,-0.5495,1317
+47,CO₂,421.3,70.34,-,1.833,77.83,-0.5495,438.9
+48,CO₂,308.2,68.94,-,5.499,-86.27,-1.01,1156
+49,CO₂,398.5,213,-,5.499,-33.59,-0.9899,1414
+50,CO₂,536.2,208.8,-,5.499,172.2,-0.5386,1818
+51,CO₂,543.8,208.8,-,1.833,182,-0.5205,614.2
+52,CO₂,538.1,208.8,-,7.332,174.6,-0.5341,2432
+53,CO₂,670,202.5,-,7.332,359.6,-0.2541,3040
+54,Toluene,416.3,2.36,-,1.597,405.4,0.9797,223.9
+55,Toluene,334.4,0.036,-,1.597,298.2,1.063,13.82
+56,Toluene,297.2,0.036,-,1.597,-159.6,-0.4703,-0.1063
+57,Toluene,297.2,2.36,-,1.597,-159.6,-0.47,0.3251
+58,Water,293.2,1.013,-,17.49,83.93,0.2962,0
+59,Water,293.2,1.013,-,17.49,83.93,0.3465,122
+60,Steam,662,38.19,-,1.007,3190,6.754,1222
+61,Steam,308.2,0.056,-,1.007,104.1,2.798,104.1
+62,Steam,662,38.19,-,1.007,146.6,0.5051,1.468
+63,Steam,308.5,38.19,-,1.007,151.4,0.5081,5.376
+64,Water,293.2,1.013,-,50.4,83.93,0.2962,0
+65,Water,303.2,1.013,-,50.4,125.8,0.3465,35.16
+66,Water,293.2,1.013,-,5.165,83.93,0.2962,0
+67,Water,333.2,1.013,-,5.165,251.2,0.8311,54.08
+
+# Table 7: Thermodynamic properties of wastewater treatment unit and PEME.
+State,T(K),P(bar),h(kJ/kg),s(kJ/kg K),m(kg/s),Mass fraction H₂O,Ammonia,NaCl,H₂,O₂
+68,293.2,1.013,-1587.0,3.001,1.4975,0.999,-0,0.001,-,-
+69,373,1.013,-1329.0,10.06,0.6691,0.9999,0.0001,0,-,-
+70,373,1.013,-1555.0,3.973,0.8283,0.9982,0.0001,0.0017,-,-
+71,372.7,1.013,-1318.0,9.95,0.6691,0.9999,0.0001,0,-,-
+72,358.9,0.6,-1555.0,3.976,0.8283,0.9999,0.0001,0.0017,-,-
+73,358.9,0.6,-1562.0,3.754,0.1474,0.9901,0.001,0.0089,-,-
+74,358.9,0.6,-1311.0,10.23,0.6808,1,0,0,-,-
+75,359,0.6,-1420.0,7.133,1.3503,1,0,0,-,-
+76,293.2,1.013,83.93,0.2962,1.7803,1,0,0,-,-
+77,303.2,1.01,125.8,0.4365,0.7809,1,0,0,-,-
+78,353.2,1.013,-1563.0,3.762,1.3503,1,0,0,-,-
+79,353.2,1.013,50.8,0.1572,0.02438,-,-,-,0,1
+80,353.2,1.013,4723,55.82,0.003047,-,-,-,1,0
+
+# Table 8: Thermodynamic properties of carbon capture unit.
+State,T(K),P(bar),h(kJ/kg),s(kJ/kg K),m(kg/s),Mass fraction CO₂,MEA,N₂,O₂,H₂O
+81,511.3,4.16,-3145,5.442,7.536,0.3171,0,0.6023,0.0379,0.0426
+82,323.2,4.16,-3448,4.767,7.536,0.3171,0,0.6023,0.0379,0.0426
+83,313.2,4.16,-4332,0.1744,285.8,0,0.3171,0,0,0
+84,313.26,4.16,-393.5,4.915,4.91,0.0453,0.9909,0.8993,0.0545,0.0011
+85,314.1,4.16,-4376,0.2167,288.3,0.0075,0.9905,0.0004,0.0011,0.0011
+86,313.65,0.15,-4376,0.2212,288.3,0.0075,0.9909,0.004,0.0011,0.0011
+87,313.65,0.15,-4348,0.2864,286.3,0.0010,0.9979,0,0,0.0011
+88,313.65,0.15,-8251,4.532,2.0579,0.9102,0.0156,0.0589,0.0101,0.0051
+89,313.65,0.15,-8251,4.532,2.0409,0.9102,0.0156,0.0589,0.0101,0.0051
+90,313.65,0.15,-8251,4.532,0.016663,0.9102,0.0156,0.0589,0.0101,0.0051
+
+# Table 9: Thermodynamic properties of methanation unit.
+State,T(K),P(bar),h(kJ/kg),s(kJ/kg K),m(kg/s),Mass fraction CO₂,H₂,CH₄,H₂O
+91,563.3,2.041,253.8,0.47,0.008315,1,0,0,0
+92,523,2,211.7,0.3964,0.008315,1,0,0,0
+93,447.7,2.041,6091,56.27,0.001524,0,1,0,0
+94,502.1,2.041,6881,58.02,0.001524,0,1,0,0
+95,523,2,7184,58.69,0.00152,0,1,0,0
+96,523,2,377.7,0.9764,0.009838,0.7318,1.2682,0,0
+97,529.6,1.92,853.6,2.572,0.003429,0.142,0.2601,0.832,0
+98,529.6,1.92,853.6,2.593,0.003429,0.142,0.2601,0.832,0
+99,562.7,1.882,821.2,2.737,0.003429,0.142,0.2601,0.832,0
+100,308,20.96,107.3,-0.2703,0.006366,0,0,0,1
+101,573,1.96,3071,7.901,0.006366,0,0,0,1
+102,479,1.92,2882,7.55,0.006366,0,1,0,1
+103,353.2,1.013,4723,55.82,0.001524,0,0,0,1
+
+# Table 10: Exergy analysis results of the system components.
+Component,Ė_Fuel (kW),Ė_Product (kW),Ė_Destruction (kW),ε (%)
+Biomass,Gasifier,18923,10908,8014,57.7
+Combustion chamber,11923,10757,1166,90.2
+Cooler,73.46,28.11,45.36,38.3
+Gas turbine cycle - Air compressor 1,751.9,676,75.89,89.9
+Gas turbine cycle - Air compressor 2,718.9,642.2,76.72,89.4
+Gas turbine cycle - Heat exchanger 1,104.8,50.08,54.72,51.6
+Gas turbine cycle - Heat exchanger 2,8122,6737,1384,83.0
+Gas turbine cycle - Gas turbine,4401,4235,148.4,96.6
+Gas turbine cycle - Air preheater,1544,994.7,549.5,64.4
+Kalina cycle - Evaporator,1900,1676,224.4,88.2
+Kalina cycle - Turbine,1456,1274,181.6,87.5
+Kalina cycle - Recuperator 1,72.75,41.23,31.52,56.7
+Kalina cycle - Recuperator 2,223.3,173.5,49.82,77.7
+Kalina cycle - Condenser 1,96.22,29.65,66.57,30.8
+Kalina cycle - Condenser 2,47.71,13.98,33.73,29.3
+Kalina cycle - Pump 1,2.051,1.444,0.6072,70.4
+Kalina cycle - Pump 2,35.1,24.78,10.32,70.6
+Kalina cycle - Separator,27583,27576,7.563,99.9
+Kalina cycle - Mixer 1,35113,35112,1.01,99.9
+Kalina cycle - Mixer 2,17460,17452,8.104,99.9
+Kalina cycle - Splitter,35028,35028,-0,100
+Kalina cycle - Throttling valve,17734,17722,11.41,99.9
+Supercritical CO₂ cycle - Turbine,987.6,943.7,43.91,95.6
+Supercritical CO₂ cycle - Main compressor,289.7,257.6,32.13,88.9
+Supercritical CO₂ cycle - Re-compressor,190.9,175.3,15.61,91.8
+Supercritical CO₂ cycle - High temperature recuperator,660.3,607.6,52.77,92.0
+Supercritical CO₂ cycle - Low temperature recuperator,467.3,404.1,63.27,86.5
+Supercritical CO₂ cycle - Generator,841.6,831.2,10.4,98.8
+Supercritical CO₂ cycle - Mixer,2432,2432,0.054,100
+Organic Rankine cycle - Turbine,210.1,171.3,38.81,81.5
+Organic Rankine cycle - Evaporator,223.6,160.4,63.18,71.8
+Organic Rankine cycle - Pump,0.5375,0.4314,0.106,80.3
+Organic Rankine cycle - Condenser,13.93,12.2,1.724,87.6
+Steam Rankine cycle - Evaporator,1216,1159,57.77,95.3
+Steam Rankine cycle - Turbine,1118,957.1,160.7,85.6
+Steam Rankine cycle - Pump,4.826,3.908,0.9176,81.0
+Steam Rankine cycle - Condenser,102.6,35.16,67.47,34.3
+Wastewater treatment unit - Separator 1,429,352.9,76.19,82.2
+Wastewater treatment unit - Heat exchanger 4,9835,9707,127,88.7
+Wastewater treatment unit - Throttling valve,27.18,26.38,0.7952,97.1
+Wastewater treatment unit - Separator 2,301.5,282.8,18.67,93.8
+Wastewater treatment unit - Heat exchanger 5,9665,6030,3634,62.4
+Wastewater treatment unit - Mixer,9712,9665,47.3,99.5
+PEME electrolyzer,622.4,333.1,289.3,53.5
+Carbon capture unit - Compressor,1500,1271,228.8,84.8
+Carbon capture unit - Heat exchanger 3,1284,1003,281,78.1
+Carbon capture unit - Absorber column,1301,1144,157.8,87.9
+Carbon capture unit - Throttling valve,542.3,153.5,388.7,28.3
+Carbon capture unit - Separator,1533,714.5,820.9,46.5
+Methanation unit - Pump 3,2.001,1.84,0.1612,92.0
+Methanation unit - Heat exchanger 6,0.1736,0.1703,0.0033,98.1
+Methanation unit - Pump 4,2.089,1.822,0.267,90.0
+Methanation unit - Heat exchanger 7,0.5483,0.4225,0.1258,77.1
+Methanation unit - Heat exchanger 8,0.2574,0.1602,0.09716,62.3
+Methanation unit - Mixer,187.4,187.4,0,100
+Sabatier reactor,187.4,168.9,18.44,90.2
+
+# Table 11: Main performance indicators of proposed polygeneration system for baseline operation.
+Performance criteria,Value
+Energy efficiency (%),35.0
+Exergy efficiency (%),39.9
+Methane production rate (kg/day),296.3
+Hydrogen production rate (kg/day),131.6
+Oxygen production rate (kg/day),2106
+Heating load (kW),1310
+Captured CO₂ rate (t/day),177.8
+Treated water production rate (m³/day),116.6
+Net power production rate (kW),3510
+Total exergy destruction rate (kW),17800
+
+# Table 12: Performance comparison of multi-objective optimization algorithms.
+Algorithm,HVₙ,IGD,ε,Spread,Remarks
+GWO,20.69,0.0086,0.0739,0.97,Closest to reference front; balanced and stable
+GA,25.59,0.04563,0.2031,2.078,Highest coverage but poor uniformity
+NSGA-II,9.72,0.0734,0.1900,0.89,Moderate diversity; weakest convergence
+MOPSO,15.27,0.0146,0.0361,0.79,Most uniform distribution; strong dominance
+
+# Table 13: Comparison between baseline and optimized results for the proposed system.
+Performance criteria,Baseline,Optimal point,Difference
+Energy efficiency (%),35.0,49.5,+41.5%
+Exergy efficiency (%),39.9,53.6,+34.4%
+Methane production rate (kg/day),296,364,+23.0%
+Hydrogen production rate (kg/day),131.6,162,+23.0%
+Oxygen production rate (kg/day),2106,2589,+23.0%
+Heating load (kW),1310,1695,+29.1%
+Net power production rate (kW),3510,3270,-6.9%
+Total exergy destruction rate (kW),17800,17550,-1.4%
+
+# Table 14: Comparative assessment of system performance with earlier works.
+Ref.,Municipal waste types,Productions,Subsystems,Analysis,Energy efficiency (%),Exergy efficiency (%),Power (kW)/Heating (kW)/Cooling (kW)/Fuel production (kg/day),Carbon capture and utilization
+Present study,MSW Wastewater,Power Heating Hydrogen Methane,Gasification Gas turbine SCO₂ Kalina ORC SRC Carbon capture Wastewater treatment Methanation PEME TEG,Energy Exergy Sensitivity GW multi-objective optimization ML Multi-scenario,49.5,53.6,3270/1700/-/H₂ 161.8/CH₄ 364.4,✓
+Chen et al. [58] (2022),MSW,Power,Gasification Incineration Gas turbine Steam turbine,Energy Exergy Economic,37.8,34.9,4240/-/-/-,×
+Hai et al. [59] (2023),MSW,Power,Gasification Gas turbine Rankine Geothermal,Energy Exergy Parametric study Environmental,-,47.6,8025/-/-/-,×
+Wang et al. [60] (2025),MSW,Power Heating Cooling Hydrogen,Gasification Gas turbine SRC Single effect chiller,GW optimization,Energy Economic Environmental,59.0,26.4,2484/3303/1166/H₂ 290.4,- 
+Tera et al. [61] (2024),MSW,Power Heating Hydrogen,Gasification Reforming SOFC ORC S-CO₂,Energy Economic Energy,76.8,60.6,5640/9260/H₂ 15170/-,×
+Eisavi et al. [62] (2024),MSW,Power Methane Methanol,Gasification Rankine Methanation PEME MCFC,Energy Exergy Exergoeconomic,41.8,36.8,7300/-/-/-/CH₄ 450/Methanol 988,✓
+Khoshgoftar Manesh et al. [63] (2024),MSW Wastewater,Freshwater,Power Gasification FPC ICE ORC HDH RO Wastewater treatment MDC Carbon storage,Energy Exergoeconomic Environmental Energy-economic Sensitivity optimization,34.5,5.9,460/-/-/-/H₂O 128.6 (m³/day),Carbon capture and storage
+
+Table S1. Verification of gas yield obtained from gasification simulation with those reported in [1]
+Parameter,Jayah et al.,Present Work
+H2 (%),12.5,18.66
+CO2 (%),8.5,11.5
+CO (%),18.9,19.14
+CH4 (%),1.2,0.11
+N2 (%),59.1,50.6
+LHV (MJ/m3),4.165,4.47
+Air-fuel ratio,2.29,2.6
+
+Table S2. Verification of s-CO2 cycle simulation with findings in Ref. [2]
+State,T(K) Present work,T(K) Ref. [2],P(bar) Present work,P(bar) Ref. [2],s(kJ/kg.K) Present work,s(kJ/kg.K) Ref. [2],h(kJ/kg) Present work,h(kJ/kg) Ref. [2],m(kg/s) Present work,m(kg/s) Ref. [2]
+1,670,670.61,204.7,204.7,-0.2565,-0.2554,339.3,340,3174,3187
+2,823.2,823.15,200.6,200.6,0.00143,0.0014,528.3,528.3,3174,3187
+3,704.9,704.87,74,74,0.0221,0.02207,398.3,398.3,3174,3187
+4,565.4,567.66,71.78,71.78,-0.2237,-0.2192,239.1,241.7,3174,3187
+5,421.1,421.47,70.34,70.34,-0.55,-0.5491,77.61,78,3174,3187
+6,308.2,308.15,69.64,69.64,-1.018,-1.018,-88.36,-88.36,2380,2375
+7,397.6,397.67,215.2,215.3,-0.9979,-0.9979,-36.26,-36.24,2380,2375
+8,542.7,545.32,211,211,-0.5259,-0.5198,180,183.4,3174,3187
+9,298.2,298.15,1.01,1.01,0.3669,0.3669,104.8,104.8,4107,4105
+10,321.2,321.16,0.9999,0.9999,0.6777,0.6779,201,201.1,4107,4105
+
+Table S3. Verification of Kalina cycle simulation with findings in Ref. [3]
+State,T(°C) Present work,T(°C) Ref. [3],P(bar) Present work,P(bar) Ref. [3],x(%) Present work,x(%) Ref. [3],h(kJ/kg) Present work,h(kJ/kg) Ref. [3],m(kg/s) Present work,m(kg/s) Ref. [3]
+1,500,500,100,100,0.6,0.6,2883,3032.7,24.99,26.06
+2,124.7,117.5,1.688,1.89,0.6,0.6,2030,2214.2,24.99,26.06
+3,86.3,88,1.688,1.89,0.6,0.6,1695,1856.7,24.99,26.06
+4,38.44,33.8,1.688,1.89,0.6,0.6,574.9,679.1,24.99,26.06
+5,44.56,45.4,1.688,1.89,0.4037,0.4037,244.1,340.1,84.21,89.07
+6,24,24.2,1.688,1.89,0.4037,0.4037,-122,-21.4,84.21,89.07
+7,24.05,24.2,4.66,4.92,0.4037,0.4037,-121.5,-20.9,84.21,89.07
+8,24.05,24.2,4.66,4.92,0.4037,0.4037,-121.5,-20.9,16.14,16.86
+9,24.05,24.2,4.66,4.92,0.4037,0.4037,-121.5,-20.9,68.07,72.22
+10,70,70,4.66,4.92,0.4037,0.4037,283.6,404.1,68.07,72.22
+11,70,70,4.66,4.92,0.958,0.9597,1482,1802.7,8.851,9.20
+12,70,70,4.66,4.92,0.3209,0.3225,104.6,199.9,59.22,63.01
+13,46.67,49.2,1.688,1.89,0.3209,0.3225,104.6,199.9,59.22,63.01
+14,51.24,49.4,4.66,4.92,0.6,0.6,446.4,623.1,24.99,26.06
+15,24,24,4.66,4.92,0.6,0.6,-119.4,70.8,24.99,26.06
+16,26.02,25.9,100,100,0.6,0.6,-102.2,87.9,24.99,26.06
+17,97.86,96.1,100,100,0.6,0.6,232.6,445.3,24.99,26.06
+
+Table S4. Verification of methane synthesis unit with findings in Ref. [4]
+State,T(k) This work,T(k) Ref. [4],P(kPa) This work,P(kPa) Ref. [4],n(mole/s) This work,n(mole/s) Ref. [4],CO2 mole frac This work,CO2 mole frac Ref. [4],H2O mole frac This work,H2O mole frac Ref. [4],H2 mole frac This work,H2 mole frac Ref. [4],CH4 mole frac This work,CH4 mole frac Ref. [4]
+52,303.2,303.2,99.3,99.3,0.2834,0.2834,1,1,-,-,-,-,-,-
+63,353,353,101.3,101.3,1.134,1.134,-,-,-,-,1,1,-,-
+64,447.4,449.8,208.2,211,1.134,1.134,-,-,-,-,1,1,-,-
+65,502.1,502.2,204.1,206.7,1.134,1.134,-,-,-,-,1,1,-,-
+66,523,523,200,202.6,1.134,1.134,-,-,-,-,1,1,-,-
+67,363.1,364.2,204.1,206.7,0.2834,0.2834,1,1,-,-,-,-,-,-
+68,523,523,200,202.6,0.2834,0.2834,1,1,-,-,-,-,-,-
+69,523,523,200,202.6,1.417,1.417,0.2,0.2,-,-,0.8,0.8,-,-
+70,573,573,196,198.5,0.3535,0.3498,0.0474,0.0475,-,-,0.1907,0.19,0.762,0.763
+71,530,530,192.1,194.6,0.3535,0.3498,0.0474,0.0475,-,-,0.1907,0.19,0.762,0.763
+72,397.3,397.9,188.2,190.7,0.3535,0.3498,0.0474,0.0475,-,-,0.1907,0.19,0.762,0.763
+73,308,308,2026,2025,0.3535,0.3498,0.0474,0.0475,-,-,0.1907,0.19,0.762,0.763
+74,573,573,196,198.5,0.5305,0.5337,-,-,1,1,-,-,-,-
+75,479,481.5,192.1,194.6,0.5305,0.5337,-,-,1,1,-,-,-,-

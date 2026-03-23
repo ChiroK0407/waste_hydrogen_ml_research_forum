@@ -1,0 +1,32 @@
+Variable,Name,Value,Mean,S.D.
+Input features,,,,
+Biomass feedstock characteristics (vol% dry basis),,,,
+Moisture,MB,6.38-10.00,8.24,3.47
+Fixed carbon,FCB,12.20-15.38,14.41,6.80
+Volatile matter,VMB,73.16-84.14,77.41,12.16
+Ash (Proximate analysis),AB,0.18-6.30,2.32,7.63
+Ash (Ultimate analysis),AB2,0.00-6.83,2.31,9.14
+Carbon content,CB,43.80-50.50,48.14,6.89
+Hydrogen content,HB,5.90-6.20,6.06,0.58
+Nitrogen content,NB,0.07-0.44,0.27,3.90
+Sulfur content,SB,0.02-0.20,0.10,0.50
+Oxygen content,OB,42.64-43.71,43.12,5.55
+Algae feedstock characteristics (vol% dry basis),,,,
+Moisture,MA,0.00-8.00,4.90,4.29
+Fixed carbon,FCA,8.00-27.40,15.27,10.58
+Volatile matter,VMA,51.50-84.30,71.57,17.59
+Ash (Proximate analysis),AA,6.40-21.10,10.93,8.82
+Ash (Ultimate analysis),AA2,0.00-23.60,10.00,12.20
+Carbon content,CA,33.50-52.10,43.27,9.35
+Hydrogen content,HA,4.80-6.50,5.70,0.85
+Nitrogen content,NA,0.00-9.95,4.12,5.19
+Sulfur content,SA,0.00-1.30,0.62,0.65
+Oxygen content,OA,30.90-43.30,36.20,6.39
+Operating conditions,,,,
+Gasification temperature (°C),GT,450-1250,851.89,242.85
+Steam to fuel ratio (kg/h:kg/h),S/F,0.005-0.5,0.27,0.17
+Blend in feed (%),BF,5-95,49.38,27.50
+Equivalence ratio,ER,0.1-0.5,0.30,0.14
+Output targets,,,,
+H2 yield (%),HY,1.03-9.87,5.14,1.72
+Syngas lower heating value (MJ/Nm³),LHV syn,11.34-21.48,12.67,2.04

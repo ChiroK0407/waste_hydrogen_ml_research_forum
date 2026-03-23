@@ -1,0 +1,9 @@
+Metric,Model,Hyperparameters,Training RÂ²,Training MSE,Testing RÂ²,Testing MSE,
+Tar yield,PSO-SVR,C = 49.49,gamma = 1.43,0.862,0.0061,0.8701,0.0054
+Tar yield,PSO-RF,n_estimators = 91,Max depth = 9,0.9614,0.002,0.8515,0.0024
+Tar yield,PSO-MLP,hidden_layer_sizes = 33,learning_rate_init = 0.0097,0.8284,0.0084,0.823,0.0031
+Tar yield,PSO-Adaboost,n_estimators = 18,Max depth = 8,0.9453,0.0027,0.8592,0.0025
+Hâ concentration,PSO-SVR,C = 49.49,gamma = 1.01,0.9149,0.0105,0.9105,0.0046
+Hâ concentration,PSO-RF,n_estimators = 60,Max depth = 8,0.9736,0.0015,0.8537,0.0067
+Hâ concentration,PSO-MLP,hidden_layer_sizes = 70,learning_rate_init = 0.0090,0.9314,0.0038,0.854,0.0067
+Hâ concentration,PSO-Adaboost,n_estimators = 30,Max depth = 9,0.9754,0.0014,0.8407,0.0073

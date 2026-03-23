@@ -1,0 +1,11 @@
+Operational variables,Lower limit,Upper limit
+Steam feed rate (kg/h),2000.00,6000.00
+SPL Diversion ratio,0.00,1.00
+DCMP1 Temperature (°C),200.00,400.00
+DCMP2 Temperature (°C),200.00,400.00
+PYR Temperature (°C),300.00,500.00
+FR Temperature (°C),600.00,1000.00
+AR Temperature (°C),700.00,1000.00
+Reflux ratio of C1 (kmol/kmol),1.20,5
+Reflux ratio of C2 (kmol/kmol),1.20,5
+Reflux ratio of C3 (kmol/kmol),1.20,5

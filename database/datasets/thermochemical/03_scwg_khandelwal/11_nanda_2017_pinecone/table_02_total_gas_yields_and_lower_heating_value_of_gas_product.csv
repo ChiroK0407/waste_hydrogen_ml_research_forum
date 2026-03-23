@@ -1,0 +1,17 @@
+Gasification conditions,Temperature / Catalyst,Total gas yields (mmol/g),Lower heating value (kJ/Nm³)
+Feed concentration: 25 wt%; Residence time: 30 min; Pressure: 21–23 MPa,300 °C,2.6,58
+,350 °C,3.1,83
+,370 °C,3.7,248
+,450 °C,4.6,403
+,550 °C,5.9,661
+Temperature: 550 °C; Residence time: 30 min; Pressure: 23 MPa,10 wt%,6.1,360
+,15 wt%,6.2,493
+,20 wt%,5.6,505
+,25 wt%,5.9,661
+Temperature: 550 °C; Feed concentration: 10 wt%; Pressure: 23 MPa,15 min,5.6,352
+,30 min,6.1,360
+,45 min,6.4,440
+,60 min,6.6,488
+Temperature: 550 °C; Feed concentration: 30 wt%; Residence time: 60 min; Pressure: 23 MPa,Na₂CO₃,7.9,678
+,NaOH,9.2,850
+,KOH,10.2,1032

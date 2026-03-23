@@ -1,0 +1,7 @@
+Band,Raman shift (cm⁻¹),Description,Bond type
+Iᵢ,1160–1220,"C—H on aromatic rings, C—C on hydroaromatic rings","sp², sp³"
+Iₛ,1230–1270,"Alkyl-aryl ether, para-aromatics, C—C structure, methyl carbon to an aromatic ring","sp², sp³"
+Iᴅ,1325–1350,"Highly ordered carbon, C—C between aromatic rings, aromatics with 6 or more fused benzene rings but less than graphite",sp²
+Iᴄ,1430–1490,"C—H methylene or methyl, semi-circle breathing of aromatic rings, condensed benzene rings","sp², sp³"
+Iɢ*,1510–1540,"Amorphous carbon structures, aromatics with 3–5 rings",sp²
+Iɢ,1580–1605,"C=C alkenes, graphite crystalline structures, aromatic ring quadrant breathing",sp²

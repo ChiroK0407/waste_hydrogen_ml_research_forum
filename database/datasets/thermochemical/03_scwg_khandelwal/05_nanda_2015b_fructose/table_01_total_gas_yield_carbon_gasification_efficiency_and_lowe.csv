@@ -1,0 +1,13 @@
+"Temperature (°C) [60 s, 4 wt% fructose]",550,0.2 ± 0.005,23,1281
+,600,0.4 ± 0.009,41,1785
+,650,0.72 ± 0.023,67,2037
+,700,1.04 ± 0.032,88,2482
+"Feed concentration (wt%) [700 °C, 60 s]",4,1.04 ± 0.032,88,2482
+,6,0.95 ± 0.029,85,2455
+,8,0.88 ± 0.031,80,2469
+,10,0.83 ± 0.03,76,2515
+"Residence time (s) [700 °C, 4 wt% fructose]",30,0.38 ± 0.011,40,1626
+,45,0.59 ± 0.017,62,1682
+,60,1.04 ± 0.032,88,2482
+,75,1.05 ± 0.034,94,2463
+Note: The data presented here are the average of triplicate measurements with standard deviation <5%.,,,,

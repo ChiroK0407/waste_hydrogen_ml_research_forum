@@ -1,0 +1,3 @@
+Hyperparameter,Lower limit,Upper limit
+Hidden layers,1,3
+Number of neurons,9,14

@@ -1,0 +1,8 @@
+Ref.,Municipal waste types,Productions,Subsystems,Analysis,Energy efficiency (%),Exergy efficiency (%),Power (kW)/Heating (kW)/Cooling (kW)/Fuel production (kg/day),Carbon capture and utilization,
+Present study,MSW Wastewater,Power Heating Hydrogen Methane,Gasification Gas turbine SCO₂ Kalina ORC SRC Carbon capture Wastewater treatment Methanation PEME TEG,Energy Exergy Sensitivity GW multi-objective optimization ML Multi-scenario,49.5,53.6,3270/1700/-/H₂ 161.8/CH₄ 364.4,✓,
+Chen et al. [58] (2022),MSW,Power,Gasification Incineration Gas turbine Steam turbine,Energy Exergy Economic,37.8,34.9,4240/-/-/-,×,
+Hai et al. [59] (2023),MSW,Power,Gasification Gas turbine Rankine Geothermal,Energy Exergy Parametric study Environmental,-,47.6,8025/-/-/-,×,
+Wang et al. [60] (2025),MSW,Power Heating Cooling Hydrogen,Gasification Gas turbine SRC Single effect chiller,GW optimization,Energy Economic Environmental,59.0,26.4,2484/3303/1166/H₂ 290.4,-
+Tera et al. [61] (2024),MSW,Power Heating Hydrogen,Gasification Reforming SOFC ORC S-CO₂,Energy Economic Energy,76.8,60.6,5640/9260/H₂ 15170/-,×,
+Eisavi et al. [62] (2024),MSW,Power Methane Methanol,Gasification Rankine Methanation PEME MCFC,Energy Exergy Exergoeconomic,41.8,36.8,7300/-/-/-/CH₄ 450/Methanol 988,✓,
+Khoshgoftar Manesh et al. [63] (2024),MSW Wastewater,Freshwater,Power Gasification FPC ICE ORC HDH RO Wastewater treatment MDC Carbon storage,Energy Exergoeconomic Environmental Energy-economic Sensitivity optimization,34.5,5.9,460/-/-/-/H₂O 128.6 (m³/day),Carbon capture and storage,

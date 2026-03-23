@@ -53,16 +53,16 @@ st.markdown("""
     margin: 0 0 14px 0;
   }
   .hero-title {
-    font-family: 'DM Serif Display', serif !important;
-    font-size: clamp(1.9rem, 4vw, 2.9rem) !important;
-    color: #ffffff !important;
-    margin: 0 0 6px 0 !important;
-    line-height: 1.15 !important;
-    position: relative; z-index: 1 !important;
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.9rem, 4vw, 2.9rem);
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    line-height: 1.15;
+    position: relative; z-index: 1;
   }
   .hero-title em {
-    font-style: italic !important;
-    color: #14c8b4 !important;
+    font-style: italic;
+    color: #14c8b4;
   }
   .hero-subtitle {
     font-family: 'DM Sans', sans-serif;
@@ -306,7 +306,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 # ═════════════════════════════════════════════════════════════════════════════
 st.markdown("""
 <p class="section-head">Dashboard Pages</p>
-<p class="section-sub">Four analytical modules — navigate from the sidebar</p>
+<p class="section-sub">Five analytical modules — navigate from the sidebar</p>
 """, unsafe_allow_html=True)
 
 st.markdown("""
@@ -378,6 +378,32 @@ st.markdown("""
       <span class="tag">Technical summaries</span>
       <span class="tag">Drive links</span>
       <span class="tag">Research gaps</span>
+    </div>
+  
+  <div class="page-card">
+    <span class="page-card-icon">🧪</span>
+    <p class="page-card-num">Page 5</p>
+    <p class="page-card-title">Dataset Viewer</p>
+    <p class="page-card-body">
+      Browse simulation-ready datasets extracted from the reviewed papers.
+      Select any paper to view its data availability status, explore individual
+      tables as interactive dataframes, and download them as CSV files — with
+      direct links to both the original paper and its dataset file.
+    </p>
+    <div class="page-card-tags">
+      <span class="tag">Simulation data</span>
+      <span class="tag">Table browser</span>
+      <span class="tag">CSV download</span>
+      <span class="tag">Data status</span>
+    </div>
+
+  <div class="step-box">
+    <div class="step-num">05</div>
+    <div class="step-title">Explore the Data</div>
+    <div class="step-body">
+      Open the Dataset Viewer to inspect the raw simulation-ready tables
+      extracted from each paper, check data availability status, and
+      download any table as a CSV for your own analysis.
     </div>
   </div>
 

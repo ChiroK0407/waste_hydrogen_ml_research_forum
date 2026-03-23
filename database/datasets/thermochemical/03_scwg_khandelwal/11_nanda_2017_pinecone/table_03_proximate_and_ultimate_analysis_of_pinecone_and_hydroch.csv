@@ -1,0 +1,20 @@
+Parameter,Pinecone,Hydrochar-300 °C,Hydrochar-370 °C,Hydrochar-550 °C
+Proximate analysis in mass fraction (%),,,,
+Moisture,5.5,3.4,2.9,2.4
+Ash,2.5,3.8,4.3,5.2
+Volatile matter,60.6,54,43.1,35.7
+Fixed carbonᵃ,31.4,38.8,49.7,56.7
+Ultimate analysis in mass fraction (%),,,,
+C,50.8,65.9,73.8,83.2
+H,6.3,6.2,5.9,3.6
+N,1.02,1.2,1.5,1.7
+S,0.18,0.1,0.07,0.05
+Oᵇ,39.2,22.8,14.4,6.2
+Atomic ratio,,,,
+H/C,1.5,1.1,1,0.5
+O/C,0.6,0.3,0.1,0.1
+N/C,0.02,0.7,0.02,0.02
+HHV (MJ/kg),20,27.4,30.9,32.1
+Empirical formula,CH₁.₅O₀.₆N₀.₀₂,CH₁.₁O₀.₃N₀.₇,CHO₀.₁N₀.₀₂,CH₀.₅O₀.₁N₀.₀₂
+"ᵃ Fixed carbon was determined as the difference of moisture, volatile matter and ash.
+ᵇ Oxygen was determined as the difference of carbon, hydrogen, nitrogen, sulfur and ash.",,,,

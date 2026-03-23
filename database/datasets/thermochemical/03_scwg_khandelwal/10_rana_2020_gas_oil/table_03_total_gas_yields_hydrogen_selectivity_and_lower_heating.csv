@@ -1,0 +1,27 @@
+Gasification conditions,Feedstock,Total gas yields (mol/kg),Hydrogen selectivity (%),Lower heating value (kJ/Nm³)
+Feed concentration: 25 wt%; Reaction time: 30 min,LGO (375 °C),3.3,44,620
+,LGO (475 °C),3.9,38,721
+,LGO (575 °C),4.4,44,756
+,LGO (675 °C),5.2,61,798
+,HGO (375 °C),3.2,20,605
+,HGO (475 °C),3.6,31,693
+,HGO (575 °C),4.3,39,709
+,HGO (675 °C),4.7,50,723
+Temperature: 675 °C; Reaction time: 30 min,LGO (20 wt%),5.1,79,696
+,LGO (25 wt%),5.2,61,798
+,LGO (30 wt%),4.4,41,797
+,LGO (35 wt%),4,31,834
+,HGO (20 wt%),4.8,62,646
+,HGO (25 wt%),4.7,50,723
+,HGO (30 wt%),4.2,28,728
+,HGO (35 wt%),4,25,763
+Temperature: 675 °C; Feed concentration: 20 wt%,LGO (30 min),5.1,79,696
+,LGO (45 min),6.5,84,916
+,LGO (60 min),7.2,76,1146
+,LGO (75 min),7,90,1369
+,HGO (30 min),4.8,62,646
+,HGO (45 min),5.7,60,805
+,HGO (60 min),7.1,60,1148
+,HGO (75 min),6.5,74,1223
+Temperature: 675 °C; Feed concentration: 20 wt%; Reaction time: 75 min,LGO + 5 wt% 10%Ni/FCNT,9.1,94,1685
+,HGO + 5 wt% 10%Ni/FCNT,8.3,78,1571

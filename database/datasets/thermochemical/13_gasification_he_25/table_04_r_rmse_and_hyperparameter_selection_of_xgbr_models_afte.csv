@@ -1,0 +1,6 @@
+Target,Train R²,Train RMSE,Test R²,Test RMSE,n_estimators,max_depth
+H₂,0.998,0.356,0.824,5.19,36,16
+CO,0.988,1.315,0.887,4.316,16,6
+CO₂,0.999,0.217,0.763,3.899,44,8
+CH₄,0.999,0.248,0.968,1.073,18,12
+Hyperparameter optimisation via grid search + cross-validation. All test R² > 0.80 after tuning. H₂ and CO test R² improved from 0.776→0.824 and 0.885→0.887 respectively. RMSE units: vol% for all targets.,,,,,,

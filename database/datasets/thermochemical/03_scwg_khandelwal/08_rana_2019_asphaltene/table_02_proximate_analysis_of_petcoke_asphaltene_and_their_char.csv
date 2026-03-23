@@ -1,0 +1,9 @@
+Feedstock,Moisture,Ash,Volatile matter,Fixed carbon
+Petcoke,5.1 ± 0.15,3.6 ± 0.12,53.8 ± 1.84,37.5 ± 1.17
+Petcoke char – 350 °C,4.6 ± 0.06,4.4 ± 0.1,46.9 ± 1.35,44.1 ± 1.22
+Petcoke char – 450 °C,4.2 ± 0.14,4.9 ± 0.14,39.2 ± 1.09,51.7 ± 1.61
+Petcoke char – 550 °C,3.5 ± 0.1,5.3 ± 0.13,35.1 ± 1.18,56.1 ± 1.28
+Petcoke char – 650 °C,3.3 ± 0.12,5.8 ± 0.12,32.8 ± 1.17,58.1 ± 1.73
+Asphaltene,4.4 ± 0.11,4.0 ± 0.12,60.1 ± 1.78,31.5 ± 1.04
+Asphaltene char – 650 °C,3.8 ± 0.13,5.4 ± 0.17,34.8 ± 1.04,56 ± 1.31
+"Fixed carbon was determined as the difference of moisture, volatile matter and ash.",,,,

@@ -1,0 +1,6 @@
+Target,Top Features (ranked by SHAP contribution),Biomass Comp. (% category),Operating Conds. (% category),OC Composition (% category)
+H₂,"S/B > T > O/B > Fe > Al > (biomass C,H,O,N,S)",11.6%,68.2%,20.2%
+CO,"S/B > O/B > T > Al > C > (biomass H,O,N,S)",18.0%,63.5%,18.6%
+CO₂,"T > H > C > S/B > (N,S,O) > Al > Fe > Ca",40.8%,14.4%,44.8%
+CH₄,"Ca > S/B > O > C > T > (N,H,S) > Fe > Al > Mg > Si",34.5%,19.9%,45.9%
+S/B = steam-to-biomass ratio; T = temperature; O/B = oxygen carrier-to-biomass ratio; Fe/Al/Ca/Mg/Zr/Si = OC metal content (wt%); C/H/O/N/S = biomass elemental composition. Category % from concentric pie chart (Fig. 5). SHAP calculated using XGBoost model.,,,,

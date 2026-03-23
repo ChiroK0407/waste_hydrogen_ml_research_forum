@@ -1,0 +1,246 @@
+# Dataset_Landscape.py Run 1
+
+import streamlit as st
+import pandas as pd
+import altair as alt
+
+
+def show_dataset_landscape(df: pd.DataFrame):
+    st.header("📊 Dataset Landscape")
+
+    st.markdown("""
+    This section analyses the **datasets** underpinning the 29 reviewed papers — covering dataset types,
+    sizes, hydrogen routes, and feedstocks. Use the table below to access each paper's dataset
+    directly via its Google Drive link.
+    """)
+
+    # ═══════════════════════════════════════════════════════════════════════
+    # 1. SUMMARY METRIC CARDS
+    # ═══════════════════════════════════════════════════════════════════════
+    total       = len(df)
+    with_size   = df["Dataset_Size_Numeric"].dropna().astype(str).str.strip()
+    with_size   = with_size[with_size.str.match(r"^\d+\.?\d*$")]
+    numeric_sizes = with_size.astype(float)
+
+    c1, c2, c3, c4, c5 = st.columns(5)
+    c1.metric("Total Papers",          total)
+    c2.metric("Dataset Size Reported", f"{len(numeric_sizes)} / {total}")
+    c3.metric("Largest Dataset",       f"{int(numeric_sizes.max()):,}" if len(numeric_sizes) else "—")
+    c4.metric("Smallest Dataset",      f"{int(numeric_sizes.min())}"   if len(numeric_sizes) else "—")
+    c5.metric("Median Dataset Size",   f"{int(numeric_sizes.median())}" if len(numeric_sizes) else "—")
+
+    st.markdown("---")
+
+    # ═══════════════════════════════════════════════════════════════════════
+    # 2. DISTRIBUTION CHARTS  (side by side)
+    # ═══════════════════════════════════════════════════════════════════════
+    col_l, col_r = st.columns(2)
+
+    # ── Dataset Type distribution ──
+    with col_l:
+        dt_counts = (
+            df["Dataset_Type"].dropna().str.strip()
+            .value_counts().reset_index()
+        )
+        dt_counts.columns = ["Dataset_Type", "Count"]
+        domain_dt = dt_counts["Dataset_Type"].tolist()
+        palette_dt = ["#2E86AB","#F4A261","#2A9D8F","#E76F51",
+                      "#457B9D","#E9C46A","#264653","#A8DADC"]
+        colours_dt = (palette_dt * 4)[: len(domain_dt)]
+
+        chart_dt = (
+            alt.Chart(dt_counts)
+            .mark_bar(cornerRadiusTopLeft=4, cornerRadiusTopRight=4)
+            .encode(
+                x=alt.X("Dataset_Type:N", sort="-y",
+                        axis=alt.Axis(labelAngle=-30, title="Dataset Type")),
+                y=alt.Y("Count:Q", axis=alt.Axis(title="Papers")),
+                color=alt.Color("Dataset_Type:N",
+                                scale=alt.Scale(domain=domain_dt, range=colours_dt),
+                                legend=None),
+                tooltip=[
+                    alt.Tooltip("Dataset_Type:N", title="Type"),
+                    alt.Tooltip("Count:Q",        title="Papers"),
+                ],
+            )
+            .properties(title="Dataset Type Distribution", height=280)
+        )
+        st.altair_chart(chart_dt, use_container_width=True)
+        st.caption(
+            "**Experimental** — lab/pilot measurements · "
+            "**Literature** — compiled from published studies · "
+            "**Simulation** — process model outputs (Aspen, PRO/II) · "
+            "**Review** — no original dataset · "
+            "**CFD** — computational fluid dynamics · "
+            "**Hybrid** — experimental + literature · "
+            "**Sensor** — IoT / real-time sensor data"
+        )
+
+    # ── Dataset size strip / dot plot (log scale, labelled) ──
+    with col_r:
+        size_df = df[["Serial", "Title", "Dataset_Type", "Dataset_Size_Numeric",
+                      "Hydrogen_Route"]].copy()
+        size_df["Dataset_Size_Numeric"] = (
+            pd.to_numeric(size_df["Dataset_Size_Numeric"], errors="coerce")
+        )
+        size_df = size_df.dropna(subset=["Dataset_Size_Numeric"])
+        size_df["Short_Title"] = size_df["Title"].str[:35] + "…"
+
+        chart_size = (
+            alt.Chart(size_df)
+            .mark_circle(size=90, opacity=0.85)
+            .encode(
+                x=alt.X("Dataset_Size_Numeric:Q",
+                        scale=alt.Scale(type="log"),
+                        axis=alt.Axis(title="Dataset Size (log scale)")),
+                y=alt.Y("Dataset_Type:N",
+                        axis=alt.Axis(title="Dataset Type")),
+                color=alt.Color("Dataset_Type:N",
+                                scale=alt.Scale(domain=domain_dt, range=colours_dt),
+                                legend=None),
+                tooltip=[
+                    alt.Tooltip("Short_Title:N",          title="Paper"),
+                    alt.Tooltip("Dataset_Type:N",          title="Type"),
+                    alt.Tooltip("Dataset_Size_Numeric:Q",  title="Size"),
+                    alt.Tooltip("Hydrogen_Route:N",        title="Route"),
+                ],
+            )
+            .properties(title="Dataset Sizes by Type (log scale)", height=280)
+        )
+        st.altair_chart(chart_size, use_container_width=True)
+        st.caption(
+            "Each circle is one paper. Hover for details. "
+            "Note the sensor dataset (n = 549,483) dwarfs all experimental datasets — "
+            "most hydrogen production ML studies work with fewer than 500 samples."
+        )
+
+    st.markdown("---")
+
+    # ═══════════════════════════════════════════════════════════════════════
+    # 3. MAIN DATASET TABLE  (papers with a dataset only)
+    # ═══════════════════════════════════════════════════════════════════════
+    st.subheader("📋 Dataset Reference Table")
+
+    # Keep only papers that have an actual dataset (exclude Review papers
+    # and any row where Dataset_Type is blank / not reported)
+    has_dataset = df[
+        df["Dataset_Type"].str.strip().str.lower().isin(
+            ["experimental", "literature", "simulation", "cfd", "hybrid", "sensor"]
+        )
+    ].copy()
+
+    st.caption(
+        f"Showing **{len(has_dataset)}** papers with a reported dataset "
+        f"(excludes {len(df) - len(has_dataset)} review / no-dataset papers). "
+        "Click 🔗 **Open** to access the paper and its dataset on Google Drive."
+    )
+
+    # Build display dataframe
+    table = has_dataset[[
+        "Serial", "Title", "Year", "Journal",
+        "Hydrogen_Route", "Feedstock",
+        "Dataset_Type", "Dataset_Size_Numeric",
+        "Dataset_Notes", "Best_R2", "Drive_Link",
+    ]].copy()
+
+    # Clean up numeric size column for display
+    table["Dataset_Size_Numeric"] = pd.to_numeric(
+        table["Dataset_Size_Numeric"], errors="coerce"
+    )
+    table = table.rename(columns={
+        "Serial":               "#",
+        "Dataset_Size_Numeric": "Dataset Size",
+        "Dataset_Notes":        "Dataset Notes",
+        "Hydrogen_Route":       "H₂ Route",
+        "Best_R2":              "Best R²",
+        "Drive_Link":           "Drive Link",
+    })
+
+    # Format Drive Link as a clickable markdown hyperlink column
+    table["Drive Link"] = table["Drive Link"].apply(
+        lambda url: f"[🔗 Open Dataset]({url})"
+        if isinstance(url, str) and url.strip().startswith("http")
+        else "—"
+    )
+
+    # Display with st.dataframe — Drive link renders as markdown via column_config
+    st.dataframe(
+        table,
+        use_container_width=True,
+        height=520,
+        column_config={
+            "#":             st.column_config.NumberColumn(width="small"),
+            "Title":         st.column_config.TextColumn(width="large"),
+            "Year":          st.column_config.NumberColumn(width="small", format="%d"),
+            "Journal":       st.column_config.TextColumn(width="medium"),
+            "H₂ Route":      st.column_config.TextColumn(width="medium"),
+            "Feedstock":     st.column_config.TextColumn(width="medium"),
+            "Dataset Type":  st.column_config.TextColumn(width="small"),
+            "Dataset Size":  st.column_config.NumberColumn(
+                                 width="small",
+                                 format="%d samples",
+                                 help="Blank = not reported in the paper"
+                             ),
+            "Dataset Notes": st.column_config.TextColumn(width="large"),
+            "Best R²":       st.column_config.NumberColumn(
+                                 width="small",
+                                 format="%.3f",
+                                 help="Highest R² reported for any model in this paper"
+                             ),
+            "Drive Link":    st.column_config.LinkColumn(
+                                 "Drive Link",
+                                 width="small",
+                                 help="Opens the paper PDF in Google Drive",
+                                 display_text="🔗 Open",
+                             ),
+        },
+        hide_index=True,
+    )
+
+    st.markdown("---")
+
+    # ═══════════════════════════════════════════════════════════════════════
+    # 5. INTERPRETATION NOTES
+    # ═══════════════════════════════════════════════════════════════════════
+    st.subheader("📝 Key Observations")
+
+    with st.expander("📏 Dataset Size Patterns", expanded=True):
+        st.markdown("""
+        - **Most ML studies in hydrogen production operate on very small datasets** — 13 of 29 papers
+          report a numeric dataset size, with a median of around **237 samples**.
+        - The **largest dataset** (549,483 datapoints) belongs to an IoT sensor study — an outlier
+          that reflects real-time monitoring rather than traditional lab experimentation.
+        - **Experimental datasets** typically range from 21 to 432 samples, reflecting the high cost
+          and time requirement of hydrogen production experiments.
+        - **Simulation datasets** (Aspen Plus, PRO/II, Latin Hypercube sampling) tend to be larger
+          (1,000–3,609 samples) since data generation is computationally rather than experimentally constrained.
+        - **Literature-compiled datasets** aggregate data across multiple published studies, typically
+          yielding 133–327 samples — a pragmatic approach when original experimental data is scarce.
+        """)
+
+    with st.expander("🗂️ Dataset Type Interpretation"):
+        st.markdown("""
+        | Type | Description | Typical Size |
+        |---|---|---|
+        | **Experimental** | Lab or pilot-scale measurements | 21 – 432 samples |
+        | **Literature** | Compiled and curated from published studies | 133 – 327 samples |
+        | **Simulation** | Generated from process simulators (Aspen Plus, PRO/II, CFD) | 1,000 – 3,609 samples |
+        | **Review** | No original dataset — purely synthesis and discussion | N/A |
+        | **CFD** | Computational Fluid Dynamics generated data | Not reported |
+        | **Hybrid** | Combination of experimental measurements and literature data | Not reported |
+        | **Sensor** | Real-time IoT sensor datapoints from operating systems | 549,483 samples |
+        """)
+
+    with st.expander("⚠️ Limitations of the Dataset Landscape"):
+        st.markdown("""
+        - **16 of 29 papers do not report a numeric dataset size**, making direct cross-study
+          comparison of model performance difficult.
+        - Dataset sizes are not standardised — some papers report the number of experimental runs,
+          others report total datapoints, and others report the number of publications compiled.
+        - **Review papers** (4 of 29) do not use original datasets at all, contributing to the
+          gap in size reporting.
+        - The wide variation in dataset composition (experimental conditions, feedstock types,
+          reactor scales) limits the generalisability of models trained on these datasets.
+        - Future work should prioritise **open dataset publication** alongside papers to enable
+          reproducibility and transfer learning across hydrogen production ML studies.
+        """)

@@ -1,0 +1,71 @@
+Gasification conditions,Temperature / Catalyst,Total gas yields (mol kg⁻¹),Carbon gasification efficiency (%),Lower heating value (MJ m⁻³)
+"Table 1. Total gas yields, carbon gasification efficiency and lower heating value of gas products from supercritical water gasification of timothy grass at 23–25 MPa.",,,,
+"1:4 BTW ratio, 45 min",450 °C,5.4,11.7,0.41
+,550 °C,8.7,19,1.04
+,650 °C,14.1,27.5,1.89
+"1:8 BTW ratio, 45 min",450 °C,7,15.8,0.54
+,550 °C,11.3,24.2,1.53
+,650 °C,17.2,33,2.21
+"1:4 BTW ratio, 650 °C",15 min,10.5,23.9,1.55
+,30 min,11.9,25.7,1.6
+,45 min,14.1,27.5,1.89
+"1:8 BTW ratio, 650 °C",15 min,11.6,23.4,1.45
+,30 min,13,27.4,1.74
+,45 min,17.2,33,2.21
+"1:8 BTW ratio, 650 °C, 45 min",1% Na₂CO₃,22.7,48.1,3.42
+,2% Na₂CO₃,25.6,55.4,3.79
+,3% Na₂CO₃,27.2,57.6,4.08
+,1% K₂CO₃,21,42.6,3.07
+,2% K₂CO₃,23.9,50.2,3.59
+,3% K₂CO₃,28.8,58.1,4.14
+,1% NaOH,22.3,45.5,2.9
+,2% NaOH,25,52.4,3.62
+,3% NaOH,28.5,61.3,4.68
+,1% KOH,20.4,38.6,2.9
+,2% KOH,23.7,45.8,3.49
+,3% KOH,30.6,59.9,4.32
+,,,,
+Table 2. Proximate and ultimate analysis of timothy grass biomass and biochar (derived at 450–650 °C with 1:8 BTW ratio for 45 min and 23–25 MPa).,,,,
+Parameter,Timothy grass,Biochar-450,Biochar-550,Biochar-650
+Proximate analysis in mass fraction (%),,,,
+Moisture,6.2,3.5,2.9,2
+Ash,4.1,8.6,10.1,13.2
+Volatile matter,71.4,58.4,46.6,37.4
+Fixed carbon,18.3,29.5,40.4,47.4
+Ultimate analysis in mass fraction (%),,,,
+C,47.4,61.2,69.7,75.1
+H,6.8,5.4,4.1,3.7
+N,1.4,1.2,1,0.7
+S,0.1,0.05,0.04,0.04
+O,40.4,23.6,15.1,7.3
+Atomic ratio,,,,
+H/C,1.7,1.1,0.7,0.6
+O/C,0.6,0.3,0.2,0.1
+N/C,0.025,0.017,0.012,0.008
+HHV (MJ kg⁻¹),18.6,24.9,26.2,28.9
+Empirical formula,CH₁.₇O₀.₆N₀.₀₂₅,CH₁.₁O₀.₃N₀.₀₁₇,CH₀.₇O₀.₂N₀.₀₁₂,CH₀.₆O₀.₁N₀.₀₀₈
+,,,,
+Table 3. Assignments for FTIR peaks in timothy grass and its biochars.,,,,
+Wavenumber (cm⁻¹),Functional group,Compounds,,
+"603, 618, 1398, 1401, 1440",C—C,Aromatics,,
+"696, 787, 794, 829",C—H,Aromatics,,
+1013,,Alkenes,,
+955,O—H,Carboxylic acids,,
+"1035, 1056, 1064",C—O,"Alcohols, ethers and esters",,
+1245,C—N,Aliphatic amines,,
+"1556, 1558",N—O,Nitro compounds,,
+1651,C=O,Carbonyls,,
+1733,C—O,Aldehydes and ketones,,
+"2330, 2361",C≡N,Nitriles,,
+2630,C—H,Aldehydes,,
+"2848, 2919",C—H,Alkanes,,
+3320,C—H,Alkynes,,
+,,,,
+Table 4. Assignments for deconvoluted Raman spectra of timothy grass biochars.,,,,
+Band,Raman shift (cm⁻¹),Description,,
+S,1170,"C—C on hydroaromatic rings, C—H on aromatic rings",,
+Sₗ,"1232, 1235, 1251","Alkyl-aryl ether, para-aromatics, C—C structure, methyl carbon to an aromatic ring",,
+D,"1356, 1362, 1382","Highly ordered carbon, C—C between aromatic rings, aromatics with six or more fused benzene rings but less than graphite",,
+Vₗ,"1444, 1450","C—H methylene or methyl, semi-circle breathing of aromatic rings, condensed benzene rings",,
+Gᵣ,"1550, 1556, 1563","Amorphous carbon structures, aromatics with 3–5 rings",,
+G,"1300, 1601, 1605","C=C alkenes, graphite crystalline structures, aromatic ring quadrant breathing",,

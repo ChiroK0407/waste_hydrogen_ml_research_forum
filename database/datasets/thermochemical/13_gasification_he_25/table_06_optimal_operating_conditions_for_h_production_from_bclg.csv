@@ -1,0 +1,9 @@
+Parameter,Optimal Range,Effect on H₂,Notes
+Temperature (T),850–1000 °C,Positive — promotes water-gas shift & tar cracking; above 900°C CO₂ reduction accelerates CO generation,H₂ increases monotonically with T in 600–1000°C range
+Steam/Biomass (S/B),2–4,"Positive up to S/B=4; negative above 4 (excess steam cools reactor, impedes gasification)",S/B = most influential factor per SHAP analysis
+OC/Biomass (O/B),1–3,"Positive up to O/B≈1.8; excess O/B raises CO₂, reduces CO via over-oxidation",O/B > 4 decreases H₂; combined effect with T above 900°C is strongest
+Fe content in OC,High (≥50 wt%),Positive — Fe provides active sites for catalytic reactions and water-splitting,Fe₈Al₂ (80% Fe₂O₃) showed best performance
+Al content in OC,< 30 wt%,Complex — moderate Al enhances activity/stability; Al > 30% reduces reaction activity,Al₂O₃ support superior to ZrO₂ and ZSM-5
+Ca content in OC,< 40 wt%,Stabilizing effect on CH₄ generation; Ca > 40% stabilises H₂ with limited further effect,CaO can enhance WGS reaction
+Zr content in OC,< 20 wt%,H₂ increases with Fe when Zr < 20%; above 30% Zr has limited additional effect,ZrO₂ support inferior to Al₂O₃ for H₂ yield
+Derived from univariate PDPs (Fig. 6) and two-factor PDPs (Fig. 7). Best OC overall: Fe₈Al₂ (Fe₂O₃:Al₂O₃ = 8:2) with H₂ yield of 22.83 mmol/g biomass at 850°C. Dataset: 225 samples from 16 BCLG publications + self-generated experimental data.,,,

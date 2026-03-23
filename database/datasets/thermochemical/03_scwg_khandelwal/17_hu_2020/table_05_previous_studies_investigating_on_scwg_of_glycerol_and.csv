@@ -1,0 +1,17 @@
+Reaction conditions (Temp °C),Pressure (MPa),Feedstock concentration,Residence time,Catalyst,Ref
+Glycerol,,,,,
+425,25.2,3 wt%,54 s,Sol-gel Ni/TiO₂; Ni/ZrO₂; Ni/Ta₂O₅,[209]
+487–600,25,5-10 wt%,4–10 s,/,[210]
+450,25,9 wt%,23 s,Ni/MgAl₂O₄·Al₂O₃; Ni/Al₂O₃; Ni/CNT,[211]
+500,23,5 wt%,10 min,Nickel wire,[175]
+300–600,25,5 wt%,20–120 min,/,[175]
+300–600,22.5–33,50 g/L,1–20 min,/,[212]
+650–740,25,10 wt%,120 min,/,[178]
+450–600,20–28,3.5–10 wt%,5–120 min,K₂CO₃,[213]
+300–430,30,10–30 wt%,5–120,/,[182]
+400–600,25,10-25 wt%,3.9–9 s,NaOH; Na₂CO₃; KOH; K₂CO₃,[214]
+510–550,35,5 wt%,2–10 s,Ru/ZrO₂,[215]
+550–650,25,10 wt%,4–11 s,K₂CO₃,[216]
+380–500,25,1 wt%,0.98–4.94 min,Na₂CO₃,[217]
+Fatty acid,,,,,
+400–500,28,0.35 M,30 min,Ru/Al₂O₃; Ru/AC; Ni/silica-alumina; Pt/AC; Pd/AC; KATALCO,[113]

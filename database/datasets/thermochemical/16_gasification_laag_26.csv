@@ -1,0 +1,67 @@
+Table 1: Application of ML/AI methods in hydrogen production (Section 3.2),,,,
+Ref.,Year,Application,ML/AI methods,H2 technology
+[10],2024,Process optimization,"NN, GA",Thermochemical
+[11],2024,Anomaly detection,"Graph AE, Graph CNN",Thermochemical
+[12],2024,Prediction of heat and H2 production,LSTM,Thermochemical
+[13],2024,Prediction and optimization of load model,"RF, LSTM",Thermochemical
+[14],2024,Process optimization,"XGBoost, NSGA-II",Thermochemical
+[15],2024,Prediction and optimization of H2 yield,"XGBoost, WOA",Thermochemical
+[16],2024,Prediction of system performance,–,Electrochemical
+[17],2024,Prediction of PV power generation and H2 production volume,"RF, SVM, LSTM, NN, GA",Electrochemical
+[18],2024,Forecast of H2 production potential,LSTM,Electrochemical
+[19],2024,Prediction of microbial electrolysis cell performance,RF,Electrochemical
+[20],2024,Prediction of H2 production rates,"k-NN, DT, RF, XGBoost",Biological
+[21],2023,Prediction of micro algal H2 production,–,Biological
+[22],2023,Prediction of H2 production rate,"RF, XGBoost, LGBM",Photocatalytic
+[23],2022,Prediction of H2 production,"ELM, GWO",Photocatalytic
+[24],2024,Prediction of deactivation of Ni catalyst,"RF, NN",Thermochemical
+[25],2022,Prediction of catalyst performance,NN,Thermochemical
+[26],2020,Prediction of catalyst deactivation,"NN, RBF",Thermochemical
+[27],2024,Prediction of HER activity,"RF, SVR, GPR, KRR, XGBoost, GB",Electrochemical
+[28],2024,Prediction of HER performance,"NN, RF, SVM, GPR, k-NN, LR",Electrochemical
+[29],2020,Prediction of Gibbs free energy of H2 adsorption,"NN, RF, KRR",Electrochemical
+[30],2024,Prediction of HER,"RF, DT, SVM, XGBoost, AdaBoost",Photocatalytic
+[31],2024,Prediction of photocatalytic H2 yield,"RF, DT, XGBoost, GB, ERT, Bagging",Photocatalytic
+[32],2022,Prediction of H2 production rate,"NN, DE",Photocatalytic
+[33],2020,Prediction of Gibbs free energy of H2 adsorption,"NN, RF, SVR, KRR",Electrochemical
+[34],2022,Prediction of stability and electrocatalytic activity of SACs,"NN, RF, k-NN, GPR, SVR, CatBoost, GB",Electrochemical
+[35],2024,Screening of HER catalysts,Graph CNN,Electrochemical
+
+Table 2: Descriptions of the tasks and ML methods used in the papers referenced in Section 3.3,,,,
+Ref.,Year,Task,ML methods,H2 technology
+[37],2024,Prediction of fatigue degradation,"NN, RF",Pipeline transport
+[38],2024,Prediction of temperature distribution in pipelines,GPR,Pipeline transport
+[39],2024,Leak detection,"AR, LASSO",Pipeline transport
+[40],2024,Leak detection,"CNN, ANFIS",Pipeline transport
+[41],2024,Prediction of heat transfer coefficient of subcooled liquid hydrogen under various flow conditions,NN,Cryogenic liquid
+[42],2022,Prediction of hydrogen flow boiling heat transfer coefficient,"RF, DT, k-NN, ERT, AdaBoost, XGBoost, Bagging",Cryogenic liquid
+[43],2024,Prediction of hydrogen adsorption of functionalized carbonaceous nanomaterials,"NN, DT, XGBoost, GPR",Solid-state
+[44],2024,Optimization of hydrogen absorption thermodynamics,BO,Solid-state
+[45],2024,Prediction of hydrogen storage capacity and enthalpy of hydride formation,"RF, LR, RR, KRR, GPR, ERT, LASSO",Solid-state
+[46],2024,Prediction of hydrogen storage capacity,CatBoost,Solid-state
+[47],2024,Prediction of hydrogen solubility,"DT, SVR, k-NN, AdaBoost",Underground
+[48],2023,Prediction of hydrogen adsorption,"NN, RF, DT, SR",Underground
+[49],2024,Prediction of UHS optimal location,"NN, SVM, k-NN, MLR, XGBoost, LightBoost, CatBoost",Underground
+[50],2024,Prediction of UHS performance metrics,NN,Underground
+[51],2024,Optimization of hydrogen liquefaction process,"NN, PSO",Cryogenic liquid
+[52],2024,Multi-criteria investigation and optimization framework,"NN, NSGA-II, TOPSIS",Cryogenic liquid
+[53],2024,Optimization of operational variables in the hydrogen liquefaction process,"NSGA-II, PSO, GWO, LINMAP, TOPSIS",Cryogenic liquid
+
+Table 3: Descriptions of the tasks and ML methods used in the papers referenced in Section 3.4,,,,
+Ref.,Year,Task,ML methods,H2 technology
+[56],2024,Prediction of laminar burning velocity,"NN, GPR, XGBoost",Combustion
+[57],2024,Prediction of flame behavior of hydrogen-rich gas combustion,"NN, RF, GPR",Combustion
+[58],2024,Prediction of turbulent flame speed,"NN, RF, MLR, SVR",Combustion
+[59],2024,Prediction of emissions,"NN, RF, DT, XGBoost, GB, Bagging",Combustion
+[60],2024,Analysis of dataset performance and prediction of combustion engine performance parameters,"NN, GPR",Combustion
+[61],2024,Prediction of performance and emissions of dual-fuel hydrogen-diesel combustion engine,NN,Combustion
+[62],2024,Prediction of fuel cell degradation and battery aging,NN,Fuel cell
+[63],2022,Prediction of fuel cell degradation and battery aging,NN,Fuel cell
+[64],2024,System optimization,"NN, NSGA-II, PSO, TOPSIS",Fuel cell
+[65],2024,Economic and efficiency evaluation/optimization,"NN, GA",Fuel cell
+[66],2024,"Prediction of exergy losses and methanol molar flow rate, Process optimization","NN, GPR, GA",Chemical feedstock
+[67],2024,Process optimization,"RF, GPR, NSGA-II",Chemical feedstock
+[68],2023,Optimization of kinetic mechanisms (reaction rate constants),PSO,Combustion
+[69],2024,Catalyst optimization,BO,Chemical feedstock
+[70],2024,Characterization of degree of metal-support interactions,"NN, RF, k-NN, SVM, MLR",Chemical feedstock
+[71],2024,Prediction of thermal conductivity,"NN, RBF",Combustion
